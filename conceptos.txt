@@ -1,0 +1,5 @@
+Conceptos que se pueden incluir en el paper
+
+En esta investigacion ignoramos los efectos de la turbulencia. No buscamos reproducir la turbulencia, solo buscamos reproducir los comportamientos macroscopicos (diagrama fundamental).
+
+La idea es reproducir comportamientos macroscopicos con el modelo mas simple posible. Con la menor cantidad de parametros posibles. Por eso nos basamos en el modelo de fuerza social basico. Sabemos que la modificacion de Johansson reproduce el comportamiento cualitativo del diagrama fundamental y ademas reproduce los efectos de turbulencia. Si bien nosotros no intentamos reproducir la turbulencia, mostramos que con pequeñas modificaciones de los parametros del modelo de fuerza social original, somos capaces de reproducir comportamientos macroscopicos. 
