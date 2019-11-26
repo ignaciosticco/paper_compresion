@@ -43,7 +43,7 @@ def main():
 
      ##### PARAMETERS ##### 
      vd = 10
-     kn = "120000"
+     kn = "0"
      clase = "bottleneck_vd{}_k{}".format(vd,kn)
      distribucion = np.genfromtxt("distrib_comp_{}".format(clase),delimiter = ' ')    
      title_plot= "Bottleneck - $k_n$={} - $v_d$={}".format(kn,vd)
