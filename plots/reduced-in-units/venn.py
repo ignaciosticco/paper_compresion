@@ -33,7 +33,7 @@ v = venn3(subsets=(1,1,1,1,1,1,1),set_labels = ('$\mathcal{A}$', '$\mathcal{K}$'
 v.get_label_by_id('100').set_text(' $\\frac{A \\tau}{m v_d}$')
 v.get_label_by_id('010').set_text('$\\frac{\\kappa B \\tau}{m}$')
 v.get_label_by_id('001').set_text('$\\frac{k B \\tau}{m v_d}$')
-v.get_label_by_id('111').set_text('$m/\\tau$')
+v.get_label_by_id('111').set_text('$\\tau/m$')
 v.get_label_by_id('101').set_text('$\\frac{\\tau}{m v_d}$')
 v.get_label_by_id('110').set_text('')
 v.get_label_by_id('011').set_text('$\\frac{B\\tau}{m}$')
