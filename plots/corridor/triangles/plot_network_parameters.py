@@ -40,44 +40,85 @@ pylab.rcParams.update(params)
 def main():
 
 
-     df = pd.read_csv('network_data_knE5_t100s.txt',delimiter = '\t') 
+     df = pd.read_csv('network_data_kn1.2E6_t30s.txt',delimiter = '\t') 
      global_density = df['0.density'].tolist()
      f_in_giant = df['2.fraction nodes in giant'].tolist()
      shortest_path = df['5.average shortest path length'].tolist()
      diameter = df['6.diameter'].tolist()
      mean_degree = df['7.mean degree'].tolist()
      std_degree = df['8.std degree'].tolist()
-     traingles = df['9.triangles per node'].tolist()
+     triangles = df['9.triangles per node'].tolist()
      simbol ='-o'
+     color = 'k'
+     label = "$k_n=1.2$~E6"
+     #plot_degree(global_density,mean_degree,std_degree,color,simbol,label)
+     #plot_fraction_in_giant(global_density,f_in_giant,color,simbol,label)
+     #plot_shortest_path(global_density,shortest_path,color,simbol,label)
+     #plot_diameter(global_density,diameter,color,simbol,label)
+     plot_triangles(global_density,triangles,color,simbol,label)
+
+
+
+     df = pd.read_csv('network_data_knE5_t30s.txt',delimiter = '\t') 
+     global_density = df['0.density'].tolist()
+     f_in_giant = df['2.fraction nodes in giant'].tolist()
+     shortest_path = df['5.average shortest path length'].tolist()
+     diameter = df['6.diameter'].tolist()
+     mean_degree = df['7.mean degree'].tolist()
+     std_degree = df['8.std degree'].tolist()
+     triangles = df['9.triangles per node'].tolist()
+     simbol ='-x'
      color = 'b'
-     label = "With body force"
+     label = "$k_n=1.2$~E5"
      #plot_degree(global_density,mean_degree,std_degree,color,simbol,label)
      #plot_fraction_in_giant(global_density,f_in_giant,color,simbol,label)
      #plot_shortest_path(global_density,shortest_path,color,simbol,label)
      #plot_diameter(global_density,diameter,color,simbol,label)
-     plot_triangles(global_density,traingles,color,simbol,label)
+     plot_triangles(global_density,triangles,color,simbol,label)
 
-
-     df = pd.read_csv('network_data_kn0_t100s.txt',delimiter = '\t') 
+     df = pd.read_csv('network_data_knE4_t30s.txt',delimiter = '\t') 
      global_density = df['0.density'].tolist()
      f_in_giant = df['2.fraction nodes in giant'].tolist()
      shortest_path = df['5.average shortest path length'].tolist()
      diameter = df['6.diameter'].tolist()
      mean_degree = df['7.mean degree'].tolist()
      std_degree = df['8.std degree'].tolist()
-     traingles = df['9.triangles per node'].tolist()
-     simbol ='-o'
-     color = 'r'
-     label = "Without body force"
+     triangles = df['9.triangles per node'].tolist()
+     simbol ='-^'
+     color = 'y'
+     label = "$k_n=1.2$~E4"
 
      #plot_degree(global_density,mean_degree,std_degree,color,simbol,label)
      #plot_fraction_in_giant(global_density,f_in_giant,color,simbol,label)
      #plot_shortest_path(global_density,shortest_path,color,simbol,label)
      #plot_diameter(global_density,diameter,color,simbol,label)
-     plot_triangles(global_density,traingles,color,simbol,label)
+     plot_triangles(global_density,triangles,color,simbol,label)
+
+
+
+     df = pd.read_csv('network_data_kn0_t30s.txt',delimiter = '\t') 
+     global_density = df['0.density'].tolist()
+     f_in_giant = df['2.fraction nodes in giant'].tolist()
+     shortest_path = df['5.average shortest path length'].tolist()
+     diameter = df['6.diameter'].tolist()
+     mean_degree = df['7.mean degree'].tolist()
+     std_degree = df['8.std degree'].tolist()
+     triangles = df['9.triangles per node'].tolist()
+     simbol ='-s'
+     color = 'c'
+     label = "$k_n=$0"
+
+     #plot_degree(global_density,mean_degree,std_degree,color,simbol,label)
+     #plot_fraction_in_giant(global_density,f_in_giant,color,simbol,label)
+     #plot_shortest_path(global_density,shortest_path,color,simbol,label)
+     #plot_diameter(global_density,diameter,color,simbol,label)
+     plot_triangles(global_density,triangles,color,simbol,label)
+
+
+
+
 
 def plot_degree(global_density,degree,std_degree,color,simbol,label):
-
 
      plt.errorbar(global_density,degree,std_degree,color=color,mec='k',label=label)   
      plt.plot(global_density,degree,simbol,color=color,mec='k',mew=0.8,linewidth = '0.8',markersize=4)   
@@ -95,7 +136,7 @@ def plot_fraction_in_giant(global_density,f_in_giant,color,simbol,label):
      pylab.grid(False)
      pylab.xlabel('Density~(p m$^{-2}$)')
      pylab.ylabel('Fraction of indiv. in Giant')
-     plt.xlim(4,6)
+     plt.xlim(4.74,6)
      lgd=plt.legend(numpoints=1,handlelength=0.8) 
      plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
 
@@ -104,17 +145,16 @@ def plot_fraction_in_giant(global_density,f_in_giant,color,simbol,label):
 
 def plot_triangles(global_density,triangles,color,simbol,label):
 
-     plt.plot(global_density,np.multiply(triangles,3),simbol,color=color,mec='k',mew=0.8,linewidth = '1',markersize=4,label=label)   
+     plt.plot(global_density,triangles,simbol,color=color,mec='k',mew=0.8,linewidth = '1',markersize=4,label=label)   
      pylab.grid(False)
      pylab.xlabel('Density~(p m$^{-2}$)')
      pylab.ylabel('Triangles per node')
-     #plt.xlim(4,6)
+     plt.ylim(-0.25,6.1)
+     plt.xlim(4.5,9.1)
      lgd=plt.legend(numpoints=1,handlelength=0.8) 
      plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
 
      pylab.savefig('triangles.png', format='png', dpi=300, bbox_inches='tight')
-     pylab.savefig('triangles.eps', format='eps', dpi=300, bbox_inches='tight')
-
 
 
 def plot_shortest_path(global_density,shortest_path,color,simbol,label):
