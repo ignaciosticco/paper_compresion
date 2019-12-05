@@ -76,27 +76,27 @@ std_te = data.groupby(data['vd'])['te'].std().values.tolist()
 ###  PLOT  ###
 
 ### No compression ###
-plt.plot(vd,avg_te,'-.rs',mew=0.7,mec='k',markersize=4,label='$k_n =$ 0 ') 
-plt.errorbar(vd,avg_te,std_te,linestyle='none',fmt='none',color='none',ecolor='r') 
+plt.plot(vd,avg_te,'-cs',mew=0.7,mec='k',markersize=4,label='$k_n =$ 0 ') 
+plt.errorbar(vd,avg_te,std_te,linestyle='none',fmt='none',color='none',ecolor='c') 
 
 ### With compression ###
 plt.plot(vd_kcomp_E4,avg_te_kcomp_E4,'-y^',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E4 ') 
 plt.errorbar(vd_kcomp_E4,avg_te_kcomp_E4,std_te_kcomp_E4,linestyle='none',fmt='none',color='none',ecolor='y') 
 
-plt.plot(vd_6E4,avg_te_6E4,'-ko',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E4') 
-plt.errorbar(vd_6E4,avg_te_6E4,std_te_6E4,linestyle='none',fmt='none',color='none',ecolor='k') 
+plt.plot(vd_6E4,avg_te_6E4,'-rv',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E4') 
+plt.errorbar(vd_6E4,avg_te_6E4,std_te_6E4,linestyle='none',fmt='none',color='none',ecolor='r') 
 
-plt.plot(vd_kcomp_E5,avg_te_kcomp_E5,'--bo',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E5') 
+plt.plot(vd_kcomp_E5,avg_te_kcomp_E5,'-bx',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E5') 
 plt.errorbar(vd_kcomp_E5,avg_te_kcomp_E5,std_te_kcomp_E5,linestyle='none',fmt='none',color='none',ecolor='b') 
 
-plt.plot(vd_kx5,avg_te_kx5,'-co',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E5') 
-plt.errorbar(vd_kx5,avg_te_kx5,std_te_kx5,linestyle='none',fmt='none',color='none',ecolor='c') 
+plt.plot(vd_kx5,avg_te_kx5,'-ko',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E5') 
+plt.errorbar(vd_kx5,avg_te_kx5,std_te_kx5,linestyle='none',fmt='none',color='none',ecolor='k') 
 
 
 pylab.grid(False)
 pylab.xlabel('$v_d$~(ms$^{-1}$)')
 pylab.ylabel('$t_e$~(s)')
-pylab.title("N = 225 - Original Friction - Door = 0.92~m (2p)")
+#pylab.title("N = 225 - Original Friction - Door = 0.92~m (2p)")
 #pylab.ylim(40, 80)
 lgd=plt.legend(numpoints=1,handlelength=0.8) 
 plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
