@@ -1,5 +1,5 @@
 import pylab as plt
-from matplotlib_venn import venn3, venn3_circles
+from matplotlib_venn import venn3, venn3_circles,venn2
 import math
 import pylab
 
@@ -29,6 +29,8 @@ params = {'backend': 'ps',
 
 pylab.rcParams.update(params)
 
+'''
+##### 3 parametros reducidos #####
 v = venn3(subsets=(1,1,1,1,1,1,1),set_labels = ('$\mathcal{A}$', '$\mathcal{K}$', '$\mathcal{K}_c$'))
 v.get_label_by_id('100').set_text(' $\\frac{A \\tau}{m v_d}$')
 v.get_label_by_id('010').set_text('$\\frac{\\kappa B \\tau}{m}$')
@@ -37,7 +39,13 @@ v.get_label_by_id('111').set_text('$\\tau/m$')
 v.get_label_by_id('101').set_text('$\\frac{\\tau}{m v_d}$')
 v.get_label_by_id('110').set_text('')
 v.get_label_by_id('011').set_text('$\\frac{B\\tau}{m}$')
+'''
 
+##### 2 parametros reducidos #####
+v = venn2(subsets=(1,1,1),set_labels = ('$\mathcal{A}$', '$\mathcal{K}$'))
+v.get_label_by_id('10').set_text(' $\\frac{A \\tau}{m v_d}$')
+v.get_label_by_id('01').set_text('$\\frac{\\kappa B \\tau}{m}$')
+v.get_label_by_id('11').set_text('$\\tau/m$')
 
-pylab.savefig('venn_parameters.png', format='png', dpi=300, bbox_inches='tight')
-pylab.savefig('venn_parameters.eps', format='eps', dpi=300, bbox_inches='tight')
+pylab.savefig('venn_2parameters.png', format='png', dpi=300, bbox_inches='tight')
+pylab.savefig('venn_2parameters.eps', format='eps', dpi=300, bbox_inches='tight')

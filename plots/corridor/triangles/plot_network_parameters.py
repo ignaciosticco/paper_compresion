@@ -155,6 +155,7 @@ def plot_triangles(global_density,triangles,color,simbol,label):
      plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
 
      pylab.savefig('triangles.png', format='png', dpi=300, bbox_inches='tight')
+     pylab.savefig('triangles.eps', format='eps', dpi=300, bbox_inches='tight')
 
 
 def plot_shortest_path(global_density,shortest_path,color,simbol,label):
@@ -181,6 +182,7 @@ def plot_diameter(global_density,diameter,color,simbol,label):
      plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
 
      pylab.savefig('diameter.png', format='png', dpi=300, bbox_inches='tight')
+     pylab.savefig('diameter.eps', format='eps', dpi=300, bbox_inches='tight')
 
 
 
