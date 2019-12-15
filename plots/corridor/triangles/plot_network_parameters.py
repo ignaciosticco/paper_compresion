@@ -57,8 +57,6 @@ def main():
      #plot_diameter(global_density,diameter,color,simbol,label)
      plot_triangles(global_density,triangles,color,simbol,label)
 
-
-
      df = pd.read_csv('network_data_knE5_t30s.txt',delimiter = '\t') 
      global_density = df['0.density'].tolist()
      f_in_giant = df['2.fraction nodes in giant'].tolist()
@@ -93,8 +91,6 @@ def main():
      #plot_shortest_path(global_density,shortest_path,color,simbol,label)
      #plot_diameter(global_density,diameter,color,simbol,label)
      plot_triangles(global_density,triangles,color,simbol,label)
-
-
 
      df = pd.read_csv('network_data_kn0_t30s.txt',delimiter = '\t') 
      global_density = df['0.density'].tolist()
@@ -153,7 +149,7 @@ def plot_triangles(global_density,triangles,color,simbol,label):
      plt.xlim(4.5,9.1)
      lgd=plt.legend(numpoints=1,handlelength=0.8) 
      plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
-
+     pylab.savefig('triangles.eps', format='eps', dpi=300, bbox_inches='tight')
      pylab.savefig('triangles.png', format='png', dpi=300, bbox_inches='tight')
 
 
@@ -181,8 +177,6 @@ def plot_diameter(global_density,diameter,color,simbol,label):
      plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
 
      pylab.savefig('diameter.png', format='png', dpi=300, bbox_inches='tight')
-
-
 
 
 if __name__=='__main__':
