@@ -58,15 +58,108 @@ Pedestrian Dynamics \sep Social Force Model \sep Body Force
 
 \section{\label{introduction}Introduction}
 
-\section{\label{background}Background}
+The Social Force Model (SFM) addresses two physical forces as 
+\textit{essential}: the ``body force'' and the ``sliding friction''. Both are 
+inspired by granular interactions and were claimed to be necessary  
+for attaining the particular effects in panicking crowds \cite{helbing_2000}. 
+The ``sliding friction'' actually proved to be an essential feature of the 
+``faster-is-slower'' effect, although the role of the ``body force'' appears, 
+at a first instance, not so clear \cite{dorso_2005,dorso_2007,dorso_2011}. \\ 
+
+The existence of a ``body force'' in the context of highly dense crowds (say, 5 
+to 10$\,$people/m$^2$) is a commonsense matter \cite{henein_2007,fruin_1993}. 
+Researchers, however, question the numerical setting for this force in 
+the SFM context \cite{lakoba_2005}. As a matter of fact, the usual setting by 
+Helbing prevents the overlapping among pedestrians, but it is known to 
+accomplish artificially high force levels 
+\cite{helbing_2000,lakoba_2005,langston_2006,lin_2017}. The force estimates 
+from the SFM appear to be remarkably higher with respect to the reported real 
+life data (say, an order of magnitude). The crowd motion simulations, however, 
+present quite realistic results \cite{lakoba_2005,langston_2006,dorso_2017}. 
+The 
+point seems to be that the SFM focuses on the ``incoordination phenomenon'' due 
+to clogging, missing the ``individualistic'' perspective  of single pedestrians 
+or very small groups \cite{helbing_2000,henein_2007,narain_2009}.  \\ 
+
+Many researchers realized that modifying the SFM may (partially) surpass the 
+misleading parameter setting. It was proposed that the pedestrians' 
+psychological force (say, the ``social force'') should be suppressed in the 
+context of highly dense crowds 
+\cite{pelechano_2007,moussaid_2011,alonso_2014,bottinelli_2017}, or smoothly 
+quenched according to the crowd density \cite{song_2019}. The authors in 
+Refs.~\cite{kabalan_2017,jebrane_2019} further proposed a rigid body model in 
+order to completely avoid the overlapping phenomenon. This perspective 
+dismisses 
+any connection to a ``sliding friction''. Conversely, other authors tried to 
+limit the pedestrians acceleration by introducing ``static friction'' between 
+the pedestrians and the floor \cite{wang_2019}. This kind of friction, however, 
+reduces the effective willings of the pedestrians.  \\  
+
+A meaningful (individualistic) numerical setting appears not available yet (to 
+our knowledge). The reason is that different numerical settings can lead to 
+the same crowd dynamics. Actually, only a small set of dimensionless 
+``numbers'' control the crowd dynamics \cite{dorso_2019}. These are similar to 
+those encountered in other active matter systems (P\'eclet number, etc.)  
+\cite{marchetti_2014}. We may hypothesize that while the dimensionless 
+``numbers'' provide some kind of control on the ``incoordination phenomenon'' 
+in 
+crowds, only a few numerical settings can attain an ``individualistic'' 
+meaning. 
+ \\
+
+The numerical setting for the ``faster is slower'' effect presented by 
+Helbing and co-workers is somewhat cumbersome 
+Ref.~\cite{helbing_2000,dorso_2017,dorso_2019}. Although a single 
+parameter (say, the desired velocity $v_d$) is numerically varied to 
+explain the phenomenon, the researcher looses sight of the dimensionless 
+``numbers'' that truly control the crowd dynamics. The setting in 
+Ref.~\cite{helbing_2000} also misses the ``faster is faster'' effect reported 
+to occur at very high pedestrian densities \cite{dorso_2017,haghani_2019}. 
+Alternatively, the empirical fundamental diagram raises as a point of reference 
+for the SFM control parameters \cite{helbing_2007,dorso_2017}. \\
+
+The fundamental diagram exhibits the flux behavior for either low dense crowds 
+(with seldom contacts between pedestrians) and highly dense crowds (dominated 
+by 
+body forces and sliding friction). The latter usually experiences a flux 
+slowing 
+down, but other behaviors are also possible \cite{helbing_2007,lohner_2018}. In 
+light of our previous hypothesis, we may suspect that the  modeling of the 
+``flux slowing down'' within the context of the SFM will require the proper 
+setting of the (dimensionless) controlling parameters. We examined this working 
+hypothesis in Ref.~\cite{dorso_2019}, but limiting the parameter exploration to 
+the sliding friction, disregarding the body force. \\
+
+We now widen the investigation on the parameter settings to include the one 
+associated to the body force. We will focus on the complex interplay between 
+the body force and the sliding friction among pedestrians. Recall that the 
+interplay dynamics is not directly controlled by the numerical setting, but 
+through dimensionless ``numbers'', where the model parameters appear mixed 
+between each other. Thus, this step up offers a challenge to the 
+``individualistic'' meaning of the parameter's setting.  
+
+
+The investigation is organized as follows. We first recall the available 
+experimental values on the body force and the sliding friction (see Section 
+\ref{experimental}). Secondly, we introduce the reduced-in-units SFM and the 
+three dimensionless numbers that control the crowd dynamics (see Section 
+\ref{background}). We present our numerical simulations in Section 
+\ref{results}. For the sake of clarity, this Section is 
+separated into two major parts: the bottleneck scenario and the corridor 
+scenario in Sections \ref{bottleneck} and \ref{corridor}, respectively. 
+Section \ref{discussion} opens a detailed discussion raising from of the results 
+in Section \ref{results}. The last Section closes the investigation with our 
+main conclusions.
+
+\section{\label{experimental}Experimental background}
+
+\section{\label{background}Theoretical background}
 
 \subsection{\label{sfm}The Social Force Model}
 
 
-\section{\label{simulations}Numerical simulations}
-
-
 \section{\label{results}Results}
+
 
 \subsection{\label{bottleneck} Bottleneck}
 
@@ -130,15 +223,15 @@ Pedestrian Dynamics \sep Social Force Model \sep Body Force
 \subsection{\label{reduced-in-units} Reduced-in-units equation of motion}
 
 
-\begin{figure}[htbp!]
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.7\columnwidth]
-{./venn_parameters.png}
-\caption{\label{} }
+    \subfloat[]{\includegraphics[width=0.40\columnwidth]{./venn_2parameters.png}\label{venn_2parameters}}\ 
+    \subfloat[]{\includegraphics[width=0.40\columnwidth]{./venn_3parameters.png}\label{venn_3parameters}}\\
+\caption[width=0.47\columnwidth]{}
+\label{flow_density}
 \end{figure}
 
-
-
+\section{\label{discussion}Discussion}
 
 
 
@@ -154,19 +247,23 @@ y T\'ecnicas - CONICET, Argentina) grant Programaci\'on Cient\'\i fica 2018 (UBA
 
 
 %/////////////////////////////////////////////////
-\begin{thebibliography}{10}
-\expandafter\ifx\csname url\endcsname\relax
-  \def\url#1{\texttt{#1}}\fi
-\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
-\expandafter\ifx\csname href\endcsname\relax
-  \def\href#1#2{#2} \def\path#1{#1}\fi
+%\begin{thebibliography}{10}
+%\expandafter\ifx\csname url\endcsname\relax
+%  \def\url#1{\texttt{#1}}\fi
+%\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+%\expandafter\ifx\csname href\endcsname\relax
+%  \def\href#1#2{#2} \def\path#1{#1}\fi
 
 %\bibitem{helbing3}
 %Helbing, D., Johansson, A., and Al-Abideen, H. Z., 2007. ``Dynamics of crowd 
 %disasters: An empirical study." Physical review E 75 (4), 046109.
 %{\path{https://doi.org/10.1103/PhysRevE.75.046109}}
 
-\end{thebibliography}
+%\end{thebibliography}
+
+\bibliographystyle{unsrt}
+\bibliography{paper}% Produces the bibliography via BibTeX.
+
 \end{document}
 \endinput
 

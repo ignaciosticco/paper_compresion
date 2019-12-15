@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  5 DEC 2019 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.3.25)  15 DEC 2019 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,7 +558,7 @@ LaTeX Warning: Label `flow_density' multiply defined.
 LaTeX Warning: Label `' multiply defined.
 
 
-LaTeX Warning: Label `' multiply defined.
+LaTeX Warning: Label `flow_density' multiply defined.
 
 )
 \openout1 = `paper.aux'.
@@ -650,31 +650,59 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 61--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--97
+
+ []
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 98--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--132
+
+ []
+
+[2]
 Package epstopdf Info: Source file: <./vd_vs_te_N225.eps>
 (epstopdf)                    date: 2019-12-05 15:01:54
 (epstopdf)                    size: 235434 bytes
 (epstopdf)             Output file: <./vd_vs_te_N225-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-05 14:45:14
-(epstopdf)                    size: 26035 bytes
+(epstopdf)                    date: 2019-12-05 15:03:35
+(epstopdf)                    size: 19103 bytes
 (epstopdf)             Command: <repstopdf --outfile=./vd_vs_te_N225-eps-conver
 ted-to.pdf ./vd_vs_te_N225.eps>
-(epstopdf)             \includegraphics on input line 77.
-runsystem(repstopdf --outfile=./vd_vs_te_N225-eps-converted-to.pdf ./vd_vs_te_N
-225.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <./vd_vs_te_N225-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-05 15:03:35
-(epstopdf)                    size: 19103 bytes.
+(epstopdf)             \includegraphics on input line 170.
+Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./vd_vs_te_N225-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<./vd_vs_te_N225-eps-converted-to.pdf, id=4, 239.89626pt x 162.6075pt>
+<./vd_vs_te_N225-eps-converted-to.pdf, id=20, 239.89626pt x 162.6075pt>
 File: ./vd_vs_te_N225-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./vd_vs_te_N225-eps-converted-to.pdf>
 Package pdftex.def Info: ./vd_vs_te_N225-eps-converted-to.pdf used on input lin
-e 77.
+e 170.
 (pdftex.def)             Requested size: 272.99881pt x 185.05936pt.
 Package epstopdf Info: Source file: <./histo_grado_bottleneck_vd2_k0.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -685,7 +713,7 @@ ted-to.pdf>
 (epstopdf)                    size: 12175 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_bottleneck_v
 d2_k0-eps-converted-to.pdf ./histo_grado_bottleneck_vd2_k0.eps>
-(epstopdf)             \includegraphics on input line 84.
+(epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -693,13 +721,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_bottleneck_vd2_k0-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<./histo_grado_bottleneck_vd2_k0-eps-converted-to.pdf, id=5, 242.9075pt x 172.6
-45pt>
+<./histo_grado_bottleneck_vd2_k0-eps-converted-to.pdf, id=21, 242.9075pt x 172.
+645pt>
 File: ./histo_grado_bottleneck_vd2_k0-eps-converted-to.pdf Graphic file (type p
 df)
  <use ./histo_grado_bottleneck_vd2_k0-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_bottleneck_vd2_k0-eps-converted-to.pdf u
-sed on input line 84.
+sed on input line 177.
 (pdftex.def)             Requested size: 155.99762pt x 110.87439pt.
 Package epstopdf Info: Source file: <./histo_grado_bottleneck_vd2_k120000.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -710,7 +738,7 @@ onverted-to.pdf>
 (epstopdf)                    size: 12176 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_bottleneck_v
 d2_k120000-eps-converted-to.pdf ./histo_grado_bottleneck_vd2_k120000.eps>
-(epstopdf)             \includegraphics on input line 85.
+(epstopdf)             \includegraphics on input line 178.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -718,13 +746,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_bottleneck_vd2_k120000-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
 
-<./histo_grado_bottleneck_vd2_k120000-eps-converted-to.pdf, id=6, 242.9075pt x 
-172.645pt>
+<./histo_grado_bottleneck_vd2_k120000-eps-converted-to.pdf, id=22, 242.9075pt x
+ 172.645pt>
 File: ./histo_grado_bottleneck_vd2_k120000-eps-converted-to.pdf Graphic file (t
 ype pdf)
  <use ./histo_grado_bottleneck_vd2_k120000-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_bottleneck_vd2_k120000-eps-converted-to.
-pdf used on input line 85.
+pdf used on input line 178.
 (pdftex.def)             Requested size: 155.99762pt x 110.87439pt.
 Package epstopdf Info: Source file: <./histo_grado_bottleneck_vd4_k0.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -735,7 +763,7 @@ ted-to.pdf>
 (epstopdf)                    size: 12180 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_bottleneck_v
 d4_k0-eps-converted-to.pdf ./histo_grado_bottleneck_vd4_k0.eps>
-(epstopdf)             \includegraphics on input line 86.
+(epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -743,13 +771,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_bottleneck_vd4_k0-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<./histo_grado_bottleneck_vd4_k0-eps-converted-to.pdf, id=7, 242.9075pt x 172.6
-45pt>
+<./histo_grado_bottleneck_vd4_k0-eps-converted-to.pdf, id=23, 242.9075pt x 172.
+645pt>
 File: ./histo_grado_bottleneck_vd4_k0-eps-converted-to.pdf Graphic file (type p
 df)
  <use ./histo_grado_bottleneck_vd4_k0-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_bottleneck_vd4_k0-eps-converted-to.pdf u
-sed on input line 86.
+sed on input line 179.
 (pdftex.def)             Requested size: 155.99762pt x 110.87439pt.
 Package epstopdf Info: Source file: <./histo_grado_bottleneck_vd4_k120000.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -760,7 +788,7 @@ onverted-to.pdf>
 (epstopdf)                    size: 12281 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_bottleneck_v
 d4_k120000-eps-converted-to.pdf ./histo_grado_bottleneck_vd4_k120000.eps>
-(epstopdf)             \includegraphics on input line 87.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -768,13 +796,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_bottleneck_vd4_k120000-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
 
-<./histo_grado_bottleneck_vd4_k120000-eps-converted-to.pdf, id=8, 242.9075pt x 
-172.645pt>
+<./histo_grado_bottleneck_vd4_k120000-eps-converted-to.pdf, id=24, 242.9075pt x
+ 172.645pt>
 File: ./histo_grado_bottleneck_vd4_k120000-eps-converted-to.pdf Graphic file (t
 ype pdf)
  <use ./histo_grado_bottleneck_vd4_k120000-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_bottleneck_vd4_k120000-eps-converted-to.
-pdf used on input line 87.
+pdf used on input line 180.
 (pdftex.def)             Requested size: 155.99762pt x 110.87439pt.
 Package epstopdf Info: Source file: <./histo_grado_bottleneck_vd10_k0.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -785,7 +813,7 @@ rted-to.pdf>
 (epstopdf)                    size: 12180 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_bottleneck_v
 d10_k0-eps-converted-to.pdf ./histo_grado_bottleneck_vd10_k0.eps>
-(epstopdf)             \includegraphics on input line 88.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -793,13 +821,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_bottleneck_vd10_k0-eps-converted-t
 o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
 
-<./histo_grado_bottleneck_vd10_k0-eps-converted-to.pdf, id=9, 242.9075pt x 172.
-645pt>
+<./histo_grado_bottleneck_vd10_k0-eps-converted-to.pdf, id=25, 242.9075pt x 172
+.645pt>
 File: ./histo_grado_bottleneck_vd10_k0-eps-converted-to.pdf Graphic file (type 
 pdf)
  <use ./histo_grado_bottleneck_vd10_k0-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_bottleneck_vd10_k0-eps-converted-to.pdf 
-used on input line 88.
+used on input line 181.
 (pdftex.def)             Requested size: 155.99762pt x 110.87439pt.
 Package epstopdf Info: Source file: <./histo_grado_bottleneck_vd10_k120000.eps>
 
@@ -811,7 +839,7 @@ converted-to.pdf>
 (epstopdf)                    size: 12292 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_bottleneck_v
 d10_k120000-eps-converted-to.pdf ./histo_grado_bottleneck_vd10_k120000.eps>
-(epstopdf)             \includegraphics on input line 89.
+(epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -819,13 +847,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_bottleneck_vd10_k120000-eps-conver
 ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
 
-<./histo_grado_bottleneck_vd10_k120000-eps-converted-to.pdf, id=10, 242.9075pt 
+<./histo_grado_bottleneck_vd10_k120000-eps-converted-to.pdf, id=26, 242.9075pt 
 x 172.645pt>
 File: ./histo_grado_bottleneck_vd10_k120000-eps-converted-to.pdf Graphic file (
 type pdf)
  <use ./histo_grado_bottleneck_vd10_k120000-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_bottleneck_vd10_k120000-eps-converted-to
-.pdf used on input line 89.
+.pdf used on input line 182.
 (pdftex.def)             Requested size: 155.99762pt x 110.87439pt.
 Package epstopdf Info: Source file: <./flow-density_multifric_nocomp.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -836,7 +864,7 @@ ted-to.pdf>
 (epstopdf)                    size: 19903 bytes
 (epstopdf)             Command: <repstopdf --outfile=./flow-density_multifric_n
 ocomp-eps-converted-to.pdf ./flow-density_multifric_nocomp.eps>
-(epstopdf)             \includegraphics on input line 101.
+(epstopdf)             \includegraphics on input line 194.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -844,13 +872,13 @@ pdfTeX warning: pdflatex (file ./flow-density_multifric_nocomp-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
 
-<./flow-density_multifric_nocomp-eps-converted-to.pdf, id=11, 232.87pt x 170.63
+<./flow-density_multifric_nocomp-eps-converted-to.pdf, id=27, 232.87pt x 170.63
 75pt>
 File: ./flow-density_multifric_nocomp-eps-converted-to.pdf Graphic file (type p
 df)
  <use ./flow-density_multifric_nocomp-eps-converted-to.pdf>
 Package pdftex.def Info: ./flow-density_multifric_nocomp-eps-converted-to.pdf u
-sed on input line 101.
+sed on input line 194.
 (pdftex.def)             Requested size: 155.99762pt x 114.31349pt.
 Package epstopdf Info: Source file: <./flow-density_multifric_comp.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -861,20 +889,20 @@ d-to.pdf>
 (epstopdf)                    size: 19531 bytes
 (epstopdf)             Command: <repstopdf --outfile=./flow-density_multifric_c
 omp-eps-converted-to.pdf ./flow-density_multifric_comp.eps>
-(epstopdf)             \includegraphics on input line 102.
+(epstopdf)             \includegraphics on input line 195.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./flow-density_multifric_comp-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<./flow-density_multifric_comp-eps-converted-to.pdf, id=12, 232.87pt x 170.6375
+<./flow-density_multifric_comp-eps-converted-to.pdf, id=28, 232.87pt x 170.6375
 pt>
 File: ./flow-density_multifric_comp-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./flow-density_multifric_comp-eps-converted-to.pdf>
 Package pdftex.def Info: ./flow-density_multifric_comp-eps-converted-to.pdf use
-d on input line 102.
+d on input line 195.
 (pdftex.def)             Requested size: 155.99762pt x 114.31349pt.
 Package epstopdf Info: Source file: <./histo_grado_density7_width22_kn0.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -885,7 +913,7 @@ verted-to.pdf>
 (epstopdf)                    size: 11635 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_density7_wid
 th22_kn0-eps-converted-to.pdf ./histo_grado_density7_width22_kn0.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -893,13 +921,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_density7_width22_kn0-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
 
-<./histo_grado_density7_width22_kn0-eps-converted-to.pdf, id=13, 237.88875pt x 
+<./histo_grado_density7_width22_kn0-eps-converted-to.pdf, id=29, 237.88875pt x 
 170.6375pt>
 File: ./histo_grado_density7_width22_kn0-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use ./histo_grado_density7_width22_kn0-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_density7_width22_kn0-eps-converted-to.pd
-f used on input line 109.
+f used on input line 202.
 (pdftex.def)             Requested size: 155.99762pt x 111.90245pt.
 Package epstopdf Info: Source file: <./histo_grado_density7_width22_knE5.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -910,7 +938,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 11785 bytes
 (epstopdf)             Command: <repstopdf --outfile=./histo_grado_density7_wid
 th22_knE5-eps-converted-to.pdf ./histo_grado_density7_width22_knE5.eps>
-(epstopdf)             \includegraphics on input line 110.
+(epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -918,13 +946,13 @@ pdfTeX warning: pdflatex (file ./histo_grado_density7_width22_knE5-eps-converte
 d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
 
-<./histo_grado_density7_width22_knE5-eps-converted-to.pdf, id=14, 237.88875pt x
+<./histo_grado_density7_width22_knE5-eps-converted-to.pdf, id=30, 237.88875pt x
  170.6375pt>
 File: ./histo_grado_density7_width22_knE5-eps-converted-to.pdf Graphic file (ty
 pe pdf)
  <use ./histo_grado_density7_width22_knE5-eps-converted-to.pdf>
 Package pdftex.def Info: ./histo_grado_density7_width22_knE5-eps-converted-to.p
-df used on input line 110.
+df used on input line 203.
 (pdftex.def)             Requested size: 155.99762pt x 111.90245pt.
 Package epstopdf Info: Source file: <./tesselation_d7_t30_kn0.eps>
 (epstopdf)                    date: 2019-12-05 14:45:14
@@ -935,19 +963,19 @@ pdf>
 (epstopdf)                    size: 799859 bytes
 (epstopdf)             Command: <repstopdf --outfile=./tesselation_d7_t30_kn0-e
 ps-converted-to.pdf ./tesselation_d7_t30_kn0.eps>
-(epstopdf)             \includegraphics on input line 111.
+(epstopdf)             \includegraphics on input line 204.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./tesselation_d7_t30_kn0-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<./tesselation_d7_t30_kn0-eps-converted-to.pdf, id=15, 222.8325pt x 148.555pt>
+<./tesselation_d7_t30_kn0-eps-converted-to.pdf, id=31, 222.8325pt x 148.555pt>
 File: ./tesselation_d7_t30_kn0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./tesselation_d7_t30_kn0-eps-converted-to.pdf>
 Package pdftex.def Info: ./tesselation_d7_t30_kn0-eps-converted-to.pdf used on 
-input line 111.
+input line 204.
 (pdftex.def)             Requested size: 155.99762pt x 103.99911pt.
 Package epstopdf Info: Source file: <./tesselation_d7_t30_knE5.eps>
 (epstopdf)                    date: 2019-12-05 14:45:14
@@ -958,18 +986,18 @@ Package epstopdf Info: Source file: <./tesselation_d7_t30_knE5.eps>
 (epstopdf)                    size: 798909 bytes
 (epstopdf)             Command: <repstopdf --outfile=./tesselation_d7_t30_knE5-
 eps-converted-to.pdf ./tesselation_d7_t30_knE5.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./tesselation_d7_t30_knE5-eps-converted-to.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<./tesselation_d7_t30_knE5-eps-converted-to.pdf, id=16, 222.8325pt x 148.555pt>
+<./tesselation_d7_t30_knE5-eps-converted-to.pdf, id=32, 222.8325pt x 148.555pt>
 File: ./tesselation_d7_t30_knE5-eps-converted-to.pdf Graphic file (type pdf)
 <use ./tesselation_d7_t30_knE5-eps-converted-to.pdf>
 Package pdftex.def Info: ./tesselation_d7_t30_knE5-eps-converted-to.pdf used on
- input line 112.
+ input line 205.
 (pdftex.def)             Requested size: 155.99762pt x 103.99911pt.
 Package epstopdf Info: Source file: <./g(r)_d7_kn0.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -979,18 +1007,18 @@ Package epstopdf Info: Source file: <./g(r)_d7_kn0.eps>
 (epstopdf)                    size: 16086 bytes
 (epstopdf)             Command: <repstopdf --outfile=./g(r)_d7_kn0-eps-converte
 d-to.pdf ./g(r)_d7_kn0.eps>
-(epstopdf)             \includegraphics on input line 113.
+(epstopdf)             \includegraphics on input line 206.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./g(r)_d7_kn0-eps-converted-to.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./g(r)_d7_kn0-eps-converted-to.pdf, id=17, 238.8925pt x 173.64874pt>
+<./g(r)_d7_kn0-eps-converted-to.pdf, id=33, 238.8925pt x 173.64874pt>
 File: ./g(r)_d7_kn0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./g(r)_d7_kn0-eps-converted-to.pdf>
 Package pdftex.def Info: ./g(r)_d7_kn0-eps-converted-to.pdf used on input line 
-113.
+206.
 (pdftex.def)             Requested size: 155.99762pt x 113.39232pt.
 Package epstopdf Info: Source file: <./g(r)_d7_knE5.eps>
 (epstopdf)                    date: 2019-12-05 14:45:13
@@ -1000,99 +1028,123 @@ Package epstopdf Info: Source file: <./g(r)_d7_knE5.eps>
 (epstopdf)                    size: 16541 bytes
 (epstopdf)             Command: <repstopdf --outfile=./g(r)_d7_knE5-eps-convert
 ed-to.pdf ./g(r)_d7_knE5.eps>
-(epstopdf)             \includegraphics on input line 114.
+(epstopdf)             \includegraphics on input line 207.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./g(r)_d7_knE5-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<./g(r)_d7_knE5-eps-converted-to.pdf, id=18, 238.8925pt x 173.64874pt>
+<./g(r)_d7_knE5-eps-converted-to.pdf, id=34, 238.8925pt x 173.64874pt>
 File: ./g(r)_d7_knE5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./g(r)_d7_knE5-eps-converted-to.pdf>
 Package pdftex.def Info: ./g(r)_d7_knE5-eps-converted-to.pdf used on input line
- 114.
+ 207.
 (pdftex.def)             Requested size: 155.99762pt x 113.39232pt.
 Package epstopdf Info: Source file: <./triangles.eps>
-(epstopdf)                    date: 2019-12-05 14:51:23
-(epstopdf)                    size: 223217 bytes
+(epstopdf)                    date: 2019-12-15 16:28:56
+(epstopdf)                    size: 223327 bytes
 (epstopdf)             Output file: <./triangles-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-05 14:52:20
+(epstopdf)                    date: 2019-12-15 16:28:56
 (epstopdf)                    size: 17054 bytes
 (epstopdf)             Command: <repstopdf --outfile=./triangles-eps-converted-
 to.pdf ./triangles.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./triangles-eps-converted-to.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<./triangles-eps-converted-to.pdf, id=19, 230.8625pt x 162.6075pt>
+<./triangles-eps-converted-to.pdf, id=35, 230.8625pt x 162.6075pt>
 File: ./triangles-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./triangles-eps-converted-to.pdf>
-Package pdftex.def Info: ./triangles-eps-converted-to.pdf used on input line 12
-3.
+Package pdftex.def Info: ./triangles-eps-converted-to.pdf used on input line 21
+6.
 (pdftex.def)             Requested size: 272.99881pt x 192.29947pt.
 
-<./venn_parameters.png, id=20, 134.4222pt x 134.4222pt>
-File: ./venn_parameters.png Graphic file (type png)
+<./venn_2parameters.png, id=36, 168.8709pt x 133.6995pt>
+File: ./venn_2parameters.png Graphic file (type png)
 
-<use ./venn_parameters.png>
-Package pdftex.def Info: ./venn_parameters.png used on input line 136.
-(pdftex.def)             Requested size: 272.99881pt x 273.03004pt.
- [1
+<use ./venn_2parameters.png>
+Package pdftex.def Info: ./venn_2parameters.png used on input line 228.
+(pdftex.def)             Requested size: 155.99762pt x 123.51503pt.
 
+<./venn_3parameters.png, id=38, 134.4222pt x 134.4222pt>
+File: ./venn_3parameters.png Graphic file (type png)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./vd_vs_te_N225-eps-conver
-ted-to.pdf>] [2 <./histo_grado_bottleneck_vd2_k0-eps-converted-to.pdf> <./histo
-_grado_bottleneck_vd2_k120000-eps-converted-to.pdf> <./histo_grado_bottleneck_v
-d4_k0-eps-converted-to.pdf> <./histo_grado_bottleneck_vd4_k120000-eps-converted
--to.pdf> <./histo_grado_bottleneck_vd10_k0-eps-converted-to.pdf> <./histo_grado
-_bottleneck_vd10_k120000-eps-converted-to.pdf>]
-
-Package natbib Warning: Empty `thebibliography' environment on input line 169.
-
-[3 <./flow-density_multifric_nocomp-eps-converted-to.pdf> <./flow-density_multi
-fric_comp-eps-converted-to.pdf>] [4 <./histo_grado_density7_width22_kn0-eps-con
-verted-to.pdf> <./histo_grado_density7_width22_knE5-eps-converted-to.pdf> <./te
-sselation_d7_t30_kn0-eps-converted-to.pdf> <./tesselation_d7_t30_knE5-eps-conve
-rted-to.pdf> <./g(r)_d7_kn0-eps-converted-to.pdf> <./g(r)_d7_knE5-eps-converted
--to.pdf>] [5 <./triangles-eps-converted-to.pdf> <./venn_parameters.png>]
-(./paper.aux)
+<use ./venn_3parameters.png>
+Package pdftex.def Info: ./venn_3parameters.png used on input line 229.
+(pdftex.def)             Requested size: 155.99762pt x 156.01393pt.
+ [3 <./vd_vs_te_N225-eps-converted-to.pdf>]
+[4 <./histo_grado_bottleneck_vd2_k0-eps-converted-to.pdf> <./histo_grado_bottle
+neck_vd2_k120000-eps-converted-to.pdf> <./histo_grado_bottleneck_vd4_k0-eps-con
+verted-to.pdf> <./histo_grado_bottleneck_vd4_k120000-eps-converted-to.pdf> <./h
+isto_grado_bottleneck_vd10_k0-eps-converted-to.pdf> <./histo_grado_bottleneck_v
+d10_k120000-eps-converted-to.pdf>] (./paper.bbl [5 <./flow-density_multifric_no
+comp-eps-converted-to.pdf> <./flow-density_multifric_comp-eps-converted-to.pdf>
+] [6 <./histo_grado_density7_width22_kn0-eps-converted-to.pdf> <./histo_grado_d
+ensity7_width22_knE5-eps-converted-to.pdf> <./tesselation_d7_t30_kn0-eps-conver
+ted-to.pdf> <./tesselation_d7_t30_knE5-eps-converted-to.pdf> <./g(r)_d7_kn0-eps
+-converted-to.pdf> <./g(r)_d7_knE5-eps-converted-to.pdf>] [7 <./triangles-eps-c
+onverted-to.pdf> <./venn_2parameters.png> <./venn_3parameters.png>]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+ [8]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+)
+[9] (./paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14761 strings out of 494850
- 282781 string characters out of 6178024
- 321597 words of memory out of 5000000
- 17754 multiletter control sequences out of 15000+600000
+ 14845 strings out of 494850
+ 284417 string characters out of 6178024
+ 323018 words of memory out of 5000000
+ 17834 multiletter control sequences out of 15000+600000
  10274 words of font info for 38 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,10n,54p,770b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti12.pfb>
-Output written on paper.pdf (5 pages, 1855128 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb>
+Output written on paper.pdf (9 pages, 1897002 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
+ 339 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

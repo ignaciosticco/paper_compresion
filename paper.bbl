@@ -1,0 +1,138 @@
+\begin{thebibliography}{10}
+
+\bibitem{helbing_2000}
+D.~Helbing, I.~Farkas, and T.~Vicsek.
+\newblock Simulating dynamical features of escape panic.
+\newblock {\em Nature}, 407:487--490, 2000.
+
+\bibitem{dorso_2005}
+D.~Parisi and C.~Dorso.
+\newblock Microscopic dynamics of pedestrian evacuation.
+\newblock {\em Physica A}, 354:606--618, 2005.
+
+\bibitem{dorso_2007}
+D.~Parisi and C.~Dorso.
+\newblock Morphological and dynamical aspects of the room evacuation process.
+\newblock {\em Physica A}, 385:343--355, 2007.
+
+\bibitem{dorso_2011}
+G.~Frank and C.~Dorso.
+\newblock Room evacuation in the presence of an obstacle.
+\newblock {\em Physica A}, 390:2135--2145, 2011.
+
+\bibitem{henein_2007}
+Colin~M. Henein and Tony White.
+\newblock Macroscopic effects of microscopic forces between agents in crowd
+  models.
+\newblock {\em Physica A: Statistical Mechanics and its Applications}, 373:694
+  -- 712, 2007.
+
+\bibitem{fruin_1993}
+J.~Fruin.
+\newblock {The causes and prevention of crowd disasters}.
+\newblock In R.A. Smith and J.F. Dickie, editors, {\em Engineering for Crowd
+  Safety}. Elsevier, 1993.
+
+\bibitem{lakoba_2005}
+Taras~I. Lakoba, D.~J. Kaup, and Neal~M. Finkelstein.
+\newblock Modifications of the helbing-molnár-farkas-vicsek social force model
+  for pedestrian evolution.
+\newblock {\em SIMULATION}, 81(5):339--352, 2005.
+
+\bibitem{langston_2006}
+Paul~A. Langston, Robert Masling, and Basel~N. Asmar.
+\newblock Crowd dynamics discrete element multi-circle model.
+\newblock {\em Safety Science}, 44(5):395 -- 417, 2006.
+
+\bibitem{lin_2017}
+Peng Lin, Jian Ma, You-Ling Si, Fan-Yu Wu, Guo-Yuan Wang, and Jian-Yu Wang.
+\newblock A numerical study of contact force in competitive evacuation.
+\newblock {\em Chinese Physics B}, 26(10):104501, sep 2017.
+
+\bibitem{dorso_2017}
+I.~M. Sticco, F.~E. Cornes, G.~A. Frank, and C.~O. Dorso.
+\newblock Beyond the faster-is-slower effect.
+\newblock {\em Phys. Rev. E}, 96:052303, Nov 2017.
+
+\bibitem{narain_2009}
+Rahul Narain, Abhinav Golas, Sean Curtis, and Ming~C. Lin.
+\newblock Aggregate dynamics for dense crowd simulation.
+\newblock {\em ACM Trans. Graph.}, 28(5):122:1--122:8, December 2009.
+
+\bibitem{pelechano_2007}
+N.~Pelechano, J.Allbeck, and N.~Badler.
+\newblock Controlling individual agents in high-density crowd simulation.
+\newblock {\em Proceedings of the 2007 ACM SIGGRAPH/Eurographics Symposium on
+  Computer Animation}, pages 99--108, 2007.
+
+\bibitem{moussaid_2011}
+Mehdi Moussa{\"\i}d, Dirk Helbing, and Guy Theraulaz.
+\newblock How simple rules determine pedestrian behavior and crowd disasters.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  108(17):6884--6888, 2011.
+
+\bibitem{alonso_2014}
+Fernando Alonso-Marroqu\'{\i}n, Jonathan Busch, Coraline Chiew, Celia Lozano,
+  and \'Alvaro Ram\'{\i}rez-G\'omez.
+\newblock Simulation of counterflow pedestrian dynamics using spheropolygons.
+\newblock {\em Phys. Rev. E}, 90:063305, Dec 2014.
+
+\bibitem{bottinelli_2017}
+Arianna Bottinelli and Jesse~L. Silverberg.
+\newblock How to: Using mode analysis to quantify, analyze, and interpret the
+  mechanisms of high-density collective motion.
+\newblock {\em Frontiers in Applied Mathematics and Statistics}, 3:26, 2017.
+
+\bibitem{song_2019}
+J.~{Song}, F.~{Chen}, Y.~{Zhu}, N.~{Zhang}, W.~{Liu}, and K.~{Du}.
+\newblock Experiment calibrated simulation modeling of crowding forces in high
+  density crowd.
+\newblock {\em IEEE Access}, 7:100162--100173, 2019.
+
+\bibitem{kabalan_2017}
+Bachar Kabalan.
+\newblock {\em {Crowd dynamics : modeling pedestrian movement and associated
+  generated forces}}.
+\newblock Theses, {Universit{\'e} Paris-Est}, January 2016.
+
+\bibitem{jebrane_2019}
+A.~Jebrane, P.~Argoul, A.~Hakim, and M.~El Rhabi.
+\newblock Estimating contact forces and pressure in a dense crowd: Microscopic
+  and macroscopic models.
+\newblock {\em Applied Mathematical Modelling}, 74:409 -- 421, 2019.
+
+\bibitem{wang_2019}
+Litao Wang and Shifei Shen.
+\newblock A pedestrian dynamics model based on heuristics considering contact
+  force information and static friction.
+\newblock {\em Transportmetrica B: Transport Dynamics}, 7(1):1117--1129, 2019.
+
+\bibitem{dorso_2019}
+I.M. Sticco, G.A. Frank, F.E. Cornes, and C.O. Dorso.
+\newblock A re-examination of the role of friction in the original social force
+  model.
+\newblock {\em Safety Science}, 121:42 -- 53, 2020.
+
+\bibitem{marchetti_2014}
+Yaouen Fily, Silke Henkes, and M.~Cristina Marchetti.
+\newblock Freezing and phase separation of self-propelled disks.
+\newblock {\em Soft Matter}, 10:2132--2140, 2014.
+
+\bibitem{haghani_2019}
+Milad Haghani, Majid Sarvi, and Zahra Shahhoseini.
+\newblock When ‘push’ does not come to ‘shove’: Revisiting ‘faster is
+  slower’ in collective egress of human crowds.
+\newblock {\em Transportation Research Part A: Policy and Practice}, 122:51 --
+  69, 2019.
+
+\bibitem{helbing_2007}
+Dirk Helbing, Anders Johansson, and Habib~Zein Al-Abideen.
+\newblock Dynamics of crowd disasters: An empirical study.
+\newblock {\em Phys. Rev. E}, 75:046109, Apr 2007.
+
+\bibitem{lohner_2018}
+Rainald Lohner, Britto Muhamad, Prabhu Dambalmath, and Eberhard Haug.
+\newblock Fundamental diagrams for specific very high density crowds.
+\newblock {\em Collective Dynamics}, 2, 2018.
+
+\end{thebibliography}
