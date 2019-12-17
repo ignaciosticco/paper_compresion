@@ -168,7 +168,16 @@ main conclusions.
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./vd_vs_te_N225.eps}
-\caption{\label{} }
+\caption{\label{vd_vs_te}Mean evacuation time (s) vs. the pedestrian’s desired velocity (m/s) for a bottleneck. The room was 20 m x 20 m size. The door was 0.92 m width. Mean values were computed from 10 evacuation processes. 225 pedestrians were initially placed in a square lattice with a random initial velocity. Each process was finished when 158 pedestrians left the room. The different symbols indicate the $k$ value corresponding to the body force (see the label). }
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./degree_vs_vd_multi_kn.eps}\label{degree_te}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./overlap_vs_vd_multi_kn.eps}\label{overlap_te}}\\
+\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrian’s desired velocity (m/s). Each symbol indicates the $k$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (reinjecting pedestrians). The average was taken every two seconds once the crowd reaches the stationary state ($t=$20~s) until the end of the simulation ($t=$110~s).}
+\label{degree_overlap_te}
 \end{figure}
 
 
