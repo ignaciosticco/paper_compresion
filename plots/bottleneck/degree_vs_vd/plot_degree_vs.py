@@ -40,17 +40,34 @@ vd_kn0 = data_kn0["vd"].tolist()
 mean_comp_kn0 = data_kn0["list_mean_degree"].tolist()
 std_comp_kn0 = data_kn0["list_std_degree"].tolist()
 
+data_knE4 = pd.read_csv("degree_vs_vd_kn12000.txt",sep="\t")
+vd_knE4 = data_knE4["vd"].tolist()
+mean_comp_knE4 = data_knE4["list_mean_degree"].tolist()
+std_comp_knE4 = data_knE4["list_std_degree"].tolist()
+
+data_kn6E4 = pd.read_csv("degree_vs_vd_kn60000.txt",sep="\t")
+vd_kn6E4 = data_kn6E4["vd"].tolist()
+mean_comp_kn6E4 = data_kn6E4["list_mean_degree"].tolist()
+std_comp_kn6E4 = data_kn6E4["list_std_degree"].tolist()
+
 data_kn = pd.read_csv("degree_vs_vd_kn120000.txt",sep="\t")
 vd_kn = data_kn["vd"].tolist()
 mean_comp_kn = data_kn["list_mean_degree"].tolist()
 std_comp_kn = data_kn["list_std_degree"].tolist()
 
+data_knE6 = pd.read_csv("degree_vs_vd_k1200000.txt",sep="\t")
+vd_knE6 = data_knE6["vd"].tolist()
+mean_comp_knE6 = data_knE6["list_mean_degree"].tolist()
+std_comp_knE6 = data_knE6["list_std_degree"].tolist()
+
 ###  PLOT  ###
 fig, ax1 = plt.subplots()
 
 plt.plot(vd_kn0,mean_comp_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=0$') 
-plt.plot(vd_kn,mean_comp_kn,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$ E5') 
-
+plt.plot(vd_knE4,mean_comp_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E4') 
+plt.plot(vd_kn6E4,mean_comp_kn6E4,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=6$ E4') 
+plt.plot(vd_kn,mean_comp_kn,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E5') 
+plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E6') 
 
 pylab.grid(False)
 pylab.xlabel('$v_d$~(m~s$^{-1})$')

@@ -54,11 +54,11 @@ vd_kcomp_E5 = list(data_kcomp_E5.vd.unique())
 avg_te_kcomp_E5 = data_kcomp_E5.groupby(data_kcomp_E5['vd'])['te'].mean().values.tolist()
 std_te_kcomp_E5 = data_kcomp_E5.groupby(data_kcomp_E5['vd'])['te'].std().values.tolist()
 
-data_kx5 = pd.read_csv("tevsvd_N225_k600000.txt", header=None,delimiter=' ') 
-data_kx5.columns=['vd','iter','te','N_quedaron','nan']
-vd_kx5 = list(data_kx5.vd.unique())
-avg_te_kx5 = data_kx5.groupby(data_kx5['vd'])['te'].mean().values.tolist()
-std_te_kx5 = data_kx5.groupby(data_kx5['vd'])['te'].std().values.tolist()
+data_kE6 = pd.read_csv("tevsvd_N225_k1200000.txt", header=None,delimiter=' ') 
+data_kE6.columns=['vd','iter','te','N_quedaron','nan']
+vd_kE6 = list(data_kE6.vd.unique())
+avg_te_kE6 = data_kE6.groupby(data_kE6['vd'])['te'].mean().values.tolist()
+std_te_kE6 = data_kE6.groupby(data_kE6['vd'])['te'].std().values.tolist()
 
 data_6E4 = pd.read_csv("tevsvd_N225_k60000.txt", header=None,delimiter=' ') 
 data_6E4.columns=['vd','iter','te','N_quedaron','nan']
@@ -89,8 +89,8 @@ plt.errorbar(vd_6E4,avg_te_6E4,std_te_6E4,linestyle='none',fmt='none',color='non
 plt.plot(vd_kcomp_E5,avg_te_kcomp_E5,'-bx',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E5') 
 plt.errorbar(vd_kcomp_E5,avg_te_kcomp_E5,std_te_kcomp_E5,linestyle='none',fmt='none',color='none',ecolor='b') 
 
-plt.plot(vd_kx5,avg_te_kx5,'-ko',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E5') 
-plt.errorbar(vd_kx5,avg_te_kx5,std_te_kx5,linestyle='none',fmt='none',color='none',ecolor='k') 
+plt.plot(vd_kE6,avg_te_kE6,'-ko',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E6') 
+plt.errorbar(vd_kE6,avg_te_kE6,std_te_kE6,linestyle='none',fmt='none',color='none',ecolor='k') 
 
 
 pylab.grid(False)
