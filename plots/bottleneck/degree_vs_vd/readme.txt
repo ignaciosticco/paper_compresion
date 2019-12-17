@@ -1,0 +1,1 @@
+Estos resultados corresponden al grado medio de todos los individuos (los que pertenecen a la componente gigante y los que no pertenecen)
