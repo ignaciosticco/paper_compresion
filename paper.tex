@@ -170,7 +170,7 @@ Fig. \ref{vd_vs_te} shows the evacuation time as a function of the pedestrian's 
 
 There is a noticeable difference in the evacuation time depending on the $k$ value of the body force. The higher the $k$ the smaller the evacuation time, meaning that if pedestrians are stiffer the overall speed increases (hence the evacuation time).\\
 
-The Faster-is-Faster (FIF) is the phenomenon in which under certain conditions, increasing the desired velocity yields to a reduction of the evacuation time. While the Faster-is-Faster is the opposite (the higher $v_d$ the lower the evacuation time).  Notice that the presence of the faster-is-faster (FIF) effect and the faster-is-slower are dependent on the value of $k$. In Fig.~\ref{vd_vs_te} we can see that $k=1.2$~E5 only exhibits FIS effect for $v_d>$2~m/s. $k=1.2$~E6 only shows FIF effect and the explored values of $k$ that satisfy $k \leq 6$~E4 exhibit both the FIS and the FIF effect. \\
+The Faster-is-Faster (FIF) is the phenomenon in which under certain conditions, increasing the desired velocity yields to a reduction of the evacuation time. The Faster-is-Faster is the opposite effect (the higher $v_d$ the lower the evacuation time).  Notice that the presence of the faster-is-faster (FIF) effect and the faster-is-slower are dependent on the value of $k$. In Fig.~\ref{vd_vs_te} we can see that $k=1.2$~E5 only exhibits FIS effect for $v_d>$2~m/s. $k=1.2$~E6 only shows FIF effect and the explored values of $k$ that satisfy $k \leq 6$~E4 exhibit both the FIS and the FIF effect. \\
  
 
 \begin{figure}[htbp!]
@@ -181,16 +181,21 @@ The Faster-is-Faster (FIF) is the phenomenon in which under certain conditions, 
 \end{figure}
 
 
-Network analysis is a set of techniques that characterize the structures in a given graph. We defined the graph of contacts among individuals. In this graph, each node represents a pedestrian and the link between a pair of nodes is settled if this pair of pedestrians are in physical contact ($i.e.$ $r_{ij}<d_{ij}$).\\
+Network analysis is a set of techniques that characterize the structures in a graph. We defined the graph of contacts among individuals. In this graph, each node represents a pedestrian and the link between a pair of nodes is settled if this pair of pedestrians are in physical contact ($i.e.$ $r_{ij}<d_{ij}$).\\
 
-Fig.~\ref{degree_te}
+Fig.~\ref{degree_vd} shows the mean degree of the contact graph as a function of the desired velocity. The degree of a node is defined as the amount of edges assigned to the node. This means, the number of pedestrians that are in contact with a given pedestrian. The mean degree is the average of the degree over all the nodes (pedestrians) and over the whole time from the stationary state until the end of the simulation.\\
+
+Increasing $v_d$ increases the mean degree in all cases. This happens because increasing $v_d$ produces higher densities that force individuals to touch each other. For a given $v_d$ the mean degree reduces as the $k$ value increases. In other words, the stiffer the pedestrians the less they touch each other. We will later discuss that this phenomenon is a characteristic of the bottleneck geometry that cannot be extrapolated to the corridor geometry.\\
+
+Fig.~\ref{overlap_vd} shows the overlap as a function of $v_d$. The overlap is defined as $d_{ij}-r_{ij}$ where $d_{ij}$ is the sum of radius of particle $i$ and particle $j$ and $r_{ij}$  is the distance between both particles. In the range $v_d \geq 2$~m/s we can see that increasing $v_d$ increases the overlap (for all the $k$ values studied). For a given $v_d$, the overlap increases as the $k$ value decreases. Reducing $k$ means reducing the normal body force which allows a greater invasion of the personal space of the particles.\\  
+
 
 \begin{figure}[!htbp]
 \centering
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./degree_vs_vd_multi_kn.eps}\label{degree_te}}\ 
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./overlap_vs_vd_multi_kn.eps}\label{overlap_te}}\\
-\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrian’s desired velocity (m/s). Each symbol indicates the $k$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (reinjecting pedestrians). The average was taken every two seconds once the crowd reaches the stationary state ($t=$20~s) until the end of the simulation ($t=$110~s).}
-\label{degree_overlap_te}
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./degree_vs_vd_multi_kn.eps}\label{degree_vd}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./overlap_vs_vd_multi_kn.eps}\label{overlap_vd}}\\
+\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrian’s desired velocity (m/s). Each symbol indicates the $k$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every two seconds once the crowd reaches the stationary state ($t=$20~s) until the end of the simulation ($t=$110~s).}
+\label{degree_overlap_vd}
 \end{figure}
 
 
