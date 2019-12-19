@@ -170,7 +170,8 @@ Fig. \ref{vd_vs_te} shows the evacuation time as a function of the pedestrian's 
 
 There is a noticeable difference in the evacuation time depending on the $k$ value of the body force. The higher the $k$ the smaller the evacuation time, meaning that if pedestrians are stiffer the overall speed increases (hence the evacuation time).\\
 
-Notice that the faster-is-slower (FIS) effect and the faster-is-faster (FIF) effect are both dependent on the value of $k$. If $k$ is high enough, the FIF effect does not show for the explored desired velocity values ($v_d \leq 10$~m/s).\\
+The Faster-is-Faster (FIF) is the phenomenon in which under certain conditions, increasing the desired velocity yields to a reduction of the evacuation time. While the Faster-is-Faster is the opposite (the higher $v_d$ the lower the evacuation time).  Notice that the presence of the faster-is-faster (FIF) effect and the faster-is-slower are dependent on the value of $k$. In Fig.~\ref{vd_vs_te} we can see that $k=1.2$~E5 only exhibits FIS effect for $v_d>$2~m/s. $k=1.2$~E6 only shows FIF effect and the explored values of $k$ that satisfy $k \leq 6$~E4 exhibit both the FIS and the FIF effect. \\
+ 
 
 \begin{figure}[htbp!]
 \centering
@@ -179,6 +180,10 @@ Notice that the faster-is-slower (FIS) effect and the faster-is-faster (FIF) eff
 \caption{\label{vd_vs_te}Mean evacuation time (s) vs. the pedestrian’s desired velocity (m/s) for a bottleneck. The room was 20 m x 20 m size. The door was 0.92 m width. Mean values were computed from 10 evacuation processes. 225 pedestrians were initially placed in a square lattice with a random initial velocity. Each process was finished when 158 pedestrians left the room. The different symbols indicate the $k$ value corresponding to the body force (see the label). }
 \end{figure}
 
+
+Network analysis is a set of techniques that characterize the structures in a given graph. We defined the graph of contacts among individuals. In this graph, each node represents a pedestrian and the link between a pair of nodes is settled if this pair of pedestrians are in physical contact ($i.e.$ $r_{ij}<d_{ij}$).\\
+
+Fig.~\ref{degree_te}
 
 \begin{figure}[!htbp]
 \centering
