@@ -153,6 +153,95 @@ main conclusions.
 
 \section{\label{experimental}Experimental background}
 
+The complex behavior of pedestrians feature either his (her) feelings and 
+the environmental conditions. The former is expressed, for example, by his 
+(her) moving ``attitude'' (say, self-assuredness). The latter brings out the 
+observed separation between pedestrians. Also, the ``contacts'' between 
+individuals address some kind of ``unwanted'' slowing down. All these 
+observed patterns are commonly quantified in the literature into a a set of 
+characteristic  parameters. The experimental meaning of these parameters is as 
+follows.
+
+\begin{itemize}
+\item[(i)] The walking attitude of a pedestrian may appear somewhat 
+``assertive'' if he (she) reacts actively to unexpected behaviors 
+\cite{lakoba_2005,helbing_1995}. The smaller the reaction time, the more 
+assertive or aggresive observed posture. The associated parameter to this 
+behavior is the relaxation or characteristic time $\tau$ 
+\cite{johansson_2009,helbing_2000}. 
+
+\item[(ii)] Despite the reactive attitude $\tau$, the pedestrian addresses a 
+``free'' (undisturbed) walking speed $\v_0$. This speed expresses his (her) 
+motivation or intention to reach a certain destination (as comfortable as 
+possible). Observations commonly associate $0.6\,$m/s, $1\,$m/s or $1.5\,$m/s 
+to relaxed, normal or nervous walking speeds, respectively  
+\cite{helbing_1995,helbing_2000,li_2015}. 
+
+\item[(iii)] The walking speed of pedestrians appears to be lower in a 
+crowded walkway with respect to their usually expected ``free'' walking speeds 
+\cite{weidmann_1992,lakoba_2005}. Pedestrians tend to reduce their speed within 
+crowded environments because they perceive not enough space for taking a 
+step  \cite{johansson_2009}. This (perceived) step distance is therefore an 
+influential parameter on the pedestrians behavior. It is known as the 
+characteristic length $B$. 
+
+\item[(iv)] Physical interactions occur in very crowded environments. The 
+``body force''  and ``sliding friction'' can be introduced straight forward. 
+This will be done in Section \ref{background}. But it is worth noting that 
+both are associated to the moving difficulties (say, slowing down and 
+obstructions) observed in contacting pedestrians. 
+
+\end{itemize}
+
+
+Table~\ref{table_data} shows a few empirical figures for the most common 
+parameters. More data is available throughout the literature (see, for example, 
+Refs.~\cite{hoogendoorn_2007,seyfried_2007,johansson_2007,moussaid_2009,
+luber_2010,seer_2014,li_2015} ). We intentionally omitted data that assumes a 
+specific mathematical model. The exhibited values should also be considered as a 
+general purpose approach, since no distinction has been made on age, gender or 
+cultural habits. \\
+
+
+\begin{table}
+\begin{tabular}{cccccc}
+ \hline
+ $\tau$[s]   & $m$[kg]     & $v_d$[m/s]  &  $B$[m]  & $k$[kg/s$^2$] &  Refs. \\
+ \hline
+0.61         & ---         & 1.24 & $0.36+1.06\,v$ &  ---                 &  
+ \cite{seyfried_2007} \\
+0.50$^*$     & 80$^*$      & 1.34 & 0.50           &  ---                 &  
+\cite{weidmann_1992,lakoba_2005}\\
+---          & $67.5$      & 1.39 &  ---           &  $96.1 + 12694.1\,x$ & 
+\cite{song_2019}\\
+---          & $67.0$      & 1.39 &  ---           &  $97.0 + 29378.9\,x$ & 
+\cite{song_2019}\\
+
+
+
+\hline
+\end{tabular}
+\caption{The experimental data for the pedestrian parameters, as explained in 
+Section~\ref{experimental}. The magnitude $v$ means de pedestrian velocity 
+(m/s). The magnitude $x$ means the compression length (m). The upper row for 
+Ref.~\cite{song_2019} corresponds data acquired in winter and the lower row to 
+datas acquiquired in summer. The asterisk ($^*$) corresponds to reasonable 
+estimates. }
+\label{table_data}
+\end{table}
+
+A first examination of the figures in Table~\ref{table_data} shows that the 
+choise $\tau\simeq0.6\,$s seems to be a reasonable estimation for the 
+relaxation time, although this may vary with respect to gender or culture 
+\cite{siddharth_2018}. Additionally, we confirm that normal pedestrians attain 
+desired velocties around $1.3\,$m/s. \\
+
+No body contacts were reported in Refs.~\cite{seyfried_2007,weidmann_1992} 
+since these experiments correspond to the low density regime. At this instance, 
+the pedestrian does not feel to be too close to the others....    \\ 
+
+
+
 \section{\label{background}Theoretical background}
 
 \subsection{\label{sfm}The Social Force Model}
