@@ -135,4 +135,76 @@ Rainald Lohner, Britto Muhamad, Prabhu Dambalmath, and Eberhard Haug.
 \newblock Fundamental diagrams for specific very high density crowds.
 \newblock {\em Collective Dynamics}, 2, 2018.
 
+\bibitem{helbing_1995}
+Dirk Helbing and P\'eter Moln\'ar.
+\newblock Social force model for pedestrian dynamics.
+\newblock {\em Phys. Rev. E}, 51:4282--4286, May 1995.
+
+\bibitem{johansson_2009}
+Anders Johansson.
+\newblock Constant-net-time headway as a key mechanism behind pedestrian flow
+  dynamics.
+\newblock {\em Phys. Rev. E}, 80:026120, Aug 2009.
+
+\bibitem{li_2015}
+Meifang Li, Yongxiang Zhao, Lerong He, Wenxiao Chen, and Xianfeng Xu.
+\newblock The parameter calibration and optimization of social force model for
+  the real-life 2013 ya’an earthquake evacuation in china.
+\newblock {\em Safety Science}, 79:243 -- 253, 2015.
+
+\bibitem{weidmann_1992}
+Ulrich Weidmann.
+\newblock Transporttechnik der fussg\"anger.
+\newblock {\em IVT Schriftenreihe}, 90, Jan 1992.
+
+\bibitem{hoogendoorn_2007}
+S.P. Hoogendoorn and W.~Daamen.
+\newblock {Microscopic Calibration and Validation of Pedestrian Models:
+  Cross-Comparison of Models Using Experimental Data}.
+\newblock In A.~Schadschneider, T.~P\"oschel, R.~K\"uhne, M.~Schreckenberg, and
+  D.~E. Wolf, editors, {\em Traffic and granular flow '05}, volume Part III.
+  Springer, 2007.
+
+\bibitem{seyfried_2007}
+A.~Seyfried, B.~Steffen, W.~Klingsch, Th. Lippert, and M.~Boltes.
+\newblock {The Fundamental Diagram of Pedestrian Movement Revisited - Empirical
+  Results and Modelling}.
+\newblock In A.~Schadschneider, T.~P\"oschel, R.~K\"uhne, M.~Schreckenberg, and
+  D.~E. Wolf, editors, {\em Traffic and granular flow '05}, volume Part III.
+  Springer, 2007.
+
+\bibitem{johansson_2007}
+A.~Johansson, D.~Helbing, and P.K. Shukla.
+\newblock Specification of the social force pedestrian model by evolutionary
+  adjustment to video tracking data.
+\newblock {\em Advances in Complex Systems}, 10(supp02):271--288, 2007.
+
+\bibitem{moussaid_2009}
+Mehdi Moussa\"\i~d, Dirk Helbing, Simon Garnier, Anders Johansson, Maud Combe,
+  and Guy Theraulaz.
+\newblock Experimental study of the behavioural mechanisms underlying
+  self-organization in human crowds.
+\newblock {\em Proceedings of the Royal Society B: Biological Sciences},
+  276(1668):2755--2762, 2009.
+
+\bibitem{luber_2010}
+M.~{Luber}, J.~A. {Stork}, G.~D. {Tipaldi}, and K.~O. {Arras}.
+\newblock People tracking with human motion predictions from social forces.
+\newblock In {\em 2010 IEEE International Conference on Robotics and
+  Automation}, pages 464--469, May 2010.
+
+\bibitem{seer_2014}
+Stefan Seer, Christian Rudloff, Thomas Matyus, and Norbert Br{\"a}ndle.
+\newblock Validating social force based models with comprehensive real world
+  motion data.
+\newblock {\em Transportation Research Procedia}, 2:724 -- 732, 2014.
+\newblock The Conference on Pedestrian and Evacuation Dynamics 2014 (PED 2014),
+  22-24 October 2014, Delft, The Netherlands.
+
+\bibitem{siddharth_2018}
+S.~M.~P. Siddharth and P.~Vedagiri.
+\newblock Modeling the gender effects of pedestrians and calibration of the
+  modified social force model.
+\newblock {\em Transportation Research Record}, 2672(31):1--9, 2018.
+
 \end{thebibliography}
