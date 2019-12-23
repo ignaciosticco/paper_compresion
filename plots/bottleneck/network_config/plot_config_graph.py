@@ -132,7 +132,8 @@ def plot_network(G,output_filename):
      fig, ax = plt.subplots()
      pos=nx.get_node_attributes(G,'pos')
      sc = nx.draw(G,pos,width=0.5,node_color=n_color,cmap='viridis',node_size=5,with_labels=False,edge_color='black')
-     plt.axis([13,20,4,16])
+     #plt.axis([13,20,4,16])
+     plt.axis([10,20,4,16])
      plt.axis('on')
      plt.grid('false')
      #plt.text(15.5, 5.5, "16", fontsize=10)
@@ -155,8 +156,8 @@ def plot_network(G,output_filename):
 def main():
 
      ############# PARAMETERS #############
-     input_filename = 'config_bottleneck_vd10_k120000'
-     output_filename = 'network_vd10_kn120000'
+     input_filename = 'config_bottleneck_vd2_k0'
+     output_filename = 'network_vd2_kn0'
      time = 100
      sum_rads = 0.46
      ######################################
