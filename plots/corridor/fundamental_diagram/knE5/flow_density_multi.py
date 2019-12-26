@@ -39,11 +39,14 @@ pylab.rcParams.update(params)
 
 ### DATA ###
 
-data_kn_kt = pd.read_csv("flow_density_kn_kt.txt",sep=" ")
-density_kn_kt = data_kn_kt["density"].tolist()
-flow_kn_kt = data_kn_kt["flow"].tolist()
-speed_kn_kt=np.divide(flow_kn_kt,density_kn_kt)
+data_kn_kt = pd.read_csv("fd_kt_kn.txt",sep="\t")
+global_density_kn_kt = data_kn_kt["mean_global_dens"].tolist()
+density_kn_kt = data_kn_kt["mean_local_dens"].tolist()
+flow_kn_kt = data_kn_kt["mean_local_flowx"].tolist()
+std_flow_kn_kt = data_kn_kt["std_local_flowx"].tolist()
+speed_kn_kt = np.divide(flow_kn_kt,density_kn_kt)
 
+'''
 data_kn_ktx3 = pd.read_csv("flow_density_kn_ktx3.txt",sep=" ")
 density_kn_ktx3 = data_kn_ktx3["density"].tolist()
 flow_kn_ktx3 = data_kn_ktx3["flow"].tolist()
@@ -63,32 +66,48 @@ data_kn_ktx9 = pd.read_csv("flow_density_kn_ktx9.txt",sep=" ")
 density_kn_ktx9 = data_kn_ktx9["density"].tolist()
 flow_kn_ktx9 = data_kn_ktx9["flow"].tolist()
 speed_kn_ktx9=np.divide(flow_kn_ktx9,density_kn_ktx9)
+'''
+data_ktx5_kn = pd.read_csv("fd_ktx5_kn.txt",sep="\t")
+global_density_ktx5_kn = data_ktx5_kn["mean_global_dens"].tolist()
+density_ktx5_kn = data_ktx5_kn["mean_local_dens"].tolist()
+flow_ktx5_kn = data_ktx5_kn["mean_local_flowx"].tolist()
+std_flow_ktx5_kn = data_ktx5_kn["std_local_flowx"].tolist()
+speed_ktx5_kn = np.divide(flow_ktx5_kn,density_ktx5_kn)
 
-data_kn_ktx10 = pd.read_csv("flow_density_kn_ktx10.txt",sep=" ")
-density_kn_ktx10 = data_kn_ktx10["density"].tolist()
-flow_kn_ktx10 = data_kn_ktx10["flow"].tolist()
-speed_kn_ktx10=np.divide(flow_kn_ktx10,density_kn_ktx10)
 
+data_ktx10_kn = pd.read_csv("fd_ktx10_kn.txt",sep="\t")
+global_density_ktx10_kn = data_ktx10_kn["mean_global_dens"].tolist()
+density_ktx10_kn = data_ktx10_kn["mean_local_dens"].tolist()
+flow_ktx10_kn = data_ktx10_kn["mean_local_flowx"].tolist()
+std_flow_ktx10_kn = data_ktx10_kn["std_local_flowx"].tolist()
+speed_ktx10_kn = np.divide(flow_ktx10_kn,density_ktx10_kn)
 
 ###  PLOT  ###
 
 
 fig, ax1 = plt.subplots()
 
+plt.plot(global_density_kn_kt,flow_kn_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
+plt.errorbar(global_density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(density_kn_kt,flow_kn_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.plot(density_kn_ktx3,flow_kn_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
-plt.plot(density_kn_ktx5,flow_kn_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
-plt.plot(density_kn_ktx7,flow_kn_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
+plt.plot(global_density_ktx5_kn,flow_ktx5_kn,'k-+',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 5 \\times \\kappa_o$') 
+plt.errorbar(global_density_ktx5_kn,flow_ktx5_kn, yerr=std_flow_ktx5_kn,color='k')
+
+plt.plot(global_density_ktx10_kn,flow_ktx10_kn,'g-^',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 10 \\times \\kappa_o$') 
+plt.errorbar(global_density_ktx10_kn,flow_ktx10_kn, yerr=std_flow_ktx10_kn,color='g')
+
+#plt.plot(density_kn_ktx3,flow_kn_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
+#plt.plot(density_kn_ktx5,flow_kn_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
+#plt.plot(density_kn_ktx7,flow_kn_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
 #plt.plot(density_kn_ktx9,flow_kn_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
-plt.plot(density_kn_ktx10,flow_kn_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
+#plt.plot(density_kn_ktx10,flow_kn_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
 '''
 
 plt.plot(density_kn_kt,speed_kn_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
 plt.plot(density_kn_ktx3,speed_kn_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
 plt.plot(density_kn_ktx5,speed_kn_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
 plt.plot(density_kn_ktx7,speed_kn_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
-#plt.plot(density_kn_ktx9,speed_kn_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
+plt.plot(density_kn_ktx9,speed_kn_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
 plt.plot(density_kn_ktx10,speed_kn_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
 '''
 pylab.grid(False)
@@ -100,8 +119,8 @@ pylab.ylim(0.0,6)
 #pylab.xlim(1.0, 10)
 #pylab.yticks(np.arange(3,11,2))
 #pylab.xticks(np.arange(0,1100,200))
-pylab.title("With Body Force")
+#pylab.title("$k_n=$0")
 lgd=plt.legend(numpoints=1,handlelength=0.8) 
-plt.legend(frameon=False,loc='lower left',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
+plt.legend(frameon=False,loc='upper left',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
 pylab.savefig('flow-density_multifric_comp.png', format='png', dpi=300, bbox_inches='tight')
-pylab.savefig('flow-density_multifric_comp.eps', format='eps', dpi=300, bbox_inches='tight')
+pylab.savefig('flow-density_multifric_bodyforce.eps', format='eps', dpi=300, bbox_inches='tight')
