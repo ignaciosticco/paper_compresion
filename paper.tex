@@ -354,16 +354,17 @@ expression for the granular force is has been borrowed from other granular
 matter fields, as follows
 
 \begin{equation}
- \mathbf{f}_g^{(ij)}=\kappa\,(R_{ij}-r_{ij})\,\Theta(R_{ij}-r_{ij})
-\,(\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij})\,\hat{\mathbf{t}}_{ij}+
-k\,(R_{ij}-r_{ij})\,\Theta(R_{ij}-r_{ij})
+ \mathbf{f}_g^{(ij)}=\kappa\,g(R_{ij}-r_{ij})\,
+(\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij})\,\hat{\mathbf{t}}_{ij}+
+k\,g(R_{ij}-r_{ij})\,
 \,\hat{\mathbf{n}}_{ij}\label{eqn_friction}
 \end{equation}
 
-\noindent where $\Theta(R_{ij}-r_{ij})$ equals unity if $R_{ij}>r_{ij}$ and 
-vanished otherwise. $\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij}$ 
-represents the difference between the tangential velocities of the sliding 
-bodies (or between the individual and the walls).    \\
+\noindent where $g(R_{ij}-r_{ij})$. $\Theta(R_{ij}-r_{ij})$ equals R_{ij}-r_{ij} 
+if $R_{ij}>r_{ij}$ and vanished otherwise. 
+$\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij}$ represents the difference 
+between the tangential velocities of the sliding bodies (or between the 
+individual and the walls).    \\
 
 The sliding friction occurs in the tangential direction while the body force 
 occurs in the normal direction. Both are assumed to be linear with respect to 
@@ -383,6 +384,14 @@ phenomenon. \\
 
 \subsection{\label{sfm}The parameters setting}
 
+
+\begin{figure}[!htbp]
+\centering
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./venn_2parameters.png}\label{venn_2parameters}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./venn_3parameters.png}\label{venn_3parameters}}\\
+\caption[width=0.47\columnwidth]{}
+\label{flow_density}
+\end{figure}
 
 
 \section{\label{results}Results}
@@ -482,14 +491,6 @@ Fig.~\ref{overlap_vd} shows the overlap as a function of $v_d$. The overlap is d
 
 \subsection{\label{reduced-in-units} Reduced-in-units equation of motion}
 
-
-\begin{figure}[!htbp]
-\centering
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./venn_2parameters.png}\label{venn_2parameters}}\ 
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./venn_3parameters.png}\label{venn_3parameters}}\\
-\caption[width=0.47\columnwidth]{}
-\label{flow_density}
-\end{figure}
 
 \section{\label{discussion}Discussion}
 
