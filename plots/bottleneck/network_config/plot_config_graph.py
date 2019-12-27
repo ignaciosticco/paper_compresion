@@ -15,7 +15,7 @@ import math
 
 golden_mean = (math.sqrt(5)-1.0)/2.0        # Aesthetic ratio
 fig_width = 3+3/8                           # width  in inches
-fig_height = fig_width*golden_mean          # height in inches
+fig_height = fig_width#fig_width*golden_mean          # height in inches
 fig_size =  [fig_width,fig_height]
 
 params = {'backend': 'ps',
@@ -156,8 +156,8 @@ def plot_network(G,output_filename):
 def main():
 
      ############# PARAMETERS #############
-     input_filename = 'config_bottleneck_vd2_k0'
-     output_filename = 'network_vd2_kn0'
+     input_filename = 'config_bottleneck_vd10_k120000'
+     output_filename = 'network_vd10_kn120000'
      time = 100
      sum_rads = 0.46
      ######################################
