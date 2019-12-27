@@ -279,6 +279,111 @@ to this issue in Section~\ref{background}. \\
 
 \subsection{\label{sfm}The Social Force Model}
 
+The Social Force Model (SFM) provides the necessary framework for simulating 
+the collective dynamics of self-driven particles (\textit{i.e.} pedestrians). 
+The pedestrians are considered to follow an equation of motion involving 
+either ``socio-psychological'' forces and physical forces (say, granular 
+forces). The equation of motion for any pedestrian $i$ (of mass $m_i$) reads
+
+\begin{equation}
+ m_i\,\displaystyle\frac{d\mathbf{v}_i}{dt}=\mathbf{f}_d^{(i)}+
+ \displaystyle\sum_{j=1}^N\mathbf{f}_s^{(ij)}+
+ \displaystyle\sum_{j=1}^N\mathbf{f}_g^{(ij)}\label{eqn_motion}
+\end{equation}
+
+\noindent where the subscript $j$ corrresponds to any neighboring pedestrian or 
+the walls. The three forces $\mathbf{f}_d$, $\mathbf{f}_s$ and $\mathbf{f}_g$ 
+are different in nature. The desire force $\mathbf{f}_d$ represents the 
+acceleration (or deceleration) of the pedestrian due to his (her) own willings. 
+The social force $\mathbf{f}_s$, intead, describes the tendency of the 
+pedestrians to stay away from each other. The granular force $\mathbf{f}_g$ 
+stands for either the sliding friction and the compression between 
+pedestrians. \\
+
+Notice that these forces are supposed to influence the behavior of the 
+pedestrians in a similar fashion as mentioned in Section~\ref{experimental}. 
+Thus, the set of (empirical) parameters described in Section~\ref{experimental} 
+is expected to be also present in the SFM. These will appear in connection to 
+the forces, although their meaning may be somewhat different. \\   
+
+The pedestrians' own willing is modeled by the desire force $\mathbf{f}_d$. 
+This force stands for the acceleration (deceleration) required to reach a 
+certain position at the desired walking speed $v_d$. This involves, however, a 
+personal attitude that makes him (her) appear more or less ``assertive''. As 
+mentioned in Section~\ref{experimental}, the reaction time $\tau$  attains for 
+this attitude. Thus, the desire force is modeled as follows
+
+\begin{equation}
+\mathbf{f}_d^{(i)}=m\,\displaystyle\frac{v_d^{(i)}\,
+\hat{\mathbf{e}}_d^{(i)}(t)-
+ \mathbf{v}^{(i)}(t)}{\tau}
+\end{equation}
+
+
+\noindent where $\hat{\mathbf{e}}(t)$ represents the unit vector pointing to 
+the target position. $\mathbf{v}(t)$ stands for the pedestrian velocity at time 
+$t$. \\
+
+The tendency of any individual to preserve his (her) ``private sphere'' is 
+accomplished by the social force $\mathbf{f}_s$. This force is expected to 
+prevent the pedestrians from getting too close to each other (or to the walls) 
+in a crowded environment. If he (she) perceives that there is not enough space 
+to move, he (she) will decelerate or even move back. The model for this kind of 
+``socio-psychological'' behavior is as follows
+
+\begin{equation}
+ \mathbf{f}_s^{(i)}=A\,e^{(R_{ij}-r_{ij})/B}\hat{\mathbf{n}}_{ij}
+ \label{eqn_social}
+\end{equation}
+
+\noindent where $r_{ij}$ means the distance between the center of mass of the 
+pedestrians $i$ and $j$, and $R_{ij}=R_i+R_j$ is the sum of the pedestrians 
+radius. The unit vector $\hat{\mathbf{n}}_{ij}$ points from pedestrian $j$ to 
+pedestrian $i$, meaning a repulsive interaction.\\ 
+
+The net distance $|R_{ij}-r_{ij}|$ scales to the parameter $B$ in the 
+expression (\ref{eqn_social}). This parameter plays the role of a fall-off 
+length within the model, and thus, it may be somewhat connected to the 
+(perceived) step distance mentioned in Section~\ref{experimental}. The 
+parameter $A$, however, does not provide any direct link to other parameters 
+mentioned there. \\    
+
+The granular force (say, the sliding friction plus the body force) attain to 
+the moving difficulties encountered in very crowded environments. The 
+expression for the granular force is has been borrowed from other granular 
+matter fields, as follows
+
+\begin{equation}
+ \mathbf{f}_g^{(ij)}=\kappa\,(R_{ij}-r_{ij})\,\Theta(R_{ij}-r_{ij})
+\,(\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij})\,\hat{\mathbf{t}}_{ij}+
+k\,(R_{ij}-r_{ij})\,\Theta(R_{ij}\,\hat{\mathbf{n}}_{ij}
+-r_{ij})\label{eqn_friction}
+\end{equation}
+
+\noindent where $\Theta(R_{ij}-r_{ij})$ equals unity if $R_{ij}>r_{ij}$ and 
+vanished otherwise. $\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij}$ 
+represents the difference between the tangential velocities of the sliding 
+bodies (or between the individual and the walls).    \\
+
+The sliding friction occurs in the tangential direction while the body force 
+occurs in the normal direction. Both are assumed to be linear with respect to 
+the net distance between contacting pedestrians. The sliding friction is also 
+linearly related to the difference between the (tangential) velocities. The 
+coefficients $\kappa$ (for the sliding friction) and $k$ (for the 
+body force) are supposed to be related to the areas of contact and the clothes 
+material, among others. \\
+
+We stress that the expression (\ref{eqn_friction}) assumes fixed values for 
+$\kappa$ and $k$. This may not be completely true according to 
+Table~\ref{table_data}. The local density (and thus, the pedestrians' 
+compression) may affect the compressibility parameter $k$ by more than an order 
+of magnitude. We will vary $k$ (and $\kappa$) in order to explore this 
+phenomenon. \\  
+
+
+\subsection{\label{sfm}The parameters setting}
+
+
 
 \section{\label{results}Results}
 
