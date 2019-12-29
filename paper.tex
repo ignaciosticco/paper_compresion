@@ -39,6 +39,31 @@ width=3.2pt](0,0) --
 \title{Effects of the body force on the evacuation dynamics}
 
 
+\author[add1]{I.M.~Sticco}
+ \address[add1]{Departamento de F\'\i sica, Facultad de Ciencias 
+Exactas y Naturales, Universidad de Buenos Aires,\\
+ Pabell\'on I, Ciudad Universitaria, 1428 Buenos Aires, Argentina.}
+ %Lines break automatically or can be forced with \\
+ \author[add2]{G.A.~Frank}
+ \address[add2]{Unidad de Investigaci\'on y Desarrollo de las 
+Ingenier\'\i as, Universidad Tecnol\'ogica Nacional, Facultad Regional Buenos 
+Aires, Av. Medrano 951, 1179 Buenos Aires, Argentina.}
+ %Lines break automatically or can be forced with \\
+\author[add1,add3]{C.O.~Dorso\corref{cor1}}%
+ \cortext[cor1]{codorso@df.uba.ar}
+%\affiliation{Departamento de F\'\i sica, Facultad de Ciencias Exactas y 
+%Naturales, Universidad de Buenos Aires,\\
+% Pabell\'on I, Ciudad Universitaria, 1428 Buenos Aires, Argentina.}%
+% \altaffiliation[Also at ]{Instituto de F\'\i sica de Buenos Aires, Pabell\'on 
+%I, Ciudad Universitaria, 1428 Buenos Aires, Argentina.}
+\address[add3]{Instituto de F\'\i sica de Buenos Aires,
+Pabell\'on I, Ciudad Universitaria, 1428 Buenos Aires, Argentina.}
+ %\affiliation{Departamento de F\'\i sica, Facultad de Ciencias 
+%Exactas y Naturales, Universidad de Buenos Aires,\\
+% Pabell\'on I, Ciudad Universitaria, 1428 Buenos Aires, Argentina.}
+
+
+
 \begin{abstract}
 
 \end{abstract}
@@ -405,17 +430,18 @@ intersecting regions. \\
 
 \begin{figure}[!htbp]
 \centering
-    
-\subfloat[(a)]{\includegraphics[width=0.45\columnwidth]{./venn_2parameters.png}
-\label{venn_2parameters}}\ 
-    
-\subfloat[(b)]{\includegraphics[width=0.45\columnwidth]{./venn_3parameters.png}
-\label{venn_3parameters}}\\
+ 
+\subfloat[\label{venn_2parameters}]
+{\includegraphics[width=0.45\columnwidth]{./venn_2parameters.png}}
+\hfill    
+\subfloat[\label{venn_3parameters}]
+{\includegraphics[width=0.45\columnwidth]{./venn_3parameters.png}
+}\\
 \caption[width=0.47\columnwidth]{Venn diagrams for the unit-less parameters
 appearing in the equation of motion (\ref{eqn_motion}) (see 
 Appendix~\ref{appendix_1} for details). The sets correspond to 
 $\mathcal{A}=\{\tau/m,1/v_d,A\}$, $\mathcal{K}=\{\tau/m,B,\kappa\}$ and 
-$\mathcal{K}_c=\{\tau/m,1/v_d,B,k\}$ (a) The Venn diagram representation if no 
+$\mathcal{K}_c=\{\tau/m,1/v_d,B,k\}$. (a) The Venn diagram representation if no 
 body force is introduced in the SFM (only sets $\mathcal{A}$ and $\mathcal{K}$, 
 as in Ref.~\cite{dorso_2019}). (b) The Venn diagram representation for the sets 
 $\mathcal{A}$, $\mathcal{K}$ and $\mathcal{K}_c$. }
@@ -523,9 +549,6 @@ Fig.~\ref{overlap_vd} shows the overlap as a function of $v_d$. The overlap is d
 
 
 
-\subsection{\label{reduced-in-units} Reduced-in-units equation of motion}
-
-
 \section{\label{discussion}Discussion}
 
 
@@ -539,7 +562,7 @@ y T\'ecnicas - CONICET, Argentina) grant Programaci\'on Cient\'\i fica 2018 (UBA
 
 \appendix
 
-\section{appendix_1}
+\section{\label{appendix_1} Reduced-in-units equation of motion}
 
 The SFM description in Section~\ref{sfm} introduces seven parameters ($m$, 
 $\tau$, $v_d$, $B$, $A$, $\kappa$ and $k$) attaining for the ``individual'' 
@@ -560,9 +583,9 @@ The equation of motion (\ref{eqn_motion}) can be written in terms of these
 
 \begin{equation}
  \displaystyle\frac{d\mathbf{v}'}{dt'}=
- \hat{\mathbf{e}}_d-\mathbd{v}'+\mathcal{A}\,e^{R'-r'}\,
+ \hat{\mathbf{e}}_d-\mathbf{v}'+\mathcal{A}\,e^{R'-r'}\,
  \hat{\mathbf{n}}+g(R'-r')\,\bigg[\mathcal{K}\,(\Delta\mathbf{v}'\cdot
- \hat{\mathbf{t}})\,\hat{\mathbf{t}}+\mathbf{K}_c\,\hat{\mathbf{n}}\bigg]
+ \hat{\mathbf{t}})\,\hat{\mathbf{t}}+\mathcal{K}_c\,\hat{\mathbf{n}}\bigg]
 \end{equation}
 
 
