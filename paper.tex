@@ -489,9 +489,9 @@ In this section, we present the results corresponding to the corridor geometry. 
 
 In Fig ... we show the flow as a function of the global density (fundamental diagram). \ref{flow_density_no_body_force} corresponds to non body force ($i.e k_n=0$), \label{flow_density_body_force} corresponds to a body force with $k_n$=1.2~E5. Each curve correspond to a different friction value. The circles correspond to the value of the original SFM ($\\kappa = 2.4~E5$), the "+" symbol correspond to the original value increased by a factor of five and triangles correspond to the original value increased by a factor of ten. \\
 
-According to most of the empirical measurements, the flow decreases for high enough values of density because the motion becomes jammed. Notice that the original friction does not produce a reduction of the flow when there is no body force but when the body force is included (with the original value), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density. When the density is five times the original value, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$. When the friction is increased by a factor of ten, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force). \\
+According to most of the empirical measurements, the flow decreases for high enough values of density because the motion becomes jammed. Notice that the original friction does not produce a reduction of the flow when there is no body force but when the body force is included (with the original value), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density. When the density is five times the original value, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$. When the friction is increased by a factor of ten, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force). This result suggests that even including the body force, the original SFM requires an increment of the friction in order to reproduce the flow reduction reported in empirical measurements.\\
 
-This result suggests that even including the body force, the original SFM requires an increment of the friction in order to reproduce the flow reduction reported in empirical measurements. 
+It is worth mentioning that increasing the body force reduces the flow, for a given density and a given friction value (compare \ref{flow_density_no_body_force} with \ref{flow_density_body_force} ). In other words, pedestrians walk slower along the corridor if the $k$ value increases ($i.e$ if they are stiffer). This result is the opposite of what we get in bottleneck geometry since the stiffer the pedestrians the faster they walk.\\
 
 
 
@@ -503,19 +503,29 @@ This result suggests that even including the body force, the original SFM requir
 \label{flow_density}
 \end{figure}
 
-\begin{figure}[!htbp]
-\centering
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_kn0.eps}\label{network_d6_kn0}}\ 
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_knE5.eps}\label{network_d6_knE5}}\\
-\caption[width=0.47\columnwidth]{}
-\label{network_corridor}
-\end{figure}
+To understand why in corridor geometry pedestrians walk slower as they become stiffer it is important to take into account that pedestrians walk slower if the friction increases. In corridors, the friction increases when pedestrians become stiffer because the crowd tends to cluster more. The clusterization means that more pedestrians are touching each other. \\
+
+One way to analyze the clusterization is by creating a network out of the (x,y) positions of the pedestrians. In this network, each node represents a pedestrian and there is a link between a pair of nodes $i,j$ if the pair of pedestrians represented by the nodes are touching each other ($i.e. d_{ij} \leq R_{ij}$). Once the network is created, it is possible to use the analytical tools that allow describing the configuration such as the mean degree, the distribution of clusters, the shortest path length, etc.\\  
+
+In Fig \ref{degree_dens} we show the mean degree as a function of the global density for different $k$ values. When the density is low,  the degree is zero because the pedestrians do not touch each other. When the density is around 4.5, a few pedestrians start to touch each other increasing the mean degree. As the density increases, the mean degree increases too until reaching an asymptotic behavior in degree six. When the degree is six, it corresponds to the densest packing possible for identical hard circles, the result is a hexagonal packing arrangement.\\
+
+It is important to notice in Fig \ref{degree_dens} that for a given value of density, the stiffer the pedestrians, the higher the degree. A higher degree means more friction force which is the cause of the reduction of the flow. In the bottleneck geometry, the opposite thing happens, the stiffer the pedestrians the lower the mean degree. This is the reason why in bottleneck pedestrians evacuate faster as they become stiffer while in corridor pedestrian's flow is lower as they become stiffer.\\
 
 
 \begin{figure}[!htbp]
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./degree_vs_dens_multi_kn.eps}\label{degree_dens}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./overlap_vs_dens_multi_kn.eps}\label{overlap_dens}}\\
+\caption[width=0.47\columnwidth]{}
+\label{network_corridor}
+\end{figure}
+
+
+
+\begin{figure}[!htbp]
+\centering
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_kn0.eps}\label{network_d6_kn0}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_knE5.eps}\label{network_d6_knE5}}\\
 \caption[width=0.47\columnwidth]{}
 \label{network_corridor}
 \end{figure}
@@ -582,7 +592,7 @@ means\\
 \begin{equation}
  \mathcal{A}=\displaystyle\frac{A\,\tau}{m\,v_d}\ \ \ \ , \ \ \ \ 
  \mathcal{K}=\displaystyle\frac{\kappa\,B\,\tau}{m}\ \ \ \ , \ \ \ \
- \mathcal{K}_c=\displaystyle\frac{k\,B\,\tau}{m\,v_d}
+ \mathcal{K}_c=\displaystyle\frac{k\,B\,\tau}{m}
 \end{equation}
 
 Notice that the SFM will arrive to similar collective dynamics whenever the 
