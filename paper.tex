@@ -485,11 +485,20 @@ Fig.~\ref{overlap_vd} shows the overlap as a function of $v_d$. The overlap is d
 
 \subsection{\label{corridor} Corridor}
 
+In this section, we present the results corresponding to the corridor geometry. We show how the overall dynamic of the system changes depending on the $k$ value associated to the body force in the original SFM.\\
+
+In Fig ... we show the flow as a function of the global density (fundamental diagram). \ref{flow_density_no_body_force} corresponds to non body force ($i.e k_n=0$), \label{flow_density_body_force} corresponds to a body force with $k_n$=1.2~E5. Each curve correspond to a different friction value. The circles correspond to the value of the original SFM ($\\kappa = 2.4~E5$), the "+" symbol correspond to the original value increased by a factor of five and triangles correspond to the original value increased by a factor of ten. \\
+
+According to most of the empirical measurements, the flow decreases for high enough values of density because the motion becomes jammed. Notice that the original friction does not produce a reduction of the flow when there is no body force but when the body force is included (with the original value), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density. When the density is five times the original value, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$. When the friction is increased by a factor of ten, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force). \\
+
+This result suggests that even including the body force, the original SFM requires an increment of the friction in order to reproduce the flow reduction reported in empirical measurements. 
+
+
 
 \begin{figure}[!htbp]
 \centering
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_nobodyforce.eps}\label{flow_density_nocomp}}\ 
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_bodyforce.eps}\label{flow_density_comp}}\\
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_nobodyforce.eps}\label{flow_density_no_body_force}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_bodyforce.eps}\label{flow_density_body_force}}\\
 \caption[width=0.47\columnwidth]{}
 \label{flow_density}
 \end{figure}
@@ -557,6 +566,7 @@ the following unit-less magnitudes\\
 
 The equation of motion (\ref{eqn_motion}) can be written in terms of these 
 (unit-less) magnitudes, while only three (reduced) parameters are needed.\\
+
 
 \begin{equation}
  \displaystyle\frac{d\mathbf{v}'}{dt'}=
