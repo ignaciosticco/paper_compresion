@@ -120,7 +120,7 @@ def crea_dict_pos(index,x,y):
           pos.update( {'{}'.format(indice) : xy} )
      return pos
 
-def plot_network(G,output_filename):
+def plot_network(G,output_filename,title):
      '''
      Grafica nodos y links ubicados en la posicion correspondiente
      del recinto. El color de cada nodo esta en funcion del grado. 
@@ -130,23 +130,26 @@ def plot_network(G,output_filename):
      nodes = G.nodes()
      n_color = np.asarray([degrees[n] for n in nodes])
      fig, ax = plt.subplots()
-     pos=nx.get_node_attributes(G,'pos')
-     sc = nx.draw(G,pos,width=0.5,node_color=n_color,cmap='viridis',node_size=5,with_labels=False,edge_color='black')
-     #plt.axis([13,20,4,16])
+     pos = nx.get_node_attributes(G,'pos')
+     sc = nx.draw(G,pos,width=0.5,cmap='jet',vmax=6,node_color=n_color,node_size=5,with_labels=False,edge_color='black')
+     plt.axis([13,20,4,16])
      plt.axis([10,20,4,16])
      plt.axis('on')
-     plt.grid('false')
-     #plt.text(15.5, 5.5, "16", fontsize=10)
-     #plt.text(8, 5.5, "8", fontsize=10)
-     #plt.text(7.5, 6, "6", fontsize=10)
-     #plt.text(7.5, 13.5, "14", fontsize=10)
+     plt.grid('off')
      ax.set_xlabel('$x$-position',fontsize=8)
      ax.set_ylabel('$y$-position',fontsize=8)
-     cmap=plt.cm.viridis
-     sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin = min(n_color), vmax=max(n_color)))
+     ax.set_title("{}".format(title),fontsize=10)
+     cmap=plt.cm.jet
+     sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin = min(n_color), vmax=6))
      sm._A = []
-     plt.colorbar(sm)
-     #sm.set_clim(0, 100)
+     plt.colorbar(sm,values=np.linspace(0, 6, 7))
+     plt.text(21.5, 4.5, "0", fontsize=12,color="k")
+     plt.text(21.5, 6.5, "1", fontsize=12,color="k")
+     plt.text(21.5, 8, "2", fontsize=12,color="k")
+     plt.text(21.5, 9.7, "3", fontsize=12,color="k")
+     plt.text(21.5, 11.5, "4", fontsize=12,color="k")
+     plt.text(21.5, 13, "5", fontsize=12,color="k")
+     plt.text(21.5, 15, "6", fontsize=12,color="k")
      pylab.savefig('{}.png'.format(output_filename), format='png', dpi=300, bbox_inches='tight')
      pylab.savefig('{}.eps'.format(output_filename), format='eps', dpi=300, bbox_inches='tight')
 
@@ -156,8 +159,10 @@ def plot_network(G,output_filename):
 def main():
 
      ############# PARAMETERS #############
-     input_filename = 'config_bottleneck_vd10_k120000'
-     output_filename = 'network_vd10_kn120000'
+     #1200000
+     input_filename = 'config_bottleneck_vd2_k0'
+     output_filename = 'network_vd2_kn0'
+     title = "$v_d=$2 m~s$^{-1}$ \hspace{0.5cm} $k=$0"
      time = 100
      sum_rads = 0.46
      ######################################
@@ -170,7 +175,7 @@ def main():
      for i in index:
           G.nodes[i]['pos'] = pos['{}'.format(i)]
 
-     plot_network(G,output_filename)
+     plot_network(G,output_filename,title)
 
 
 if __name__=='__main__':
