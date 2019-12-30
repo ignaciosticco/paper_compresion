@@ -475,8 +475,8 @@ Fig.~\ref{overlap_vd} shows the overlap as a function of $v_d$. The overlap is d
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn0.eps}\label{flow_density_nocomp}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn0.eps}\label{flow_density_comp}}\\
-        \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn120000.eps}\label{flow_density_nocomp}}\ 
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn120000.eps}\label{flow_density_comp}}\\
+        \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn1200000.eps}\label{flow_density_nocomp}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn1200000.eps}\label{flow_density_comp}}\\
 \caption[width=0.47\columnwidth]{}
 \label{flow_density}
 \end{figure}
@@ -509,8 +509,9 @@ One way to analyze the clusterization is by creating a network out of the (x,y) 
 
 In Fig \ref{degree_dens} we show the mean degree as a function of the global density for different $k$ values. When the density is low,  the degree is zero because the pedestrians do not touch each other. When the density is around 4.5, a few pedestrians start to touch each other increasing the mean degree. As the density increases, the mean degree increases too until reaching an asymptotic behavior in degree six. When the degree is six, it corresponds to the densest packing possible for identical hard circles, the result is a hexagonal packing arrangement.\\
 
-It is important to notice in Fig \ref{degree_dens} that for a given value of density, the stiffer the pedestrians, the higher the degree. A higher degree means more friction force which is the cause of the reduction of the flow. In the bottleneck geometry, the opposite thing happens, the stiffer the pedestrians the lower the mean degree. This is the reason why in bottleneck pedestrians evacuate faster as they become stiffer while in corridor pedestrian's flow is lower as they become stiffer.\\
+It is important to notice that in Fig. \ref{degree_dens} for a given value of density, the stiffer the pedestrians, the higher the degree. A higher degree means more friction force which is the cause of the reduction of the flow. In the bottleneck geometry, the opposite thing happens, the stiffer the pedestrians the lower the mean degree. This is the reason why in bottleneck pedestrians evacuate faster as they become stiffer while in corridor pedestrian's flow is lower as they become stiffer.\\
 
+The mean overlap increases as the global density increases (see Fig...) and the higher the stiffness the lower the overlap. This result is similar to the overlap vs. the desired velocity obtained for bottleneck geometry. The higher the value of $k$ the higher the repulsion of pedestrian-pedestrian interaction since the body force is acting in the normal direction $n_{ij}$.\\
 
 \begin{figure}[!htbp]
 \centering
@@ -520,7 +521,7 @@ It is important to notice in Fig \ref{degree_dens} that for a given value of den
 \label{network_corridor}
 \end{figure}
 
-
+As was mentioned above, increasing the $k$ value of the body force increases the stiffness of pedestrians. Increasing the stiffness reduces the overlap (both in bottleneck and corridor) and reduces the mean degree in a bottleneck and increases the mean degree in a corridor. In fig. ... it shown the network associated with the corridor at a particular timestep ($t=$) and a particular global density. Fig. ... corresponds to $k=0$ while Fig. ... corresponds to $k=1.2$~E5. This is an example to show how increasing the stiffness increases the number of contacts between pedestrians. Notice that there are many more pedestrians with degree 6 in the case of $k=1.2$~E5 than the case of $k=0$. \\
 
 \begin{figure}[!htbp]
 \centering
