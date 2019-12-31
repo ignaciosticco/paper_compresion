@@ -529,7 +529,7 @@ Comparing Fig. \ref{network_vd2_kn0} against Fig. \ref{network_vd2_kn1200000} an
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn0.eps}\label{network_vd10_kn0}}\\
         \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn1200000.eps}\label{network_vd2_kn1200000}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn1200000.eps}\label{network_vd10_kn1200000}}\\
-\caption[width=0.47\columnwidth]{}
+\caption[width=0.47\columnwidth]{Contact networks of a 225 pedestrian evacuation through a bottleneck. The door is placed at $(x,y)=(20,10)$~m, the width of the door is 0.92~m (equivalent to 2 pedestrian's diameter). The lines that connect the nodes (pedestrians) represent the contact between them. The color represents the degree (the number of pedestrians with which it is connected). \ref{network_vd2_kn0} and \ref{network_vd10_kn0} correspond to a simulation without body force with $v_d=$2 and $v_d=$10 respectively. \ref{network_vd2_kn1200000} and \ref{network_vd10_kn1200000} correspond to simulations with $k$=1.2~E6 with $v_d=$2 and $v_d=$10 respectively.}
 \label{network_bottleneck}
 \end{figure}
 
@@ -551,7 +551,7 @@ It is worth mentioning that increasing the body force reduces the flow, for a gi
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_nobodyforce.eps}\label{flow_density_no_body_force}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_bodyforce.eps}\label{flow_density_body_force}}\\
-\caption[width=0.47\columnwidth]{}
+\caption[width=0.47\columnwidth]{Flow vs. global density. The flow is calculated in a circular area of R=1~m at the center of the corridor. The circle corresponds to the original friction of the SFM, the "+" symbol corresponds to the friction increased by a factor of five and the triangles correspond to the friction increased by a factor of ten. The desired velocity was $v_d=1$ in all the cases. Fig. \ref{flow_density_no_body_force} corresponds to simulations without body force and Fig. \ref{flow_density_body_force} corresponds to a body force with $k=$1.2~E5.}
 \label{flow_density}
 \end{figure}
 
@@ -569,7 +569,7 @@ The mean overlap increases as the global density increases (see Fig. \ref{overla
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./degree_vs_dens_multi_kn.eps}\label{degree_dens}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./overlap_vs_dens_multi_kn.eps}\label{overlap_dens}}\\
-\caption[width=0.47\columnwidth]{}
+\caption[width=0.47\columnwidth]{\ref{degree_dens} mean degree as a function of the global density for different $k$ values. \label{overlap_dens} mean overlap as a function of the global density. The mean values are averages over all the pedestrians and over time once the system reaches the stationary state. Both measurements correspond to corridor geometry with desired velocity $v_d=1$.}
 \label{network_corridor}
 \end{figure}
 
@@ -579,7 +579,7 @@ As was mentioned above, increasing the $k$ value of the body force increases the
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_kn0.eps}\label{network_d6_kn0}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_knE5.eps}\label{network_d6_knE5}}\\
-\caption[width=0.47\columnwidth]{}
+\caption[width=0.47\columnwidth]{Contact network of the pedestrians along the corridor. The lines that connect the nodes (pedestrians) represent the contact between them. The colors stand for the degree of the node (the number of pedestrians that are in contact with him/her). The corridor was 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$. \ref{network_d6_kn0} corresponds to a simulation without body force and \label{network_d6_knE5} corresponds to a simulation with $k=1.2$~E5.}
 \label{network_corridor}
 \end{figure}
 
@@ -591,7 +591,7 @@ This result is consistent with the results obtained in Ref. \cite{pugnaloni_2013
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./triangles.eps}
-\caption{\label{triangles} }
+\caption{\label{triangles} Triangles per node as a function of the global density. A triangle in a network is defined as three nodes all connected. Each marker corresponds to a different stiffness $k$ (see the label in the plot). The measurements correspond to a corridor of 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$.  }
 \end{figure}
 
 
