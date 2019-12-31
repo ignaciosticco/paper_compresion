@@ -583,13 +583,15 @@ As was mentioned above, increasing the $k$ value of the body force increases the
 \label{network_corridor}
 \end{figure}
 
+The increment of the clusterization is responsible for the reduction of the flow. In the corridor geometry, the crowd gets more clusterized if the pedestrians become stiffer. We studied the network properties of the contact graph arising from the positions $(x,y)$ of every the pedestrians. We found that a good descriptor to exhibit the clusterization is the number of triangles per node. A triangle is defined as a structure composed of three nodes all in contact with each other. In Fig. \ref{triangles} we show the triangles per node as a function of the global density for different stiffness values $k$. This descriptor allows to distinguish states with the same global density but different stiffness levels. In other words, it is a descriptor very sensitive to changes in stiffness that allow expressing the degree of clustering of the system even better than the mean degree. \\
 
+This result is consistent with the results obtained in Ref. \cite{pugnaloni_2013} where they explore several topological and geometric descriptors capable of properly describing granular systems with different stiffness. While our study system is self-propelled, there are analogies with the system studied in Ref. Like the authors, we recommend using topological descriptors (in particular triangles per node) to describe systems with equal global density and different stiffness levels.\\
 
 \begin{figure}[htbp!]
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./triangles.eps}
-\caption{\label{} }
+\caption{\label{triangles} }
 \end{figure}
 
 
