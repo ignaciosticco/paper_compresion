@@ -470,15 +470,18 @@ Fig.~\ref{overlap_vd} shows the overlap as a function of $v_d$. The overlap is d
 \end{figure}
 
 
+Increasing the stiffness has a significative impact on the evacuation dynamics. It reduces the overlap and reduces the mean degree between pedestrians. Both effects tend to reduce the friction in the crowd and the immediate consequence of this is a reduction of the evacuation time (pedestrians escape faster). The body force has a notorious impact in the number of pedestrians that each pedestrians touch (degree). This is clearly depicted in Fig. \ref{network_bottleneck} where four different configurations of the evacuation dynamics are shown. The configurations represent 225 pedestrians trying to escape through a 0.92 m door which center is located at $(x,y)=(20,10)$~m. The colors correspond to the degree of each node (pedestrian) and the lines between pedestrians represent the contacts among them.\\
+
+
 
 \begin{figure}[!htbp]
 \centering
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn0.eps}\label{flow_density_nocomp}}\ 
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn0.eps}\label{flow_density_comp}}\\
-        \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn1200000.eps}\label{flow_density_nocomp}}\ 
-    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn1200000.eps}\label{flow_density_comp}}\\
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn0.eps}\label{network_vd2_kn0}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn0.eps}\label{network_vd10_kn0}}\\
+        \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn1200000.eps}\label{network_vd2_kn1200000}}\ 
+    \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn1200000.eps}\label{network_vd10_kn1200000}}\\
 \caption[width=0.47\columnwidth]{}
-\label{flow_density}
+\label{network_bottleneck}
 \end{figure}
 
 
@@ -559,7 +562,7 @@ y T\'ecnicas - CONICET, Argentina) grant Programaci\'on Cient\'\i fica 2018 (UBA
 
 \appendix
 
-\section{appendix_1}
+%\section{appendix_1}
 
 The SFM description in Section~\ref{sfm} introduces seven parameters ($m$, 
 $\tau$, $v_d$, $B$, $A$, $\kappa$ and $k$) attaining for the ``individual'' 
@@ -579,12 +582,12 @@ The equation of motion (\ref{eqn_motion}) can be written in terms of these
 (unit-less) magnitudes, while only three (reduced) parameters are needed.\\
 
 
-\begin{equation}
- \displaystyle\frac{d\mathbf{v}'}{dt'}=
- \hat{\mathbf{e}}_d-\mathbd{v}'+\mathcal{A}\,e^{R'-r'}\,
- \hat{\mathbf{n}}+g(R'-r')\,\bigg[\mathcal{K}\,(\Delta\mathbf{v}'\cdot
- \hat{\mathbf{t}})\,\hat{\mathbf{t}}+\mathbf{K}_c\,\hat{\mathbf{n}}\bigg]
-\end{equation}
+%\begin{equation}
+% \displaystyle\frac{d\mathbf{v}'}{dt'}=
+% \hat{\mathbf{e}}_d-\mathbd{v}'+\mathcal{A}\,e^{R'-r'}\,
+% \hat{\mathbf{n}}+g(R'-r')\,\bigg[\mathcal{K}\,(\Delta\mathbf{v}'\cdot
+% \hat{\mathbf{t}})\,\hat{\mathbf{t}}+\mathbf{K}_c\,\hat{\mathbf{n}}\bigg]
+%\end{equation}
 
 
 \noindent where the smaller set ($\mathcal{A}$,$\mathcal{K}$,$\mathcal{K}_c$) 
