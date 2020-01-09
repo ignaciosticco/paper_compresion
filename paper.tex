@@ -494,7 +494,15 @@ Fig. \ref{vd_vs_te} shows the evacuation time as a function of the pedestrian's 
 
 Two behavioral patterns can be seen in Fig.~\ref{vd_vs_te}. Whenever the slope is positive it means that the harder the pedestrians try to get out (higher $v_d$), the higher it takes them to evacuate. This is the Faster-is-slower (FIS) regime. Conversely, the negative slope corresponds to a Faster-is-Faster (FIF) phenomenon (the harder they try, the quicker they leave). Fig.~\ref{vd_vs_te} shows a change in the slope sign only for stiffness values below $k=1.2$~E5. This mean that ``soft'' individuals are required to attain this behavioral change.   Notice that for  $k=1.2$~E6 (the stiffest explored pedestrians) no FIS can be seen at all. Besides, the evacuation pattern for $k = 0$ and $k = 1.2$~E4 are very similar since the body force is comparable to the social force for these stiffness values. \\
 
-Despite the presence of the FIS or FIF phenomenon, the evacuation time at a fixed value of $v_d$ decreases for increasing values of $k$. This means that stiffer pedestrians evacuate faster than soft pedestrians. In order to investigate this issue, we computed the mean velocity of the whole crowd as a function of the stiffens $k$. \textcolor{red}{agregar figura velocidad (k)}. \\
+Despite the presence of the FIS or FIF phenomenon, the evacuation time at a fixed value of $v_d$ decreases for increasing values of $k$. This means that stiffer pedestrians evacuate faster than soft pedestrians. In order to investigate this issue, we computed the mean velocity of the whole crowd as a function of the stiffens $k$. Fig.~\ref{kn_vs_vx_bottleneck} shows the mean velocity in the x-direction as a function of the stiffness $k$ for three different desired velocities. In all cases, the velocity increases with the stiffness. From $k_n=0$ to $k_n=$1.2~E4 the increment of velocity is not as significative as it is for higher $k_n$. \\
+
+
+\begin{figure}[!htbp]
+\centering
+    \subfloat[]{\includegraphics[width=0.7\columnwidth]{./kn_vs_vx_bottleneck.eps}\label{kn_vs_vx_bottleneck}}\\
+\caption[width=0.47\columnwidth]{}
+\end{figure}
+
 
 The presence of a FIF phenomenon for only (soft individuals) open many questions on the microscopic dynamics of pedestrians. We may presume that contacts between pedestrians are quite different for soft individuals than for stiff individuals. In order to study the contacts dynamics, regardless of the compression effects, we assimilate the pedestrians as nodes and the whole crowd as a network. We set a link between any two individuals if both are in physical contact (\textit{i.e.} $r_{ij} \leq R{ij}$).\\
 
@@ -514,9 +522,9 @@ A more detailed insight to the contact dynamics can be acquired from Fig.~\ref{o
 \label{degree_overlap_vd}
 \end{figure}
 
-The regime for $v_d<2\,$m/s can be... \textcolor{red}{completar}.\\
+The regime for $v_d<2\,$m/s is different from the rest since most of the pedestrians are not touching each other. The only pedestrians who touch each other are the ones who are being re-injected in the room. The overlap is higher than, for example, $v_d=3\,$m/s because of the pedestrians who are re-injected bump against the bulk. \\
 
-Besides, for a given $v_d$, the overlap increases as the $k$ value decreases. \textcolor{red}{Reducing $k$ means reducing the normal body force which allows a greater invasion of the personal space of the individuals.} The increment in mean overlap, however, seems to be more significant than the mean degree. \\  
+Besides, for a given $v_d$, the overlap increases as the $k$ value decreases. Reducing $k$ means reducing the normal body force which allows a greater invasion of the personal space of the individuals ( this means more overlap between pedestrians). The increment in mean overlap, however, seems to be more significant than the mean degree. \\  
 
 
 An increase in the body stiffness is expected to impact on the evacuation dynamics. The simulations reduction of the overlap and the mean degree between pedestrians, tend to diminish the sliding friction within the crowd. Consequently, an enhancement in the evacuation time (pedestrians escape faster) should be observed, as pictured in Fig.~\ref{vd_vs_te}. Notice, however, that switching from a FIS regime (positive slope) to a  FIF regime (negative slope) in Fig.~\ref{vd_vs_te} appears as a more complex phenomenon. We will focus on this issue in an upcoming investigation.\\
