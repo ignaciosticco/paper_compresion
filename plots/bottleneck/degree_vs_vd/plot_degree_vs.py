@@ -63,11 +63,11 @@ std_comp_knE6 = data_knE6["list_std_degree"].tolist()
 ###  PLOT  ###
 fig, ax1 = plt.subplots()
 
-plt.plot(vd_kn0,mean_comp_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=0$') 
-plt.plot(vd_knE4,mean_comp_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E4') 
-plt.plot(vd_kn6E4,mean_comp_kn6E4,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=6$ E4') 
-plt.plot(vd_kn,mean_comp_kn,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E5') 
-plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E6') 
+plt.plot(vd_kn0,mean_comp_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=0$') 
+plt.plot(vd_knE4,mean_comp_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k_n=1.2$ E4') 
+plt.plot(vd_kn6E4,mean_comp_kn6E4,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k_n=6$ E4') 
+plt.plot(vd_kn,mean_comp_kn,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k_n=1.2$ E5') 
+plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k_n=1.2$ E6') 
 
 pylab.grid(False)
 pylab.xlabel('$v_d$~(m~s$^{-1})$')
