@@ -225,7 +225,7 @@ cultural habits. \\
 \begin{tabular}{c@{\hspace{6mm}}c@{\hspace{6mm}}c@{\hspace{6mm}}c@{\hspace{6mm}}
 c@{\hspace{14mm}}l}
  \hline
- $\tau$[s]   & $m$[kg]     & $v_d$[m/s]  &  $B$[m]  & $k$[kg/s$^2$] &  Refs. \\
+ $\tau$[s]   & $m$[kg]     & $v_d$[m/s]  &  $B$[m]  & $k_n$[kg/s$^2$] &  Refs. \\
  \hline
 0.61         & ---         & 1.24 & $0.36+1.06\,v$ &  ---                 &  
  \cite{seyfried_2007} \\
@@ -255,7 +255,7 @@ relaxation time, although this may vary with respect to gender or culture
 desired velocities around $1.3\,$m/s. \\
 
 The reports from Refs.~\cite{seyfried_2007,weidmann_1992} do not include any 
-values for the compressibility $k$ since these experiments were carried out 
+values for the compressibility $k_n$ since these experiments were carried out 
 under low density conditions. Notice that the minimum (perceived) step distance 
 is $0.36\,$m \cite{seyfried_2007}, but the pedestrians seem to require larger 
 distances when they walk faster. The commonly accepted value $B\simeq 
@@ -268,7 +268,7 @@ The reported data from Ref.~\cite{song_2019} correspond to the crowded
 environment of the Beijing subway. This environment was not suitable for 
 providing information on the step distance $B$, but estimates for the 
 desired speed and the body compresibility could be achieved. The reported 
-magnitude $k$ assesses either the clothes and the body compressibility. The 
+magnitude $k_n$ assesses either the clothes and the body compressibility. The 
 final value, though, is linearly related to the compression $x$. \\
 
 We measured the maximum attainable forces at the subway in Buenos Aires, 
@@ -281,11 +281,11 @@ fittings provided by Ref.~\cite{song_2019} shows that these magnitudes
 accomplish densities around 5 people/m$^2$.     \\    
 
 The maximum (realistic) compressions may be computed from the relation 
-$F=k(x)\,x$ and the compressibility $k(x)$ reported in Table~\ref{table_data}. 
+$F=k(x)\,x$ and the compressibility $k_n(x)$ reported in Table~\ref{table_data}. 
 An ``uncomfortable'' body force of $30\,$N can address compressions in the 
 range of $0.030-0.055\,$m. Also, a ``hitting'' force of $60\,$N can address 
 compressions between $0.045$ and $0.065\,$m. Thus, according to 
-Table~\ref{table_data}, we may expect experimental values for $k(x)$ up to 
+Table~\ref{table_data}, we may expect experimental values for $k_n(x)$ up to 
 $1000\,$kg/s$^2$ (for $F=30\,$N), or, up to $1400\,$kg/s$^2$ (for $F=60\,$N). \\
 
 Besides, no realiable values for the sliding friction $\kappa$ appears to be 
@@ -388,15 +388,15 @@ The sliding friction occurs in the tangential direction while the body force
 occurs in the normal direction. Both are assumed to be linear with respect to 
 the net distance between contacting pedestrians. The sliding friction is also 
 linearly related to the difference between the (tangential) velocities. The 
-coefficients $\kappa$ (for the sliding friction) and $k$ (for the 
+coefficients $\kappa$ (for the sliding friction) and $k_n$ (for the 
 body force) are supposed to be related to the areas of contact and the clothes 
 material, among others. \\
 
 We stress that the expression (\ref{eqn_friction}) assumes fixed values for 
-$\kappa$ and $k$. This may not be completely true according to 
+$\kappa$ and $k_n$. This may not be completely true according to 
 Table~\ref{table_data}. The local density (and thus, the pedestrians' 
-compression) may affect the compressibility parameter $k$ by more than an order 
-of magnitude. We will vary $k$ (and $\kappa$) in order to explore this 
+compression) may affect the compressibility parameter $k_n$ by more than an order 
+of magnitude. We will vary $k_n$ (and $\kappa$) in order to explore this 
 phenomenon. \\  
 
 
@@ -471,7 +471,7 @@ unchanged.  \\
 We confirm from these diagrams that no univocal relations can be established 
 between the individual parameters and the collective dynamics (in a crowded 
 environment). The presence of the body force moves the dynamics to a more 
-complex context. We will investigate this context in Section~\ref{results}. \\
+complex context. We will investigate this context in section~\ref{results}. \\
 
 
 \section{\label{results}Results}
@@ -480,37 +480,38 @@ complex context. We will investigate this context in Section~\ref{results}. \\
 \subsection{\label{bottleneck} Bottleneck}
 
 
-We present in this Section the results corresponding to the bottleneck geometry. We show the consequences of modifying the body force coefficient $k$ in the evacuation dynamics. Recall that this coefficient is associated with the stiffness of the pedestrians. \\
+We present in this section the results corresponding to the bottleneck geometry. We show the consequences of modifying the body force coefficient $k_n$ in the evacuation dynamics. Recall that this coefficient is associated with the stiffness of the pedestrians. \\
 
-Fig. \ref{vd_vs_te} shows the evacuation time as a function of the pedestrian's desired velocity. The evacuation time is defined as the time until 80\% of the pedestrians left the room. The different markers correspond to different $k$ values (\textit{i.e.} different body ``stiffness''; see caption for details). We will focus on the evacuation time for $v_d>2\,$m/s.\\
+Fig.~\ref{vd_vs_te} shows the evacuation time as a function of the pedestrian's desired velocity. The evacuation time is defined as the time until 80\% of the pedestrians left the room. The different markers correspond to different $k_n$ values (\textit{i.e.} different body ``stiffness''; see caption for details). In this section we will focus on the evacuation time for $v_d>2\,$m/s.\\
 
 
 \begin{figure}[htbp!]
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./vd_vs_te_N225.eps}
-\caption{\label{vd_vs_te}Mean evacuation time (s) vs. the pedestrian’s desired velocity (m/s) for a bottleneck. The room was 20 m x 20 m size. The door was 0.92 m width. Mean values were computed from 10 evacuation processes. 225 pedestrians were initially placed in a square lattice with a random initial velocity. Each process was finished when 158 pedestrians left the room. The different symbols indicate the $k$ value corresponding to the body force (see the label). The crosses correspond to the Helbing original SFM parameter, the up-triangles correspond to the value measured in Ref ..., squares correspond to zero body force and circles correspond to an extreme value of stiffness (one order of magnitude higher than the original SFM). The down triangles correspond to an intermediate value between the empirical value presented in Ref... and the chosen by Helbing in Ref.~\cite{helbing_2000} }
+\caption{\label{vd_vs_te}Mean evacuation time (s) vs. the pedestrian’s desired velocity (m/s) for a bottleneck. The room was 20 m x 20 m size. The door was 0.92 m width. Mean values were computed from 10 evacuation processes. 225 pedestrians were initially placed in a square lattice with a random initial velocity. Each process was finished when 158 pedestrians left the room. The different symbols indicate the $k_n$ value corresponding to the body force (see the label). The crosses correspond to the Helbing original SFM parameter, the up-triangles correspond to the value measured in Ref.~\cite{gordon1989anthropometric}, squares correspond to zero body force and circles correspond to an extreme value of stiffness (one order of magnitude higher than the original SFM). The down triangles correspond to an intermediate value between the empirical value presented in Ref.~\cite{gordon1989anthropometric} and the chosen by Helbing in Ref.~\cite{helbing_2000} }
 \end{figure}
 
-Two behavioral patterns can be seen in Fig.~\ref{vd_vs_te}. Whenever the slope is positive it means that the harder the pedestrians try to get out (higher $v_d$), the higher it takes them to evacuate. This is the Faster-is-slower (FIS) regime. Conversely, the negative slope corresponds to a Faster-is-Faster (FIF) phenomenon (the harder they try, the quicker they leave). Fig.~\ref{vd_vs_te} shows a change in the slope sign only for stiffness values below $k=1.2$~E5. This mean that ``soft'' individuals are required to attain this behavioral change.   Notice that for  $k=1.2$~E6 (the stiffest explored pedestrians) no FIS can be seen at all. Besides, the evacuation pattern for $k = 0$ and $k = 1.2$~E4 are very similar since the body force is comparable to the social force for these stiffness values. \\
+Two behavioral patterns can be seen in Fig.~\ref{vd_vs_te}. Whenever the slope is positive, it means that the harder the pedestrians trying to get out (higher $v_d$), the higher it takes them to evacuate. This is the Faster-is-slower (FIS) regime. Conversely, the negative slope corresponds to a Faster-is-Faster (FIF) phenomenon (the harder they try, the quicker they leave). Fig.~\ref{vd_vs_te} shows a change in the slope sign only for stiffness values below $k=1.2$~E5. This means that ``soft'' individuals are required to attain this behavioral change.   Notice that for  $k_n=1.2$~E6 (the stiffest explored pedestrians), no FIS can be seen at all. Besides, the evacuation pattern for $k_n = 0$ and $k_n = 1.2$~E4 are very similar since the body force is comparable to the social force for these stiffness values. \\
 
-Despite the presence of the FIS or FIF phenomenon, the evacuation time at a fixed value of $v_d$ decreases for increasing values of $k$. This means that stiffer pedestrians evacuate faster than soft pedestrians. In order to investigate this issue, we computed the mean velocity of the whole crowd as a function of the stiffens $k$. Fig.~\ref{kn_vs_vx_bottleneck} shows the mean velocity in the x-direction as a function of the stiffness $k$ for three different desired velocities. In all cases, the velocity increases with the stiffness. From $k_n=0$ to $k_n=$1.2~E4 the increment of velocity is not as significative as it is for higher $k_n$. \\
+Despite the presence of the FIS or FIF phenomenon, the evacuation time at a fixed value of $v_d$ decreases for increasing values of $k_n$. This means that stiffer pedestrians evacuate faster than soft pedestrians. To investigate this issue, we computed the mean velocity of the whole crowd as a function of the stiffens $k_n$. Fig.~\ref{kn_vs_vx_bottleneck} shows the mean velocity in the x-direction as a function of the stiffness $k_n$ for three different desired velocities. In all cases, the velocity increases with the stiffness. From $k_n=0$ to $k_n=$1.2~E4 the increment of velocity is not as significative as it is for higher $k_n$. \\
 
 
 \begin{figure}[!htbp]
 \centering
-    \subfloat[]{\includegraphics[width=0.7\columnwidth]{./kn_vs_vx_bottleneck.eps}\label{kn_vs_vx_bottleneck}}\\
-\caption[width=0.47\columnwidth]{}
+    \subfloat[]{\includegraphics[width=0.7\columnwidth]{./kn_vs_vx_bottleneck.eps}}\\
+\caption[width=0.47\columnwidth]{Mean velocity in the x-direction as a function of the stiffness level $k_n$ for different desired velocities (see label). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every two seconds once the crowd reaches the stationary state ($t=$20~s) until the end of the simulation ($t=$110~s). }
+\label{kn_vs_vx_bottleneck}
 \end{figure}
 
 
-The presence of a FIF phenomenon for only (soft individuals) open many questions on the microscopic dynamics of pedestrians. We may presume that contacts between pedestrians are quite different for soft individuals than for stiff individuals. In order to study the contacts dynamics, regardless of the compression effects, we assimilate the pedestrians as nodes and the whole crowd as a network. We set a link between any two individuals if both are in physical contact (\textit{i.e.} $r_{ij} \leq R{ij}$).\\
+The presence of a FIF phenomenon only for soft individuals opens many questions on the microscopic dynamics of pedestrians. We may presume that contacts between pedestrians are quite different for soft individuals than for stiff individuals. To study the dynamics of the contact, regardless of the compression effects, we assimilate the pedestrians as nodes and the whole crowd as a network. We set a link between any two individuals if both are in physical contact (\textit{i.e.} $r_{ij} \leq R{ij}$).\\
 
-Fig.~\ref{degree_vd} shows the mean degree of the contact network as a function of the desired velocity. The degree of a node is defined as the number of links that connecting this node to any other node. This means, the number of pedestrians that are in physical contact with a given pedestrian. The mean degree is the average of the degree over all the nodes (pedestrians) and over the whole sampled time. We report mean values after the system has reached the stationary state, that is, after a well formed bulk has been established.\\
+Fig.~\ref{degree_vd} shows the mean degree of the contact network as a function of the desired velocity. The degree of a node is defined as the number of links that connect this node to any other node. This means, the number of pedestrians that are in physical contact with a given pedestrian. The mean degree is the average of the degree over all the nodes (pedestrians) and over the whole sampled time. We report mean values after the system has reached the stationary state, that is after a well-formed bulk has been established.\\
 
-Increasing $v_d$ increases the mean degree, as expected. This occurs because increasing $v_d$ produces higher densities that force individuals to touch each other. But surprisingly. for a given $v_d$ the mean degree reduces as the $k$ value increases. A noticeable decrease of the mean degree can be seen for the highest explored value of $k$. We may expect a significant change in the sliding friction due to this fact.\\
+Increasing $v_d$ increases the mean degree, as expected. This occurs because increasing $v_d$ produces higher densities that force individuals to touch each other. But surprisingly, for a given $v_d$, the mean degree reduces as the $k_n$ value increases. A noticeable decrease in the mean degree can be seen for the highest explored value of $k_n$. We may expect a significant change in the sliding friction due to this fact.\\
 
-A more detailed insight to the contact dynamics can be acquired from Fig.~\ref{overlap_vd}. The overlap between individuals is shown as a function of $v_d$. Recall from Section \ref{sfm} that the overlap is defined as $R_{ij}-r_{ij}$ where $R_{ij}$, is the sum of radius of particle $i$ and particle $j$ and $r_{ij}$  is the distance between both particles. Except for very low desired velocities (say, $v_d<2\,$m/s), we can see that the mean overlap is an increasing function of $v_d$ (for the studied $k$ values).\\
+A more detailed insight into the contact dynamics can be acquired from Fig.~\ref{overlap_vd}. The overlap between individuals is shown as a function of $v_d$. Recall from section \ref{sfm} that the overlap is defined as $R_{ij}-r_{ij}$ where $R_{ij}$, is the sum of radius of particle $i$ and particle $j$ and $r_{ij}$  is the distance between both particles. Except for very low desired velocities (say, $v_d<2\,$m/s), we can see that the mean overlap is an increasing function of $v_d$ (for the studied $k_n$ values).\\
 
 % Agregar valor de kappa en todos los captions. 
 
@@ -518,18 +519,18 @@ A more detailed insight to the contact dynamics can be acquired from Fig.~\ref{o
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./degree_vs_vd_multi_kn.eps}\label{degree_vd}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./overlap_vs_vd_multi_kn.eps}\label{overlap_vd}}\\
-\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every two seconds once the crowd reaches the stationary state ($t=$20~s) until the end of the simulation ($t=$110~s).}
+\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k_n$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every two seconds once the crowd reaches the stationary state ($t=$20~s) until the end of the simulation ($t=$110~s).}
 \label{degree_overlap_vd}
 \end{figure}
 
 The regime for $v_d<2\,$m/s is different from the rest since most of the pedestrians are not touching each other. The only pedestrians who touch each other are the ones who are being re-injected in the room. The overlap is higher than, for example, $v_d=3\,$m/s because of the pedestrians who are re-injected bump against the bulk. \\
 
-Besides, for a given $v_d$, the overlap increases as the $k$ value decreases. Reducing $k$ means reducing the normal body force which allows a greater invasion of the personal space of the individuals ( this means more overlap between pedestrians). The increment in mean overlap, however, seems to be more significant than the mean degree. \\  
+Besides, for a given $v_d$, the overlap increases as the $k_n$ value decreases. Reducing $k_n$ means reducing the normal body force, which allows a more significant invasion of the personal space of the individuals ( this means more overlap between pedestrians). The increment in mean overlap, however, seems to be more significant than the mean degree. \\  
 
 
-An increase in the body stiffness is expected to impact on the evacuation dynamics. The simulations reduction of the overlap and the mean degree between pedestrians, tend to diminish the sliding friction within the crowd. Consequently, an enhancement in the evacuation time (pedestrians escape faster) should be observed, as pictured in Fig.~\ref{vd_vs_te}. Notice, however, that switching from a FIS regime (positive slope) to a  FIF regime (negative slope) in Fig.~\ref{vd_vs_te} appears as a more complex phenomenon. We will focus on this issue in an upcoming investigation.\\
+Increasing body stiffness has a significant impact on evacuation dynamics. The simulations reduction of the overlap and the mean degree between pedestrians, tend to diminish the sliding friction within the crowd. Consequently, an enhancement in the evacuation time (pedestrians escape faster) is observed, as pictured in Fig.~\ref{vd_vs_te}. Notice, however, that switching from a FIS regime (positive slope) to a  FIF regime (negative slope) in Fig.~\ref{vd_vs_te} appears as a more complex phenomenon. We will focus on this issue in an upcoming investigation.\\
 
-Despite the slidding friction, the body force has a notorious impact in the number of pedestrians touching each other (say, the degree). This is clearly depicted in Fig.~\ref{network_bottleneck} where four different configurations of the evacuation dynamics are shown. The configurations represent 225 pedestrians trying to escape through a door see caption for details. The colors correspond to the degree of each node (pedestrian) and the lines between pedestrians represent the contacts among them.\\
+Despite the sliding friction, the body force has a notorious impact in the number of pedestrians touching each other (say, the degree). This is clearly depicted in Fig.~\ref{network_bottleneck} where four different configurations of the evacuation dynamics are shown. The configurations represent 225 pedestrians trying to escape through a door see the caption for details. The colors correspond to the degree of each node (pedestrian), and the lines between pedestrians represent the contacts among them.\\
 
 
 
@@ -539,27 +540,27 @@ Despite the slidding friction, the body force has a notorious impact in the numb
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn0.eps}\label{network_vd10_kn0}}\\
         \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd2_kn1200000.eps}\label{network_vd2_kn1200000}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_vd10_kn1200000.eps}\label{network_vd10_kn1200000}}\\
-\caption[width=0.47\columnwidth]{Contact networks of a 225 pedestrian evacuation through a bottleneck. The door is placed at $(x,y)=(20,10)$~m, the width of the door is 0.92~m (equivalent to 2 pedestrian\textsc{\char13}s diameter). The lines that connect the nodes (pedestrians) represent the contact between them. The color represents the degree (the number of pedestrians with which it is connected). (a) and (b) correspond to a simulation without body force with $v_d=$2 and $v_d=$10 respectively. (c) and (d) correspond to simulations with $k$=1.2~E6 with $v_d=$2 and $v_d=$10 respectively.}
+\caption[width=0.47\columnwidth]{Contact networks of a 225 pedestrian evacuation through a bottleneck. The door is placed at $(x,y)=(20,10)$~m, the width of the door is 0.92~m (equivalent to 2 pedestrian\textsc{\char13}s diameter). The lines that connect the nodes (pedestrians) represent the contact between them. The color represents the degree (the number of pedestrians with which it is connected). (a) and (b) correspond to a simulation without body force with $v_d=$2 and $v_d=$10 respectively. (c) and (d) correspond to simulations with $k_n$=1.2~E6 with $v_d=$2 and $v_d=$10 respectively.}
 \label{network_bottleneck}
 \end{figure}
 
 
 
-The four configurations corresponds to two different $v_d$ and two different $k$ values (say, the  minimum and maximum explored values). Fig.~\ref{network_vd2_kn0} and Fig.~\ref{network_vd10_kn0} shows a snapshot for $k=$0, at desired velocities of 2$\,$m/s and 10$\,$m/s respectively.    Fig.~\ref{network_vd2_kn1200000} and Fig.~\ref{network_vd10_kn1200000} show similar situations, but for  $k=$1.2$\,$E6. As expected, increasing the desired velocity compresses the crowd towards the exit. \\
+The four configurations corresponds to two different $v_d$ and two different $k_n$ values (say, the  minimum and maximum explored values). Fig.~\ref{network_vd2_kn0} and Fig.~\ref{network_vd10_kn0} shows a snapshot for $k_n=$0, at desired velocities of 2$\,$m/s and 10$\,$m/s respectively.    Fig.~\ref{network_vd2_kn1200000} and Fig.~\ref{network_vd10_kn1200000} show similar situations, but for  $k_n=$1.2$\,$E6. As expected, increasing the desired velocity compresses the crowd towards the exit. \\
 
-The four snapshots in \ref{network_bottleneck} comfirm (visually) the fact that more rigid bodies releases the crowd environment, widening the occupied region. At $v_d=10\,$m/s (the maximum explored velocity), it can hardly be found pedestians with degree 6 when $k=1.2\,$E6, while a lot of them are present for $k$=0.\\
+The four snapshots in Fig.~\ref{network_bottleneck} confirm (visually) the fact that more rigid pedestrians release the crowded environment, widening the occupied region. At $v_d=10\,$m/s (the maximum explored velocity), it can hardly be found pedestrians with degree 6 when $k_n=1.2\,$E6, while a lot of them are present for $k_n$=0.\\
 
-\textcolor{red}{Agregar una conclusion}
+To conclude this section, we want to emphasize that increasing body stiffness has a significant impact on the evacuation dynamics. The stiffer pedestrians are, the less they touch to each other (less degree and less overlap). This yields a reduction of an increment of the speed, which reduces the evacuation time. \\
 
 \subsection{\label{corridor} Corridor}
 
-In this section, we present the results corresponding to the corridor geometry. We show the effects of modifying the body force coefficient $k$ in the dynamics.\\
+In this section, we present the results corresponding to the corridor geometry. We show the effects of modifying the body force coefficient $k_n$ in the dynamics.\\
 
 In Fig. \ref{flow_density} we show the flow as a function of the global density (fundamental diagram). \ref{flow_density_no_body_force} corresponds to zero body force (\textit{i.e.} $k_n=0$), \ref{flow_density_body_force} corresponds to a body force with $k_n$=1.2~E5. Each curve correspond to a different friction value. The circles correspond to the value of the original SFM ($\kappa = 2.4$~E5), the "+" symbol correspond to the original value increased by a factor of five and triangles correspond to the original value increased by a factor of ten. \\
 
 According to most of the empirical measurements, the flow decreases for high enough values of density because pedestrians become jammed. Notice that the original friction does not produce a reduction of the flow when there is zero body force but when the body force is included (with the original SFM value), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density. When the friction is five times the original value, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$. When the friction is increased by a factor of ten, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force). This result suggests that even including the body force, the original SFM requires an increment of the friction in order to reproduce the flow reduction reported in empirical measurements.\\
 
-It is worth mentioning that increasing the body force reduces the flow, for a given density and a given friction value (compare \ref{flow_density_no_body_force} with \ref{flow_density_body_force} ). In other words, pedestrians walk slower along the corridor if the $k$ value increases (\textit{i.e.} if they are stiffer). This result is the opposite of what we get in bottleneck geometry since in bottleneck, the stiffer the pedestrians are, the faster they walk (and evacuate).\\
+It is worth mentioning that increasing the body force reduces the flow, for a given density and a given friction value (compare \ref{flow_density_no_body_force} with \ref{flow_density_body_force} ). In other words, pedestrians walk slower along the corridor if the $k_n$ value increases (\textit{i.e.} if they are stiffer). This result is the opposite of what we get in bottleneck geometry since in bottleneck, the stiffer the pedestrians are, the faster they walk (and evacuate).\\
 
 
 
@@ -567,7 +568,7 @@ It is worth mentioning that increasing the body force reduces the flow, for a gi
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_nobodyforce.eps}\label{flow_density_no_body_force}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./flow-density_multifric_bodyforce.eps}\label{flow_density_body_force}}\\
-\caption[width=0.47\columnwidth]{Flow vs. global density. The flow is calculated in a circular area of R=1~m at the center of the corridor. The circular markers correspond to the original friction of the SFM, the "+" symbol corresponds to the friction increased by a factor of five and the triangles correspond to the friction increased by a factor of ten. The desired velocity was $v_d=1$ in all the cases. (a) corresponds to simulations without body force and (b) corresponds to a body force with $k=$1.2~E5.}
+\caption[width=0.47\columnwidth]{Flow vs. global density. The flow is calculated in a circular area of R=1~m at the center of the corridor. The circular markers correspond to the original friction of the SFM, the "+" symbol corresponds to the friction increased by a factor of five and the triangles correspond to the friction increased by a factor of ten. The desired velocity was $v_d=1$ in all the cases. (a) corresponds to simulations without body force and (b) corresponds to a body force with $k_n=$1.2~E5.}
 \label{flow_density}
 \end{figure}
 
@@ -575,21 +576,21 @@ To understand why in corridor geometry pedestrians walk slower as they become st
 
 One way to analyze the increment of connectivity is by creating a network out of the (x,y) positions of the pedestrians. In this network, each node represents a pedestrian and there is a link between a pair of nodes $i,j$ if the pair of pedestrians represented by the nodes are touching each other (\textit{i.e.} $r_{ij} \leq R_{ij}$). Once the network is created, it is possible to use the analytical tools that allow describing the network such as the mean degree, the distribution of clusters, the shortest path length, etc.\\  
 
-Fig.~\ref{degree_dens} shows the mean degree as a function of the global density for different $k$ values. When the density is low,  the degree is zero because the pedestrians do not touch each other. When the density is around 4.5, a few pedestrians start to touch each other increasing the mean degree. As the density increases, the mean degree increases too until reaching an asymptotic behavior in degree six. When the degree is six, it corresponds to the densest packing possible for identical hard circles, the result is a hexagonal packing arrangement.\\
+Fig.~\ref{degree_dens} shows the mean degree as a function of the global density for different $k_n$ values. When the density is low,  the degree is zero because the pedestrians do not touch each other. When the density is around 4.5, a few pedestrians start to touch each other increasing the mean degree. As the density increases, the mean degree increases too until reaching an asymptotic behavior in degree six. When the degree is six, it corresponds to the densest packing possible for identical hard circles, the result is a hexagonal packing arrangement.\\
 
 It is important to notice that in Fig. \ref{degree_dens} for a given value of density, the stiffer the pedestrians, the higher the degree. A higher degree means more friction force which is the cause of the reduction of the flow. In the bottleneck geometry, the opposite thing happens, the stiffer the pedestrians the lower the mean degree. This is the reason why in a bottleneck, pedestrians evacuate faster as they become stiffer while in a corridor the pedestrian\textsc{\char13}s flow is lower as they become stiffer.\\
 
-The mean overlap increases as the global density increases (see Fig. \ref{overlap_dens}) and the higher the stiffness the lower the overlap. This result is similar to the overlap vs. desired velocity obtained for bottleneck geometry. The higher the value of $k$ the higher the repulsion of the pedestrian-pedestrian interaction since the body force is acting in the normal direction $n_{ij}$.\\
+The mean overlap increases as the global density increases (see Fig. \ref{overlap_dens}) and the higher the stiffness the lower the overlap. This result is similar to the overlap vs. desired velocity obtained for bottleneck geometry. The higher the value of $k_n$ the higher the repulsion of the pedestrian-pedestrian interaction since the body force is acting in the normal direction $n_{ij}$.\\
 
 \begin{figure}[!htbp]
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./degree_vs_dens_multi_kn.eps}\label{degree_dens}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./overlap_vs_dens_multi_kn.eps}\label{overlap_dens}}\\
-\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the global density for different $k$ values. (b) mean overlap as a function of the global density. The mean values are averages over all the pedestrians and over time once the system reaches the stationary state. Both measurements correspond to corridor geometry with desired velocity $v_d=1$.}
+\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the global density for different $k_n$ values. (b) mean overlap as a function of the global density. The mean values are averages over all the pedestrians and over time once the system reaches the stationary state. Both measurements correspond to corridor geometry with desired velocity $v_d=1$.}
 \label{network_corridor}
 \end{figure}
 
-As was mentioned above, increasing the $k$ value of the body force increases the stiffness of pedestrians. Increasing the stiffness reduces the overlap (both in bottleneck and corridor). Regarding the network connectivity, increasing the stiffness reduces the mean degree in a bottleneck but increases the mean degree in a corridor. In Fig.~\ref{network_corridor} it shown the contact network corresponding to the corridor at a particular timestep and a particular global density. Fig.~\ref{network_d6_kn0} corresponds to $k=0$ while Fig. \ref{network_d6_knE5} corresponds to $k=1.2$~E5. This is an example to show that increasing the stiffness increases the number of contacts between pedestrians (the network connectivity). Notice that there are many more pedestrians with degree 6 in the case of $k=1.2$~E5 than the case of $k=0$. \\
+As was mentioned above, increasing the $k_n$ value of the body force increases the stiffness of pedestrians. Increasing the stiffness reduces the overlap (both in bottleneck and corridor). Regarding the network connectivity, increasing the stiffness reduces the mean degree in a bottleneck but increases the mean degree in a corridor. In Fig.~\ref{network_corridor} it shown the contact network corresponding to the corridor at a particular timestep and a particular global density. Fig.~\ref{network_d6_kn0} corresponds to $k_n=0$ while Fig. \ref{network_d6_knE5} corresponds to $k_n=1.2$~E5. This is an example to show that increasing the stiffness increases the number of contacts between pedestrians (the network connectivity). Notice that there are many more pedestrians with degree 6 in the case of $k_n=1.2$~E5 than the case of $k_n=0$. \\
 
 This result is exactly the opposite of what we get in the bottleneck. This happens because, in the corridor, the lateral walls act like containers that force the pedestrian to increase their contacts. Whereas in the bottleneck there are no lateral walls. Thus, when increasing the stiffness they have more space to detach from each other, reducing the connectedness (hence reducing the mean degree). \\
 
@@ -597,11 +598,11 @@ This result is exactly the opposite of what we get in the bottleneck. This happe
 \centering
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_kn0.eps}\label{network_d6_kn0}}\ 
     \subfloat[]{\includegraphics[width=0.45\columnwidth]{./network_d6_knE5.eps}\label{network_d6_knE5}}\\
-\caption[width=0.47\columnwidth]{Contact network of the pedestrians along the corridor. The lines that connect the nodes (pedestrians) represent the contact between them. The colors stand for the degree of the node (the number of pedestrians that are in contact with him/her). The corridor was 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$. (a) corresponds to a simulation without body force and (b) corresponds to a simulation with $k=1.2$~E5.}
+\caption[width=0.47\columnwidth]{Contact network of the pedestrians along the corridor. The lines that connect the nodes (pedestrians) represent the contact between them. The colors stand for the degree of the node (the number of pedestrians that are in contact with him/her). The corridor was 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$. (a) corresponds to a simulation without body force and (b) corresponds to a simulation with $k_n=1.2$~E5.}
 \label{network_corridor}
 \end{figure}
 
-The increment of the connectedness is responsible for the reduction of the flow. In the corridor geometry, the crowd gets more connected if the pedestrians become stiffer. We studied the network properties of the contact graph arising from the positions $(x,y)$ of every pedestrian. We found that a good descriptor to exhibit the connectivity is the number of triangles per node. A triangle is defined as a structure composed of three nodes all in contact with each other. Fig.~\ref{triangles} shows the triangles per node as a function of the global density for different stiffness values $k$. This descriptor allows to distinguish states with the same global density but different stiffness levels. In other words, it is a descriptor very sensitive to changes in stiffness that allow expressing the connectivity of the system even better than the mean degree. \\
+The increment of the connectedness is responsible for the reduction of the flow. In the corridor geometry, the crowd gets more connected if the pedestrians become stiffer. We studied the network properties of the contact graph arising from the positions $(x,y)$ of every pedestrian. We found that a good descriptor to exhibit the connectivity is the number of triangles per node. A triangle is defined as a structure composed of three nodes all in contact with each other. Fig.~\ref{triangles} shows the triangles per node as a function of the global density for different stiffness values $k_n$. This descriptor allows to distinguish states with the same global density but different stiffness levels. In other words, it is a descriptor very sensitive to changes in stiffness that allow expressing the connectivity of the system even better than the mean degree. \\
 
 This result is consistent with the results obtained in Ref.~\cite{pugnaloni_2013} where the authors explore several topological and geometric descriptors capable of properly describing granular systems with different stiffness. While our study system is self-propelled, there are analogies with the system studied in Ref.~\cite{pugnaloni_2013} Like the authors, we recommend using topological descriptors (in particular triangles per node) to describe systems with equal global density and different stiffness levels.\\
 
@@ -609,7 +610,7 @@ This result is consistent with the results obtained in Ref.~\cite{pugnaloni_2013
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./triangles.eps}
-\caption{\label{triangles} Triangles per node as a function of the global density. A triangle in a network is defined as three nodes all connected. Each marker corresponds to a different stiffness $k$ (see the label in the plot). The measurements correspond to a corridor of 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$.  }
+\caption{\label{triangles} Triangles per node as a function of the global density. A triangle in a network is defined as three nodes all connected. Each marker corresponds to a different stiffness $k_n$ (see the label in the plot). The measurements correspond to a corridor of 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$.  }
 \end{figure}
 
 
@@ -630,8 +631,8 @@ y T\'ecnicas - CONICET, Argentina) grant Programaci\'on Cient\'\i fica 2018 (UBA
 
 \section{\label{appendix1}Reduced-in-units equation of motion}
 
-The SFM description in Section~\ref{sfm} introduces seven parameters ($m$, 
-$\tau$, $v_d$, $B$, $A$, $\kappa$ and $k$) attaining for the ``individual'' 
+The SFM description in section~\ref{sfm} introduces seven parameters ($m$, 
+$\tau$, $v_d$, $B$, $A$, $\kappa$ and $k_n$) attaining for the ``individual'' 
 behavior of each pedestrian. The collective dynamic, however, requires a 
 smaller set of parameters. In order to identify this smaller set, we introduce 
 the following unit-less magnitudes\\
@@ -670,7 +671,7 @@ Notice that the SFM will arrive to similar collective dynamics whenever the
 reduced set ($\mathcal{A}$,$\mathcal{K}$,$\mathcal{K}_c$) remains unchanged 
 (although some ``individual'' parameters are allowed to change). For a deep 
 explanation on the meaning  of the set 
-($\mathcal{A}$,$\mathcal{K}$,$\mathcal{K}_c$) see Section~\ref{parameters}. \\
+($\mathcal{A}$,$\mathcal{K}$,$\mathcal{K}_c$) see section~\ref{parameters}. \\
 
 
 
