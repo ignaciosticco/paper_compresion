@@ -70,19 +70,19 @@ std_comp_knE6 = data_knE6["list_std_overlap"].tolist()
 
 fig, ax1 = plt.subplots()
 
-plt.plot(vd_kn0,mean_comp_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=0$') 
+plt.plot(vd_kn0,mean_comp_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=0$') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(vd_knE4,mean_comp_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$~E4') 
+plt.plot(vd_knE4,mean_comp_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E4') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(vd_knx5,mean_comp_knx5,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=6$~E4') 
+plt.plot(vd_knx5,mean_comp_knx5,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=6$~E4') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(vd_knE5,mean_comp_knE5,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$~E5') 
+plt.plot(vd_knE5,mean_comp_knE5,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E5') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$~E6') 
+plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E6') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
 

@@ -160,9 +160,9 @@ def main():
 
      ############# PARAMETERS #############
      #1200000
-     input_filename = 'config_bottleneck_vd2_k0'
-     output_filename = 'network_vd2_kn0'
-     title = "$v_d=$2 m~s$^{-1}$ \hspace{0.5cm} $k=$0"
+     input_filename = 'config_bottleneck_vd2_k1200000'
+     output_filename = 'network_vd2_kn1200000'
+     title = "$v_d=$2 m~s$^{-1}$ \hspace{0.5cm} $k_n=$1.2~E6"
      time = 100
      sum_rads = 0.46
      ######################################

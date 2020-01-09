@@ -65,7 +65,7 @@ plt.plot(vd_knE6,mean_degree_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=3
 
 pylab.grid(False)
 pylab.xlabel('density~(p m$^{-2})$')
-pylab.ylabel('Mean degree~(m)')
+pylab.ylabel('Mean degree')
 plt.ylim(0.0,6.1)
 lgd=plt.legend(numpoints=1,handlelength=0.8) 
 plt.legend(frameon=False,loc='best',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
