@@ -556,12 +556,9 @@ To conclude this section, we want to emphasize that increasing body stiffness ha
 
 In this section, we present the results corresponding to the corridor geometry. We show the effects of modifying the body force coefficient $k_n$ in the dynamics.\\
 
-In Fig. \ref{flow_density} we show the flow as a function of the global density (fundamental diagram). \ref{flow_density_no_body_force} corresponds to zero body force (\textit{i.e.} $k_n=0$), \ref{flow_density_body_force} corresponds to a body force with $k_n$=1.2~E5. Each curve correspond to a different friction value. The circles correspond to the value of the original SFM ($\kappa = 2.4$~E5), the "+" symbol correspond to the original value increased by a factor of five and triangles correspond to the original value increased by a factor of ten. \\
+In Fig. \ref{flow_density} we show the flow as a function of the global density (fundamental diagram). \ref{flow_density_no_body_force} corresponds to zero body force (\textit{i.e.} $k_n=0$), Fig.~\ref{flow_density_body_force} corresponds to a body force with $k_n$=1.2~E5. Each curve correspond to a different friction value (see the caption).\\
 
-According to most of the empirical measurements, the flow decreases for high enough values of density because pedestrians become jammed. Notice that the original friction does not produce a reduction of the flow when there is zero body force but when the body force is included (with the original SFM value), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density. When the friction is five times the original value, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$. When the friction is increased by a factor of ten, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force). This result suggests that even including the body force, the original SFM requires an increment of the friction in order to reproduce the flow reduction reported in empirical measurements.\\
-
-It is worth mentioning that increasing the body force reduces the flow, for a given density and a given friction value (compare \ref{flow_density_no_body_force} with \ref{flow_density_body_force} ). In other words, pedestrians walk slower along the corridor if the $k_n$ value increases (\textit{i.e.} if they are stiffer). This result is the opposite of what we get in bottleneck geometry since in bottleneck, the stiffer the pedestrians are, the faster they walk (and evacuate).\\
-
+According to most of the empirical measurements, the flow decreases for high enough values of density because the crowd becomes jammed. Notice that the original friction does not produce a reduction of the flow when there is zero body force but when the body force is included (with the original SFM value), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density. When the friction is five times the original value, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$. When the friction is increased by a factor of ten, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force). This result suggests that even including the body force, the original SFM requires an increment of the friction in order to reproduce the flow reduction reported in empirical measurements.\\
 
 
 \begin{figure}[!htbp]
@@ -572,13 +569,10 @@ It is worth mentioning that increasing the body force reduces the flow, for a gi
 \label{flow_density}
 \end{figure}
 
-To understand why in corridor geometry pedestrians walk slower as they become stiffer it is important to take into account that pedestrians walk slower if the friction increases. In corridors, the friction increases when pedestrians become stiffer because the crowd tends to be more connected. To be more connected means that more pedestrians are touching each other. \\
 
-One way to analyze the increment of connectivity is by creating a network out of the (x,y) positions of the pedestrians. In this network, each node represents a pedestrian and there is a link between a pair of nodes $i,j$ if the pair of pedestrians represented by the nodes are touching each other (\textit{i.e.} $r_{ij} \leq R_{ij}$). Once the network is created, it is possible to use the analytical tools that allow describing the network such as the mean degree, the distribution of clusters, the shortest path length, etc.\\  
+In the same way as with the bottleneck geometry, we computed the contact network to study the topological differences that arise from increasing the $k_n$ value. Fig.~\ref{degree_dens} shows the mean degree as a function of the global density for different $k_n$ values. When the density is low,  the degree is zero because the pedestrians do not touch each other. When the density is around 4.5, a few pedestrians start to touch each other increasing the mean degree. As the density increases, the mean degree increases too until reaching an asymptotic behavior in degree six. Degree six, corresponds to the densest packing possible for identical hard circles, the result is a hexagonal packing arrangement.\\
 
-Fig.~\ref{degree_dens} shows the mean degree as a function of the global density for different $k_n$ values. When the density is low,  the degree is zero because the pedestrians do not touch each other. When the density is around 4.5, a few pedestrians start to touch each other increasing the mean degree. As the density increases, the mean degree increases too until reaching an asymptotic behavior in degree six. When the degree is six, it corresponds to the densest packing possible for identical hard circles, the result is a hexagonal packing arrangement.\\
-
-It is important to notice that in Fig. \ref{degree_dens} for a given value of density, the stiffer the pedestrians, the higher the degree. A higher degree means more friction force which is the cause of the reduction of the flow. In the bottleneck geometry, the opposite thing happens, the stiffer the pedestrians the lower the mean degree. This is the reason why in a bottleneck, pedestrians evacuate faster as they become stiffer while in a corridor the pedestrian\textsc{\char13}s flow is lower as they become stiffer.\\
+It is important to notice that in Fig. \ref{degree_dens} for a given value of density, the stiffer the pedestrians, the higher the degree. In the bottleneck geometry, the opposite thing happens, the stiffer the pedestrians the lower the mean degree.\\
 
 The mean overlap increases as the global density increases (see Fig. \ref{overlap_dens}) and the higher the stiffness the lower the overlap. This result is similar to the overlap vs. desired velocity obtained for bottleneck geometry. The higher the value of $k_n$ the higher the repulsion of the pedestrian-pedestrian interaction since the body force is acting in the normal direction $n_{ij}$.\\
 
@@ -590,7 +584,7 @@ The mean overlap increases as the global density increases (see Fig. \ref{overla
 \label{network_corridor}
 \end{figure}
 
-As was mentioned above, increasing the $k_n$ value of the body force increases the stiffness of pedestrians. Increasing the stiffness reduces the overlap (both in bottleneck and corridor). Regarding the network connectivity, increasing the stiffness reduces the mean degree in a bottleneck but increases the mean degree in a corridor. In Fig.~\ref{network_corridor} it shown the contact network corresponding to the corridor at a particular timestep and a particular global density. Fig.~\ref{network_d6_kn0} corresponds to $k_n=0$ while Fig. \ref{network_d6_knE5} corresponds to $k_n=1.2$~E5. This is an example to show that increasing the stiffness increases the number of contacts between pedestrians (the network connectivity). Notice that there are many more pedestrians with degree 6 in the case of $k_n=1.2$~E5 than the case of $k_n=0$. \\
+As was mentioned above, increasing the $k_n$ value of the body force increases the stiffness of pedestrians. Increasing the stiffness reduces the overlap (both in the bottleneck and corridor). Regarding the network connectivity, increasing the stiffness reduces the mean degree in a bottleneck but increases the mean degree in a corridor. Fig.~\ref{network_corridor} it shows the contact network corresponding to the corridor at a particular timestep and a particular global density. Fig.~\ref{network_d6_kn0} corresponds to $k_n=0$ while Fig.~\ref{network_d6_knE5} corresponds to $k_n=1.2$~E5. This is an example to show that increasing the stiffness increases the number of contacts between pedestrians (the network connectivity). Notice that there are many more pedestrians with degree 6 in the case of $k_n=1.2$~E5 than the case of $k_n=0$. \\
 
 This result is exactly the opposite of what we get in the bottleneck. This happens because, in the corridor, the lateral walls act like containers that force the pedestrian to increase their contacts. Whereas in the bottleneck there are no lateral walls. Thus, when increasing the stiffness they have more space to detach from each other, reducing the connectedness (hence reducing the mean degree). \\
 
@@ -602,7 +596,7 @@ This result is exactly the opposite of what we get in the bottleneck. This happe
 \label{network_corridor}
 \end{figure}
 
-The increment of the connectedness is responsible for the reduction of the flow. In the corridor geometry, the crowd gets more connected if the pedestrians become stiffer. We studied the network properties of the contact graph arising from the positions $(x,y)$ of every pedestrian. We found that a good descriptor to exhibit the connectivity is the number of triangles per node. A triangle is defined as a structure composed of three nodes all in contact with each other. Fig.~\ref{triangles} shows the triangles per node as a function of the global density for different stiffness values $k_n$. This descriptor allows to distinguish states with the same global density but different stiffness levels. In other words, it is a descriptor very sensitive to changes in stiffness that allow expressing the connectivity of the system even better than the mean degree. \\
+In the corridor geometry, the crowd gets more connected if the pedestrians become stiffer. We studied the network properties of the contact graph arising from the positions $(x,y)$ of every pedestrian. We found that a good descriptor to exhibit the connectivity is the number of triangles per node. A triangle is defined as a structure composed of three nodes all in contact with each other. Fig.~\ref{triangles} shows the triangles per node as a function of the global density for different stiffness values $k_n$. This descriptor allows to distinguish states with the same global density but different stiffness levels. In other words, it is a descriptor very sensitive to changes in stiffness that allow expressing the connectivity of the system even better than the mean degree. \\
 
 This result is consistent with the results obtained in Ref.~\cite{pugnaloni_2013} where the authors explore several topological and geometric descriptors capable of properly describing granular systems with different stiffness. While our study system is self-propelled, there are analogies with the system studied in Ref.~\cite{pugnaloni_2013} Like the authors, we recommend using topological descriptors (in particular triangles per node) to describe systems with equal global density and different stiffness levels.\\
 
@@ -613,6 +607,23 @@ This result is consistent with the results obtained in Ref.~\cite{pugnaloni_2013
 \caption{\label{triangles} Triangles per node as a function of the global density. A triangle in a network is defined as three nodes all connected. Each marker corresponds to a different stiffness $k_n$ (see the label in the plot). The measurements correspond to a corridor of 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$.  }
 \end{figure}
 
+The most important result is that increasing the $k_n$ value reduces the flow (hence reduces the walking speed of the overall crowd) in the corridor geometry. Fig.~\ref{kn_vs_vx_corridor} shows the velocity in the direction of displacement $v_x$ as a function of the stiffness for different global density levels. $v_x$ reduces as $k_n$ increases as opposed to what happens in the bottleneck geometry. There is little to no change in the speed from zero to $k_n=$1.2~E4, from this value on, the diminishing of velocity is more abrupt.\\
+
+The reason why the velocity reduces as the stiffness of the pedestrians increases is that it becomes harder for the pedestrians to walk forward since the repulsion force (body force) against the pedestrian that is ahead becoming higher. Thus, they have no other option than moving at (almost) the same speed than the pedestrians that they have at their sides.\\
+
+
+\begin{figure}[htbp!]
+\centering
+\includegraphics[width=0.7\columnwidth]{./kn_vs_vx_corridor.eps}
+\caption{\label{kn_vs_vx_corridor}   }
+\end{figure}
+
+The value of $k_n$ affects the velocity all along the corridor. Fig... shows the velocity profile ($v_x$ vs. the longitudinal coordinate $y$) for different $k_n$ values. For $k_n=0$, we can see a parabolic-like velocity profile that resembles the Poissele flow for a viscous liquid. As $k_n$ increases the velocity profile flattens until becoming a constant ($k_n=$ 1.2~E6) which $v_x$ value is much lower than on the case of soft pedestrians ($k_n=$0).\\
+
+If the stiffness is high enough, the crowd behaves like a solid; this means that the crowd can not be deformed. This is express by the strain rate, which is shown in Fig.~\ref{}. \\
+
+
+The strain rate is a quantity that characterizes the deformation of a physical object. It is defined as a tensor .... For this particular problem we define a discrete version of the strain rate that compares the velocity of the pedestrians close to the wall (boundary) and the pedestrians that are in the center of the corridor (center). \\
 
 
 
