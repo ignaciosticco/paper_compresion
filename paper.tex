@@ -550,7 +550,18 @@ The four configurations corresponds to two different $v_d$ and two different $k_
 
 The four snapshots in Fig.~\ref{network_bottleneck} confirm (visually) the fact that more rigid pedestrians release the crowded environment, widening the occupied region. At $v_d=10\,$m/s (the maximum explored velocity), it can hardly be found pedestrians with degree 6 when $k_n=1.2\,$E6, while a lot of them are present for $k_n$=0.\\
 
-To conclude this section, we want to emphasize that increasing body stiffness has a significant impact on the evacuation dynamics. The stiffer pedestrians are, the less they touch to each other (less degree and less overlap). This yields a reduction of an increment of the speed, which reduces the evacuation time. \\
+The clusterization of the pedestrians has a significant impact on the blocking clusters (the group of pedestrians that clog the exit).  Fig.~\ref{pbc_vs_vd_multi_kn} shows the blocking cluster existence probability as a function of the desired velocity for different $k$ values. The blocking clusters occur more often when the desired velocity increases because increasing $v_d$ increase the density in the area close to the exit. The most remarkable fact of Fig.~\ref{pbc_vs_vd_multi_kn} is that increasing the stiffness reduces the blocking cluster existence for a fixed value of $v_d$. Under these conditions, the blocking clusters strictly govern the evacuation dynamics~\cite{dorso_2005}. Thus, increasing the stiffness reduces the blocking cluster existence, which improves the evacuation time.\\
+
+\begin{figure}[htbp!]
+\centering
+\includegraphics[width=0.7\columnwidth]
+{./pbc_vs_vd_multi_kn.eps}
+\caption{\label{pbc_vs_vd_multi_kn} Blocking cluster existence probability as a function of $v_d$ for different stiffness levels (see label). The probability is calculated as the amount of time a blocking cluster is present divided by the overall simulation time. The result correspond to a bottleneck geometry with 225 pedestrians in periodic boundary conditions (re-injection of pedestrians once the exited the room). The simulation lasted $t_f =$ 1000~s. }
+\end{figure}
+
+
+To conclude this section, we want to emphasize that increasing body stiffness has a significant impact on the evacuation dynamics. The stiffer pedestrians are, the less they touch to each other (less degree and less overlap). This phenomenon yields a reduction of the existence of the blocking clusters, which reduces the overall evacuation time. \\
+\\
 
 \subsection{\label{corridor} Corridor}
 
