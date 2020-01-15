@@ -48,31 +48,33 @@ def main():
 
 
      list_k = [0,12000,120000,1200000]
+     list_d = [6,7,8]
+     list_symbol = ['-o','-v','-^']
+     list_color = ['b','g','r']
      y_borde = 0.5
      y_centro = 10.5
      plot_name = 'strain_rate_vs_kn'
-     strain_rate = []
-     error_strain_rate = []
-
-     for k in list_k:
-          file_name = 'vx_profile_kn{}.txt'.format(k)
-          df = pd.read_csv('{}'.format(file_name),sep='\t')
-          vx_borde = float(df.loc[df['bin y'] == y_borde, 'mean vx'])
-          vx_centro = float(df.loc[df['bin y'] == y_centro, 'mean vx'])
-          strain_rate += [(vx_centro-vx_borde)/float(y_centro-y_borde)] 
-          error_strain_rate += [(float(df.loc[df['bin y'] == y_borde, 'std vx'])+float(df.loc[df['bin y'] == y_centro, 'std vx']))/float(y_centro-y_borde)]
-     print(error_strain_rate)
-
-     plot_strainrate_vs_k(plot_name,list_k,strain_rate,error_strain_rate)
-
-def plot_strainrate_vs_k(plot_name,list_k,strain_rate,error_strain_rate):
-     '''
-
-     '''
 
 
-     plt.errorbar(list_k,strain_rate,error_strain_rate, fmt='none')     
-     plt.plot(list_k,strain_rate,'b-o',mec='k',mew=0.8,linewidth = '1',markersize=4)     
+     i = 0
+     for d in list_d:
+          strain_rate = []
+          error_strain_rate = []
+          for k in list_k:
+               file_name = 'vx_profile_d{}_kn{}.txt'.format(d,k)
+               df = pd.read_csv('{}'.format(file_name),sep='\t')
+               vx_borde = float(df.loc[df['bin y'] == y_borde, 'mean vx'])
+               vx_centro = float(df.loc[df['bin y'] == y_centro, 'mean vx'])
+               strain_rate += [(vx_centro-vx_borde)/float(y_centro-y_borde)] 
+               error_strain_rate += [(float(df.loc[df['bin y'] == y_borde, 'std vx'])+float(df.loc[df['bin y'] == y_centro, 'std vx']))/float(y_centro-y_borde)]
+
+          plot_strainrate_vs_k(plot_name,list_k,strain_rate,error_strain_rate,d,list_symbol[i],list_color[i])
+          i+=1
+
+def plot_strainrate_vs_k(plot_name,list_k,strain_rate,error_strain_rate,d,symbol,color):
+
+     plt.errorbar(list_k,strain_rate,error_strain_rate,color=color, fmt='none')     
+     plt.plot(list_k,strain_rate,symbol,color=color,mec='k',mew=0.8,linewidth = '1',markersize=4,label='$\\rho=${}'.format(d))     
      pylab.grid(False)
      pylab.xlabel('$k_n$')
      pylab.ylabel('Strain rate~(1/s)')
@@ -81,10 +83,10 @@ def plot_strainrate_vs_k(plot_name,list_k,strain_rate,error_strain_rate):
      #plt.ylim(-0.25,6.2)
      #plt.xlim(4.5,9.1)
      #lgd=plt.legend(numpoints=1,handlelength=0.8) 
-     #plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
-     pylab.savefig('{}.png'.format(plot_name), format='png', dpi=300, bbox_inches='tight')
+     plt.legend(frameon=False,loc='best',labelspacing=-0.1,borderpad=0.3,handletextpad=0.5,fontsize=6,numpoints=1) 
      pylab.savefig('{}.eps'.format(plot_name), format='eps', dpi=300, bbox_inches='tight')
-     
+     pylab.savefig('{}.png'.format(plot_name), format='png', dpi=300, bbox_inches='tight')
+
 
 if __name__=='__main__':
      main()
