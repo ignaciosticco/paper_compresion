@@ -78,8 +78,11 @@ Pedestrian Dynamics \sep Social Force Model \sep Body Force
 
 \section{\label{introduction}Introduction}
 
-The Social Force Model (SFM) addresses two physical forces as 
-\textit{essential}: the ``body force'' and the ``sliding friction''. Both are 
+\textcolor{red}{The Social Force Model (SFM) is a pedestrian dynamics model that
+considers three kinds of forces: desired forces, social forces, and physical forces.
+In its original version, the SFM, addresses two physical forces as essential: 
+\sout{The Social Force Model (SFM) addresses two physical forces as 
+\textit{essential}:}} the ``body force'' and the ``sliding friction''. Both are 
 inspired by granular interactions and were claimed to be necessary  
 for attaining the particular effects in panicking crowds \cite{helbing_2000}. 
 The ``sliding friction'' actually proved to be an essential feature of the 
@@ -97,7 +100,8 @@ from the SFM appear to be remarkably higher with respect to the reported real
 life data (say, an order of magnitude). The crowd motion simulations, however, 
 present quite realistic results \cite{lakoba_2005,langston_2006,dorso_2017}. 
 The 
-point seems to be that the SFM focuses on the ``incoordination phenomenon'' due 
+point seems to be that the SFM focuses on the \textcolor{red}{``collective behavior''
+ \sout{``incoordination phenomenon''}} due 
 to clogging, missing the ``individualistic'' perspective  of single pedestrians 
 or very small groups \cite{helbing_2000,henein_2007,narain_2009}.  \\ 
 
@@ -115,14 +119,15 @@ limit the pedestrians acceleration by introducing ``static friction'' between
 the pedestrians and the floor \cite{wang_2019}. This kind of friction, however, 
 reduces the effective willings of the pedestrians.  \\  
 
-A meaningful (individualistic) numerical setting appears not available yet (to 
-our knowledge). The reason is that different numerical settings can lead to 
+\textcolor{red}{A unique (and universal) setting appears not available yet. 
+\sout{A meaningful (individualistic) numerical setting appears not available yet (to 
+our knowledge).}} The reason is that different numerical settings can lead to 
 the same crowd dynamics. Actually, only a small set of dimensionless 
 ``numbers'' control the crowd dynamics \cite{dorso_2019}. These are similar to 
 those encountered in other active matter systems (P\'eclet number, etc.)  
 \cite{marchetti_2014}. We may hypothesize that while the dimensionless 
-``numbers'' provide some kind of control on the ``incoordination phenomenon'' 
-in 
+``numbers'' provide some kind of control on the \textcolor{red}{\sout{
+``incoordination phenomenon''} collective behavior} in 
 crowds, only a few numerical settings can attain an ``individualistic'' 
 meaning. 
  \\
@@ -151,7 +156,8 @@ hypothesis in Ref.~\cite{dorso_2019}, but limiting the parameter exploration to
 the sliding friction, disregarding the body force. \\
 
 We now widen the investigation on the parameter settings to include the one 
-associated to the body force. We will focus on the complex interplay between 
+associated to the body force. We will \textcolor{red}{\sout{focus} explore} 
+on the complex interplay between 
 the body force and the sliding friction among pedestrians. Recall that the 
 interplay dynamics is not directly controlled by the numerical setting, but 
 through dimensionless ``numbers'', where the model parameters appear mixed 
