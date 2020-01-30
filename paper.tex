@@ -741,10 +741,28 @@ Where $<>$ means the average taken over time. By this definition we compare the 
 
 \subsection{Dimensionless numbers and comparison with empirical data}
 
+
+In this section, we inspect different values of the dimensionless numbers $\mathcal{K}_c$ and $\mathcal{K}$ and compare the results with the empirical measurements of Ref.~\cite{helbing_2007}. We varied the body force coefficient ($k_c$) and the friction coefficient ($k_t$) to inspect different values of $\mathcal{K}_c$ and $\mathcal{K}$ respectively.\\
+
+The empirical measurements correspond to the fundamental diagram at the entrance of the Jamaraat bridge (see the inset in Fig.~\ref{flow_density_no_body_force}). We aim to reproduce the qualitative behavior of these measurements roughly.\\
+
+Figs. \ref{flow_density} show the flow as a function of the global density (fundamental diagram). \ref{flow_density_no_body_force} corresponds to $\mathcal{K}_c=$ 0 (zero body force \textit{i.e.} $k_n=0$) while Fig.~\ref{flow_density_body_force} corresponds to $\mathcal{K}_c=$68 (which is the value of the original SFM with $k_n$=1.2~E5 ). Each curve correspond to a different friction value, hence different $K_t$ value (see the caption).\\
+
+According to most of the empirical measurements of the fundamental diagram, the flow decreases for high enough values of density because the crowd becomes jammed. Notice that the original friction ($\mathcal{K}=$137) does not produce a reduction of the flow when there is zero body force. Nevertheless, when the body force is included, and we remain the original friction (circles from Fig.~\ref{flow_density_body_force}), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density.\\
+
+When the dimensionless number associated with the friction is $\mathcal{K} = $ 685 
+(the friction is five times the original SFM value), the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$ (black curve of Fig.~\ref{flow_density_no_body_force}). \\
+
+When the dimensionless number associated to the friction is $\mathcal{K}=$1371  (the friction is ten times the original SFM value), in this case, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force).\\
+
+These results suggest that although increasing $\mathcal{K}_c$ produces a reduction in flow, it is necessary to increase $\mathcal{K}$ (for instance, increasing friction $k_t$) to reproduce the reduction in the flow that characterizes the high-density regime. It is still a pending challenge to find the values of the dimensionless numbers that reproduce the qualitative behavior of the fundamental diagram, but this first approach narrows down the search.\\
+
+
+\begin{comment}
 Fig. \ref{flow_density} shows the flow as a function of the global density (fundamental diagram). \ref{flow_density_no_body_force} corresponds to zero body force (\textit{i.e.} $k_n=0$), Fig.~\ref{flow_density_body_force} corresponds to a body force with $k_n$=1.2~E5. Each curve correspond to a different friction value (see the caption).\\
 
 According to most of the empirical measurements, the flow decreases for high enough values of density because the crowd becomes jammed. Notice that the original friction does not produce a reduction of the flow when there is zero body force but when the body force is included (with the original SFM value), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and increases for higher values of density. When the friction is five times the original value, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$. When the friction is increased by a factor of ten, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with body force and without body force). This result suggests that even including the body force, the original SFM requires an increment of the friction in order to reproduce the flow reduction reported in empirical measurements.\\
-
+\end{comment}
 
 \begin{figure}[!htbp]
 \centering
@@ -756,9 +774,6 @@ According to most of the empirical measurements, the flow decreases for high eno
 
 
 To conclude section \ref{results}, we remark that increasing the stiffness produces the opposite results in corridors respect to bottlenecks. The walls in the corridors play a critical role that prevents pedestrians from detaching from each other. This effect has consequences such as increasing the connectivity of the contact network, flattening the velocity profile (thus reducing the strain rate). If the stiffness is high enough, the pedestrians can not push to the pedestrian ahead since the body force repulsion becomes very high. This leads to a"solidification" of the crowd that makes all the pedestrians walk at almost the same velocity. The pedestrians that are in contact with the wall are the ones who determine the velocity of the whole crowd. \\
-
-\section{\label{discussion}Discussion}
-
 
 
 \section{\label{conclusions}Conclusions}
