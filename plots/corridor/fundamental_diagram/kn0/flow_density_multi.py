@@ -82,29 +82,16 @@ speed_ktx10_kn0 = np.divide(flow_ktx10_kn0,density_ktx10_kn0)
 
 fig, ax1 = plt.subplots()
 
-plt.plot(global_density_kn0_kt,flow_kn0_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.errorbar(global_density_kn0_kt,flow_kn0_kt, yerr=std_flow_kn0_kt,color='y')
+plt.plot(global_density_kn0_kt,flow_kn0_kt,'-o',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
+plt.errorbar(global_density_kn0_kt,flow_kn0_kt, yerr=std_flow_kn0_kt,color='b')
 
-plt.plot(global_density_ktx5_kn0,flow_ktx5_kn0,'k-+',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 5 \\times \\kappa_o$') 
-plt.errorbar(global_density_ktx5_kn0,flow_ktx5_kn0, yerr=std_flow_ktx5_kn0,color='k')
+plt.plot(global_density_ktx5_kn0,flow_ktx5_kn0,'-+',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 5 \\times \\kappa_o$') 
+plt.errorbar(global_density_ktx5_kn0,flow_ktx5_kn0, yerr=std_flow_ktx5_kn0,color='orange')
 
-plt.plot(global_density_ktx10_kn0,flow_ktx10_kn0,'g-^',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 10 \\times \\kappa_o$') 
+plt.plot(global_density_ktx10_kn0,flow_ktx10_kn0,'-^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 10 \\times \\kappa_o$') 
 plt.errorbar(global_density_ktx10_kn0,flow_ktx10_kn0, yerr=std_flow_ktx10_kn0,color='g')
 
-#plt.plot(density_kn0_ktx3,flow_kn0_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
-#plt.plot(density_kn0_ktx5,flow_kn0_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
-#plt.plot(density_kn0_ktx7,flow_kn0_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
-#plt.plot(density_kn0_ktx9,flow_kn0_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
-#plt.plot(density_kn0_ktx10,flow_kn0_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
-'''
 
-plt.plot(density_kn0_kt,speed_kn0_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx3,speed_kn0_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx5,speed_kn0_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx7,speed_kn0_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx9,speed_kn0_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
-plt.plot(density_kn0_ktx10,speed_kn0_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
-'''
 pylab.grid(False)
 pylab.xlabel('Density~(p~m$^{-2}$)')
 pylab.ylabel('Flow~(p~m$^{-1}$s$^{-1}$)')
