@@ -115,8 +115,45 @@ pylab.ylim(0.0,6)
 #pylab.xlim(1.0, 10)
 #pylab.yticks(np.arange(3,11,2))
 #pylab.xticks(np.arange(0,1100,200))
-pylab.title("$k_n=$0")
-lgd=plt.legend(numpoints=1,handlelength=0.8) 
-plt.legend(frameon=False,loc='upper left',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
+pylab.title("$\\mathcal{K}_c=$ 0")
+#lgd=plt.legend(numpoints=1,handlelength=0.8) 
+#plt.legend(frameon=False,loc='upper left',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
+
+
+############ Insert plot ############
+
+
+
+data_johansson = np.genfromtxt('Flujo_vs_densidad_Helbing_2007.dat', delimiter = '')
+density_johansson = data_johansson[:,0] 
+flow_johansson = data_johansson[:,1] 
+
+############  PLOT  ############
+
+
+left, bottom, width, height = [0.15, 0.60, 0.28, 0.28]
+ax2 = fig.add_axes([left, bottom, width, height])
+
+ax2.plot(density_johansson,flow_johansson,'*',color='orange',markeredgecolor='orange',markersize=2) 
+fig.patch.set_facecolor('black')
+#pylab.yticks(np.arange(0,1.1,1),size='4.5')
+#pylab.xticks(np.arange(0,1.1,1),size='0.0')
+pylab.xlabel('Density ',size='4.5',labelpad=1)
+pylab.ylabel('Flow  ',size='3.5',labelpad=-6,zorder=1)
+#pylab.ylim(0.3, 1.1)
+#pylab.xlim(0, 1.02)
+#ax2.tick_params(axis='y', pad=-4)
+ax2.set_yticklabels([])
+plt.tick_params(axis='x',which='both',bottom=False,top=False,labelbottom=False) 
+plt.tick_params(axis='y',which='both',bottom=False,top=False,labelbottom=False) 
+
+ax2.xaxis.set_ticks_position('none') 
+ax2.yaxis.set_ticks_position('none') 
+ax2.grid(False)
+plt.text(1.05, -0.1, "0", size=4.5)
+#plt.text(9, -0.1, "10", size=4.5)
+plt.text(0.25, 1.7, "2", size=4.5)
+
+
 pylab.savefig('flow-density_multifric_nobodyforce.png', format='png', dpi=300, bbox_inches='tight')
 pylab.savefig('flow-density_multifric_nobodyforce.eps', format='eps', dpi=300, bbox_inches='tight')
