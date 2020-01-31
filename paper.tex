@@ -752,6 +752,8 @@ Where $<>$ means the average taken over time. By this definition we compare the 
 \end{figure}
 
 
+To conclude section \ref{corridor}, we remark that increasing the stiffness produces the opposite results in corridors respect to bottlenecks. The walls in the corridors play a critical role that prevents pedestrians from detaching from each other. This effect has consequences such as increasing the connectivity of the contact network and flattening the velocity profile (thus reducing the strain rate). If the stiffness is high enough, the pedestrians can not push to the pedestrian ahead since the body force repulsion becomes very high. This leads to a "solidification" of the crowd that makes all the pedestrians walk at almost the same velocity. The pedestrians that are in contact with the wall are the ones who determine the velocity of the whole crowd. \\
+
 \subsection{Dimensionless numbers and comparison with empirical data}
 
 
@@ -761,11 +763,13 @@ The empirical measurements correspond to the fundamental diagram at the entrance
 
 Figs. \ref{flow_density} show the flow as a function of the global density (fundamental diagram). Fig.~\ref{flow_density_no_body_force} corresponds to $\mathcal{K}_c=$ 0 (zero body force \textit{i.e.} $k_n=0$) while Fig.~\ref{flow_density_body_force} corresponds to $\mathcal{K}_c=$68 (which is the value of the original SFM with $k_n$=1.2~E5 ). Each curve correspond to a different friction value, hence different $k_t$ value (see the caption).\\
 
-According to most of the empirical measurements of the fundamental diagram, the flow decreases for high enough values of density because the crowd becomes jammed. Notice that the original friction (corresponding to $\mathcal{K}=$137) does not produce a reduction of the flow when there is zero body force ($\mathcal{K}_c$=0). Nevertheless, when the body force is included, and we remain the original friction (circles from Fig.~\ref{flow_density_body_force}), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and then increases for higher values of density.\\
+According to most of the empirical measurements of the fundamental diagram, the flow decreases for high enough values of density because the crowd becomes jammed. Notice that the original friction (corresponding to $\mathcal{K}=$137) does not produce a reduction of the flow when there is zero body force ($\mathcal{K}_c=$0). Nevertheless, when the body force is included, and we remain the original friction (circles from Fig.~\ref{flow_density_body_force}), the flow reduces from  5 p m$^{-2}$ to 7 p m$^{-2}$ and then increases for higher values of density.\\
 
-When the dimensionless number associated with the friction is $\mathcal{K} = $ 685 (the friction is five times the original SFM value), the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$ (orange curve of Fig.~\ref{flow_density_no_body_force}). \\
+When the dimensionless number associated with the friction is $\mathcal{K} = $ 685, the friction is five times the original SFM value. In this scenario, the flow reduces for densities higher than 5 p m$^{-2}$ in both cases (with body force and without body force). The main qualitative difference is that including the body force produces a subtle increment in the flow for densities higher than 7 p m$^{-2}$ (orange curve from Fig.~\ref{flow_density_no_body_force}). \\
 
 When the dimensionless number associated to the friction is $\mathcal{K}=$1371  (the friction is ten times the original SFM value), in this case, the flow reduces or remains constant when the density is higher than 5 p m$^{-2}$ for both cases (with $\mathcal{K}_c=$ 0 and $\mathcal{K}_c = $ 68).\\
+
+It worth mentioning that the SFM contemplates the possibility of overlapping between pedestrians (unlike the models stated in Refs.~\cite{kabalan_2017,jebrane_2019}). Despite this hard-to-interpret feature, the SFM can reproduce empirical behaviors of collective pedestrian dynamics.\\
 
 These results suggest that although increasing $\mathcal{K}_c$ produces a reduction in the flow, it is necessary to increase $\mathcal{K}$ (for instance, increasing friction $k_t$) to reproduce the reduction in the flow that characterizes the high-density regime. It is still a pending challenge to find the values of the dimensionless numbers that reproduce the qualitative behavior of the fundamental diagram, but this first approach narrows down the search.\\
 
@@ -785,8 +789,6 @@ According to most of the empirical measurements, the flow decreases for high eno
 \end{figure}
 
 
-To conclude section \ref{results}, we remark that increasing the stiffness produces the opposite results in corridors respect to bottlenecks. The walls in the corridors play a critical role that prevents pedestrians from detaching from each other. This effect has consequences such as increasing the connectivity of the contact network, flattening the velocity profile (thus reducing the strain rate). If the stiffness is high enough, the pedestrians can not push to the pedestrian ahead since the body force repulsion becomes very high. This leads to a"solidification" of the crowd that makes all the pedestrians walk at almost the same velocity. The pedestrians that are in contact with the wall are the ones who determine the velocity of the whole crowd. \\
-
 
 \section{\label{conclusions}Conclusions}
 
@@ -797,7 +799,7 @@ In the bottleneck geometry, the evacuation time diminishes (pedestrians move fas
 
 In the corridor geometry, the actual walking speed reduces as pedestrians become stiffer. This is the opposite behavior with respect to the obtained in bottleneck geometry. The difference is explained because although increasing stiffness further separates individuals, they can not detach from each other as much as possible due to the lateral walls (these walls are not relevant in the bottleneck geometry). Thus, when the stiffness increases, the overlap between pedestrians is reduced while the number of contacts (degree) increases. Granular materials can behave like fluid or solids, depending on several conditions. If the stiffness level is low, the entire crowd behaves like a viscous fluid (with a parabolic velocity profile). However, if the stiffness level is high enough, the whole crowd behaves like a crystalline solid with a constant velocity profile which only depends on the friction interaction with the walls.\\
 
-Regarding the parameters of the model, we found out that it is possible to reduce the original SFM parameters to three dimensionless parameters. The original parameters interrelate to each other through the dimensionless ones. Many different settings can produce the same dimensionless parameters. Thus, no univocal relations can be established between the individualistic parameters and collective dynamics.\\
+Regarding the parameters of the model, we found that it is possible to reduce the original SFM parameters to three dimensionless parameters. The original parameters interrelate to each other through the dimensionless ones. Many different settings can produce the same dimensionless parameters. Thus, no univocal relations can be established between the individualistic parameters and collective dynamics. In order to explore the outcomes from different dimensionless numbers, we compared numerical results with empirical measurements. We found good candidates to reproduce the qualitative behavior of empirical measurements in the range and $0 < \mathcal{K}_c < 68$ with $\mathcal{K} = 685$. Nevertheless, this is a first sketch to arrive at a set of dimensionless parameters that may be suitable to reproduce empirical measurements. We encourage further research that seeks to find the values of the dimensionless numbers that can reproduce experimental data.\\
 
 \section*{Acknowledgments}
 This work was supported by the National Scientific and Technical 
