@@ -78,11 +78,10 @@ Pedestrian Dynamics \sep Social Force Model \sep Body Force
 
 \section{\label{introduction}Introduction}
 
-\textcolor{red}{The Social Force Model (SFM) is a pedestrian dynamics model that
-considers three kinds of forces: desired forces, social forces, and physical forces.
+The Social Force Model (SFM) models the crowd dynamics 
+considering three kinds of force: desired forces, social forces, and physical forces.
 In its original version, the SFM, addresses two physical forces as essential: 
-\sout{The Social Force Model (SFM) addresses two physical forces as 
-\textit{essential}:}} the ``body force'' and the ``sliding friction''. Both are 
+ the ``body force'' and the ``sliding friction''. Both are 
 inspired by granular interactions and were claimed to be necessary  
 for attaining the particular effects in panicking crowds \cite{helbing_2000}. 
 The ``sliding friction'' actually proved to be an essential feature of the 
@@ -93,15 +92,14 @@ The existence of a ``body force'' in the context of highly dense crowds (say, 5
 to 10$\,$people/m$^2$) is a commonsense matter \cite{henein_2007,fruin_1993}. 
 Researchers, however, question the numerical setting for this force in 
 the SFM context \cite{lakoba_2005}. As a matter of fact, the usual setting by 
-Helbing prevents the \textcolor{red}{excessive} overlapping among pedestrians, but it is known to 
+Helbing prevents the excessive overlapping among pedestrians, but it is known to 
 accomplish artificially high force levels 
 \cite{helbing_2000,lakoba_2005,langston_2006,lin_2017}. The force estimates 
 from the SFM appear to be remarkably higher with respect to the reported real 
 life data (say, an order of magnitude). The crowd motion simulations, however, 
 present quite realistic results \cite{lakoba_2005,langston_2006,dorso_2017}. 
 The 
-point seems to be that the SFM focuses on the \textcolor{red}{``collective behavior''
- \sout{``incoordination phenomenon''}} due 
+point seems to be that the SFM focuses on the ``collective behavior'' due 
 to clogging, missing the ``individualistic'' perspective  of single pedestrians 
 or very small groups \cite{helbing_2000,henein_2007,narain_2009}.  \\ 
 
@@ -119,15 +117,15 @@ limit the pedestrians acceleration by introducing ``static friction'' between
 the pedestrians and the floor \cite{wang_2019}. This kind of friction, however, 
 reduces the effective willings of the pedestrians.  \\  
 
-\textcolor{red}{A unique (and universal) setting appears not available yet. 
-\sout{A meaningful (individualistic) numerical setting appears not available yet (to 
-our knowledge).}} The reason is that different numerical settings can lead to 
+A unique (and universal) setting appears not available yet to
+our knowledge. 
+ The reason is that different numerical settings can lead to 
 the same crowd dynamics. Actually, only a small set of dimensionless 
 ``numbers'' control the crowd dynamics \cite{dorso_2019}. These are similar to 
 those encountered in other active matter systems (P\'eclet number, etc.)  
 \cite{marchetti_2014}. We may hypothesize that while the dimensionless 
-``numbers'' provide some kind of control on the \textcolor{red}{\sout{
-``incoordination phenomenon''} collective behavior} in 
+``numbers'' provide some kind of control on the 
+collective behavior in 
 crowds, only a few numerical settings can attain an ``individualistic'' 
 meaning. 
  \\
@@ -156,8 +154,8 @@ hypothesis in Ref.~\cite{dorso_2019}, but limiting the parameter exploration to
 the sliding friction, disregarding the body force. \\
 
 We now widen the investigation on the parameter settings to include the one 
-associated to the body force. We will \textcolor{red}{\sout{focus} explore} 
-on the complex interplay between 
+associated to the body force. We will  explore 
+ the complex interplay between 
 the body force and the sliding friction among pedestrians. Recall that the 
 interplay dynamics is not directly controlled by the numerical setting, but 
 through dimensionless ``numbers'', where the model parameters appear mixed 
@@ -173,13 +171,12 @@ three dimensionless numbers that control the crowd dynamics (see Section
 \ref{results}. For the sake of clarity, this Section is 
 separated into two major parts: the bottleneck scenario and the corridor 
 scenario in Sections \ref{bottleneck} and \ref{corridor}, respectively. 
-Section \ref{discussion} opens a detailed discussion raising from of the results 
-in Section \ref{results}. The last Section closes the investigation with our 
-main conclusions.
+Section \ref{conclusions} opens a detailed discussion from results in Section \ref{results}
+and resumes our main conclusions.
 
 \section{\label{experimental}Experimental background}
 
-The complex behavior of pedestrians \textcolor{red}{\sout{feature} features}
+The complex behavior of pedestrians features
  either his (her) feelings and 
 the environmental conditions. The former is expressed, for example, by his 
 (her) moving ``attitude'' (say, self-assuredness). The latter brings out the 
@@ -191,14 +188,14 @@ follows.
 
 \begin{itemize}
 \item[(i)] The walking attitude of a pedestrian may appear somewhat 
- \textcolor{red}{\sout{``assertive''} ``aggressive''} if he (she) reacts actively to unexpected behaviors 
+  ``aggressive'' if he (she) reacts actively to unexpected behaviors 
 \cite{lakoba_2005,helbing_1995}. The smaller the reaction time, the more 
-\textcolor{red}{\sout{assertive or}}  aggressive observed posture. The associated parameter to this 
+ aggressive observed posture. The associated parameter to this 
 behavior is the relaxation or characteristic time $\tau$ 
 \cite{johansson_2009,helbing_2000}. 
 
 \item[(ii)] Despite the reactive attitude $\tau$, the pedestrian addresses a 
-``free'' (undisturbed) walking speed $v_0$. This speed expresses his (her) 
+``free'' (undisturbed) walking speed $v_d$. This speed expresses his (her) 
 motivation or intention to reach a certain destination (as comfortable as 
 possible). Observations commonly associate $0.6\,$m/s, $1\,$m/s or $1.5\,$m/s 
 to relaxed, normal or nervous walking speeds, respectively  
@@ -221,7 +218,7 @@ obstructions) observed in contacting pedestrians.
 \end{itemize}
 
 
-Table~\ref{table_data} shows a few empirical \textcolor{red}{\sout{figures} values}
+Table~\ref{table_data} shows a few empirical values
  for the most common 
 parameters. More data is available throughout the literature (see, for example, 
 Refs.~\cite{hoogendoorn_2007,seyfried_2007,johansson_2007,moussaid_2009,
@@ -249,25 +246,24 @@ c@{\hspace{14mm}}l}
 \hline
 \end{tabular}
 \caption{The experimental data for the pedestrian parameters, as explained in 
-Section~\ref{experimental}. The magnitude $v$ means de pedestrian velocity 
+Section~\ref{experimental}. The magnitude $v$ means the actual pedestrian velocity 
 (m/s). The magnitude $x$ means the compression length (m). The upper row for 
-Ref.~\cite{song_2019} corresponds data acquired in winter and the lower row to 
-datas acquiquired in summer. The asterisk ($^*$) corresponds to reasonable 
+Ref.~\cite{song_2019} corresponds to data acquired in winter and the lower row to 
+data acquired in summer. The asterisk ($^*$) corresponds to reasonable 
 estimates from the authors. }
 \label{table_data}
 \end{table}
 
 A first examination of the figures in Table~\ref{table_data} shows that the 
-choise $\tau\simeq0.6\,$s seems to be a reasonable estimation for the 
+choice $\tau\simeq0.6\,$s seems to be a reasonable estimation for the 
 relaxation time, although this may vary with respect to gender or culture 
 \cite{siddharth_2018}. Additionally, we confirm that normal pedestrians attain 
 desired velocities around $1.3\,$m/s. \\
 
 The reports from Refs.~\cite{seyfried_2007,weidmann_1992} do not include any 
 values for the compressibility $k_n$ since these experiments were carried out 
-under low density conditions. \textcolor{red}{\sout{Notice that the} The} 
-minimum (perceived) step distance 
-is $0.36\,$m \textcolor{red}{according to Ref.}\cite{seyfried_2007}, but the
+under low density conditions.  The minimum (perceived) step distance 
+is $0.36\,$m according to Ref.~\cite{seyfried_2007}, but the
  pedestrians seem to require larger 
 distances when they walk faster. The commonly accepted value $B\simeq 
 0.5\,$m is somewhat valid for walking speeds under $0.5\,$m/s 
@@ -278,11 +274,11 @@ space to move along.     \\
 The reported data from Ref.~\cite{song_2019} correspond to the crowded 
 environment of the Beijing subway. This environment was not suitable for 
 providing information on the step distance $B$, but estimates for the 
-desired speed and the body compresibility could be achieved. The reported 
+desired speed and the body compressibility could be achieved. The reported 
 magnitude $k_n$ assesses either the clothes and the body compressibility. The 
 final value, though, is linearly related to the compression $x$. \\
 
-We measured the maximum attainable forces at the subway in Buenos Aires, 
+We measured the maximum attainable forces during the spring of 2019 at the subway in Buenos Aires, 
 Argentina. Our preliminary results show that pedestrians feel ``uncomfortable'' 
 whenever a body force ranging from $5$ to $20\,$N is applied for at least ten 
 minutes. Short lasting forces (say, less than 4 minutes) may also be perceived 
@@ -291,15 +287,15 @@ forces up to $60\,$N during very short ``hits''. The comparison with the
 fittings provided by Ref.~\cite{song_2019} shows that these magnitudes 
 accomplish densities around 5 people/m$^2$.     \\    
 
-The maximum (realistic) compressions may be computed from the relation 
-$F=k(x)\,x$ and the compressibility $k_n(x)$ reported in Table~\ref{table_data}. 
-An ``uncomfortable'' body force \textcolor{red}{\sout{of $30\,$N}} can address compressions in the 
+The maximum (realistic) compressions may be computed from the hook relation 
+$F(x)=k_n(x)\,x$ and the compressibility $k_n(x)$ reported in Table~\ref{table_data}. 
+An ``uncomfortable'' body force  $10\,$N $-$ $30\,$N can address compressions in the 
 range of $0.030-0.055\,$m. Also, a ``hitting'' force of $60\,$N can address 
 compressions between $0.045$ and $0.065\,$m. Thus, according to 
 Table~\ref{table_data}, we may expect experimental values for $k_n(x)$ up to 
 $1000\,$kg/s$^2$ (for $F=30\,$N), or, up to $1400\,$kg/s$^2$ (for $F=60\,$N). \\
 
-Besides, no realiable values for the sliding friction $\kappa$ appears to be 
+Besides, no reliable values for the sliding friction $\kappa$ appears to be 
 available in the literature (to our knowledge). We may presume, however, that 
 the sliding friction approaches a fraction of the body force. We will come back 
 to this issue in Section~\ref{background}. \\
@@ -325,7 +321,7 @@ forces). The equation of motion for any pedestrian $i$ (of mass $m_i$) reads
 the walls. The three forces $\mathbf{f}_d$, $\mathbf{f}_s$ and $\mathbf{f}_g$ 
 are different in nature. The desire force $\mathbf{f}_d$ represents the 
 acceleration (or deceleration) of the pedestrian due to his (her) own willings. 
-The social force $\mathbf{f}_s$, \textcolor{red}{\sout{intead} instead}, describes the tendency of the 
+The social force $\mathbf{f}_s$, instead, describes the tendency of the 
 pedestrians to stay away from each other. The granular force $\mathbf{f}_g$ 
 stands for either the sliding friction and the compression between 
 pedestrians. \\
@@ -371,7 +367,7 @@ pedestrians $i$ and $j$, and $R_{ij}=R_i+R_j$ is the sum of the pedestrians
 radius. The unit vector $\hat{\mathbf{n}}_{ij}$ points from pedestrian $j$ to 
 pedestrian $i$, meaning a repulsive interaction.\\ 
 
-The net distance \textcolor{red}{(overlap)} $|R_{ij}-r_{ij}|$ scales to the parameter $B$ in the 
+The net distance (overlap) $|R_{ij}-r_{ij}|$ scales to the parameter $B$ in the 
 expression (\ref{eqn_social}). This parameter plays the role of a fall-off 
 length within the model, and thus, it may be somewhat connected to the 
 (perceived) step distance mentioned in Section~\ref{experimental}. The 
@@ -415,8 +411,7 @@ phenomenon. \\
 
 The numerical setting of the parameters may affect the dynamics of the 
 pedestrians. Some settings, however, yield similar collective dynamics.
-\textcolor{red}{\sout{In order to investigate these similarities, we} We}
- introduce unit-less magnitudes 
+We introduce unit-less magnitudes 
 and proceed straightforward as indicated in \ref{appendix1}. We realize from 
 \ref{appendix1} that only three (unit-less) parameters  are the true 
 ``control'' parameters for the collective dynamics. These are $\mathcal{A}$, 
@@ -484,6 +479,23 @@ We confirm from these diagrams that no univocal relations can be established
 between the individual parameters and the collective dynamics (in a crowded 
 environment). The presence of the body force moves the dynamics to a more 
 complex context. We will investigate this context in section~\ref{results}. \\
+
+
+
+\section{\label{hypotheses}Working hypotheses and procedure}
+
+
+\begin{itemize}
+
+\item 1)  Nos enfocamos en estudiar principalmente los efectos del parametro kn. Variamos kn en la mayoria de los resultados, salvo en el diagrama fundamental donde tambien variamos kt.
+
+\item 2)  No usamos anisotropia. Estamos interesados en las situaciones de alta densidad donde suponemos que la anisotropia no juega ningun papel relevante.
+
+\item 3) Las simulaciones numéricas las hacemos con LAMMPS usando módulos creados por nosotros para calcular las fuerzas del modelo de Helbing. 
+
+\item 4) Exploramos situaciones de muy alta densidad (muy alta presion), sabemos que en estas situaciones pueden producirse caidas y desmayos pero en este paper ignoramos esos efectos.
+
+\end{itemize}
 
 
 \section{\label{results}Results}
