@@ -82,29 +82,16 @@ speed_ktx10_kn0 = np.divide(flow_ktx10_kn0,density_ktx10_kn0)
 
 fig, ax1 = plt.subplots()
 
-plt.plot(global_density_kn0_kt,flow_kn0_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.errorbar(global_density_kn0_kt,flow_kn0_kt, yerr=std_flow_kn0_kt,color='y')
+plt.plot(global_density_kn0_kt,flow_kn0_kt,'-o',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
+plt.errorbar(global_density_kn0_kt,flow_kn0_kt, yerr=std_flow_kn0_kt,color='b')
 
-plt.plot(global_density_ktx5_kn0,flow_ktx5_kn0,'k-+',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 5 \\times \\kappa_o$') 
-plt.errorbar(global_density_ktx5_kn0,flow_ktx5_kn0, yerr=std_flow_ktx5_kn0,color='k')
+plt.plot(global_density_ktx5_kn0,flow_ktx5_kn0,'-+',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 5 \\times \\kappa_o$') 
+plt.errorbar(global_density_ktx5_kn0,flow_ktx5_kn0, yerr=std_flow_ktx5_kn0,color='orange')
 
-plt.plot(global_density_ktx10_kn0,flow_ktx10_kn0,'g-^',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 10 \\times \\kappa_o$') 
+plt.plot(global_density_ktx10_kn0,flow_ktx10_kn0,'-^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 10 \\times \\kappa_o$') 
 plt.errorbar(global_density_ktx10_kn0,flow_ktx10_kn0, yerr=std_flow_ktx10_kn0,color='g')
 
-#plt.plot(density_kn0_ktx3,flow_kn0_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
-#plt.plot(density_kn0_ktx5,flow_kn0_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
-#plt.plot(density_kn0_ktx7,flow_kn0_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
-#plt.plot(density_kn0_ktx9,flow_kn0_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
-#plt.plot(density_kn0_ktx10,flow_kn0_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
-'''
 
-plt.plot(density_kn0_kt,speed_kn0_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx3,speed_kn0_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx5,speed_kn0_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx7,speed_kn0_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
-plt.plot(density_kn0_ktx9,speed_kn0_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
-plt.plot(density_kn0_ktx10,speed_kn0_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
-'''
 pylab.grid(False)
 pylab.xlabel('Density~(p~m$^{-2}$)')
 pylab.ylabel('Flow~(p~m$^{-1}$s$^{-1}$)')
@@ -115,8 +102,45 @@ pylab.ylim(0.0,6)
 #pylab.xlim(1.0, 10)
 #pylab.yticks(np.arange(3,11,2))
 #pylab.xticks(np.arange(0,1100,200))
-pylab.title("$k_n=$0")
-lgd=plt.legend(numpoints=1,handlelength=0.8) 
-plt.legend(frameon=False,loc='upper left',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
+pylab.title("$\\mathcal{K}_c=$ 0")
+#lgd=plt.legend(numpoints=1,handlelength=0.8) 
+#plt.legend(frameon=False,loc='upper left',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
+
+
+############ Insert plot ############
+
+
+
+data_johansson = np.genfromtxt('Flujo_vs_densidad_Helbing_2007.dat', delimiter = '')
+density_johansson = data_johansson[:,0] 
+flow_johansson = data_johansson[:,1] 
+
+############  PLOT  ############
+
+
+left, bottom, width, height = [0.15, 0.60, 0.28, 0.28]
+ax2 = fig.add_axes([left, bottom, width, height])
+
+ax2.plot(density_johansson,flow_johansson,'*',color='orange',markeredgecolor='orange',markersize=2) 
+fig.patch.set_facecolor('black')
+#pylab.yticks(np.arange(0,1.1,1),size='4.5')
+#pylab.xticks(np.arange(0,1.1,1),size='0.0')
+pylab.xlabel('Density ',size='4.5',labelpad=1)
+pylab.ylabel('Flow  ',size='3.5',labelpad=-6,zorder=1)
+#pylab.ylim(0.3, 1.1)
+#pylab.xlim(0, 1.02)
+#ax2.tick_params(axis='y', pad=-4)
+ax2.set_yticklabels([])
+plt.tick_params(axis='x',which='both',bottom=False,top=False,labelbottom=False) 
+plt.tick_params(axis='y',which='both',bottom=False,top=False,labelbottom=False) 
+
+ax2.xaxis.set_ticks_position('none') 
+ax2.yaxis.set_ticks_position('none') 
+ax2.grid(False)
+plt.text(1.05, -0.1, "0", size=4.5)
+#plt.text(9, -0.1, "10", size=4.5)
+plt.text(0.25, 1.7, "2", size=4.5)
+
+
 pylab.savefig('flow-density_multifric_nobodyforce.png', format='png', dpi=300, bbox_inches='tight')
 pylab.savefig('flow-density_multifric_nobodyforce.eps', format='eps', dpi=300, bbox_inches='tight')

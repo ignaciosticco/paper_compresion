@@ -87,28 +87,27 @@ speed_ktx10_kn = np.divide(flow_ktx10_kn,density_ktx10_kn)
 
 fig, ax1 = plt.subplots()
 
-plt.plot(global_density_kn_kt,flow_kn_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.errorbar(global_density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(global_density_ktx5_kn,flow_ktx5_kn,'k-+',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 5 \\times \\kappa_o$') 
-plt.errorbar(global_density_ktx5_kn,flow_ktx5_kn, yerr=std_flow_ktx5_kn,color='k')
+plt.plot(global_density_kn_kt,flow_kn_kt,'-o',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 135') 
+plt.errorbar(global_density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='b')
 
-plt.plot(global_density_ktx10_kn,flow_ktx10_kn,'g-^',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 10 \\times \\kappa_o$') 
+plt.plot(global_density_ktx5_kn,flow_ktx5_kn,'-+',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 685') 
+plt.errorbar(global_density_ktx5_kn,flow_ktx5_kn, yerr=std_flow_ktx5_kn,color='orange')
+
+plt.plot(global_density_ktx10_kn,flow_ktx10_kn,'-^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 1371') 
 plt.errorbar(global_density_ktx10_kn,flow_ktx10_kn, yerr=std_flow_ktx10_kn,color='g')
 
-#plt.plot(density_kn_ktx3,flow_kn_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
-#plt.plot(density_kn_ktx5,flow_kn_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
-#plt.plot(density_kn_ktx7,flow_kn_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
-#plt.plot(density_kn_ktx9,flow_kn_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
-#plt.plot(density_kn_ktx10,flow_kn_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
-'''
 
-plt.plot(density_kn_kt,speed_kn_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.plot(density_kn_ktx3,speed_kn_ktx3,'-ro',mew=0.7,markerfacecolor='r',markeredgecolor='k',markersize=4,label='$\\kappa = 3 \\times \\kappa_o$') 
-plt.plot(density_kn_ktx5,speed_kn_ktx5,'k-+',mew=0.7,markersize=4,label='$\\kappa = 5 \\times \\kappa_o$') 
-plt.plot(density_kn_ktx7,speed_kn_ktx7,'b-x',mew=0.7,markersize=4,label='$\\kappa = 7 \\times \\kappa_o$') 
-plt.plot(density_kn_ktx9,speed_kn_ktx9,'c-s',mew=0.7,markerfacecolor='c',markersize=4,markeredgecolor='k',label='$\\kappa = 9 \\times \\kappa_o$ ') 
-plt.plot(density_kn_ktx10,speed_kn_ktx10,'g-^',mew=0.7,markerfacecolor='g',markersize=4,markeredgecolor='k',label='$\\kappa = 10 \\times \\kappa_o$') 
+'''
+plt.plot(global_density_kn_kt,flow_kn_kt,'y-o',mew=0.7,markerfacecolor='y',markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 135') 
+plt.errorbar(global_density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
+
+plt.plot(global_density_ktx5_kn,flow_ktx5_kn,'k-+',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 685') 
+plt.errorbar(global_density_ktx5_kn,flow_ktx5_kn, yerr=std_flow_ktx5_kn,color='k')
+
+plt.plot(global_density_ktx10_kn,flow_ktx10_kn,'g-^',mew=0.7,markerfacecolor='g',markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 1371') 
+plt.errorbar(global_density_ktx10_kn,flow_ktx10_kn, yerr=std_flow_ktx10_kn,color='g')
+
 '''
 pylab.grid(False)
 pylab.xlabel('Density~(p~m$^{-2}$)')
@@ -119,7 +118,7 @@ pylab.ylim(0.0,6)
 #pylab.xlim(1.0, 10)
 #pylab.yticks(np.arange(3,11,2))
 #pylab.xticks(np.arange(0,1100,200))
-pylab.title("$k_n=$1.2~E5")
+pylab.title("$\\mathcal{K}_c=$ 68 ($k_n=$1.2~E5)")
 lgd=plt.legend(numpoints=1,handlelength=0.8) 
 plt.legend(frameon=False,loc='upper left',labelspacing=0.2,borderpad=0.3,handletextpad=0.5,fontsize=7,numpoints=1) 
 pylab.savefig('flow-density_multifric_comp.png', format='png', dpi=300, bbox_inches='tight')
