@@ -76,18 +76,18 @@ std_te = data.groupby(data['vd'])['te'].std().values.tolist()
 ###  PLOT  ###
 
 ### No compression ###
-plt.plot(vd,avg_te,'-cs',mew=0.7,mec='k',markersize=4,label='$k_n =$ 0 ') 
-plt.errorbar(vd,avg_te,std_te,linestyle='none',fmt='none',color='none',ecolor='c') 
+plt.plot(vd,avg_te,'-s',mew=0.7,mec='k',markersize=4,label='$k_n =$ 0 ') 
+plt.errorbar(vd,avg_te,std_te,linestyle='none',fmt='none',color='b',ecolor='#1f77b4') 
 
 ### With compression ###
-plt.plot(vd_kcomp_E4,avg_te_kcomp_E4,'-y^',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E4 ') 
-plt.errorbar(vd_kcomp_E4,avg_te_kcomp_E4,std_te_kcomp_E4,linestyle='none',fmt='none',color='none',ecolor='y') 
+plt.plot(vd_kcomp_E4,avg_te_kcomp_E4,'-^',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E4 ') 
+plt.errorbar(vd_kcomp_E4,avg_te_kcomp_E4,std_te_kcomp_E4,linestyle='none',fmt='none',color='orange',ecolor='#ff7f0e') 
 
-plt.plot(vd_6E4,avg_te_6E4,'-rv',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E4') 
-plt.errorbar(vd_6E4,avg_te_6E4,std_te_6E4,linestyle='none',fmt='none',color='none',ecolor='r') 
+plt.plot(vd_6E4,avg_te_6E4,'-v',color='firebrick',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E4') 
+plt.errorbar(vd_6E4,avg_te_6E4,std_te_6E4,linestyle='none',fmt='none',color='firebrick',ecolor='firebrick') 
 
-plt.plot(vd_kcomp_E5,avg_te_kcomp_E5,'-bx',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E5') 
-plt.errorbar(vd_kcomp_E5,avg_te_kcomp_E5,std_te_kcomp_E5,linestyle='none',fmt='none',color='none',ecolor='b') 
+plt.plot(vd_kcomp_E5,avg_te_kcomp_E5,'-x',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E5') 
+plt.errorbar(vd_kcomp_E5,avg_te_kcomp_E5,std_te_kcomp_E5,linestyle='none',fmt='none',color='none',ecolor='g') 
 
 plt.plot(vd_kE6,avg_te_kE6,'-ko',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E6') 
 plt.errorbar(vd_kE6,avg_te_kE6,std_te_kE6,linestyle='none',fmt='none',color='none',ecolor='k') 
