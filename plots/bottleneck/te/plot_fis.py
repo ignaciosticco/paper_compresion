@@ -42,7 +42,7 @@ pylab.rcParams.update(params)
 ### DATA ###
 
 
-data_kcomp_E4 = pd.read_csv("tevsvd_N225_k12000.txt", header=None,delimiter=' ') 
+data_kcomp_E4 = pd.read_csv("tevsvd_N225_k26200.txt", header=None,delimiter=' ') 
 data_kcomp_E4.columns=['vd','iter','te','N_quedaron','nan']
 vd_kcomp_E4 = list(data_kcomp_E4.vd.unique())
 avg_te_kcomp_E4 = data_kcomp_E4.groupby(data_kcomp_E4['vd'])['te'].mean().values.tolist()
@@ -80,7 +80,7 @@ plt.plot(vd,avg_te,'-s',mew=0.7,mec='k',markersize=4,label='$k_n =$ 0 ')
 plt.errorbar(vd,avg_te,std_te,linestyle='none',fmt='none',color='b',ecolor='#1f77b4') 
 
 ### With compression ###
-plt.plot(vd_kcomp_E4,avg_te_kcomp_E4,'-^',mew=0.7,mec='k',markersize=4,label='$k_n =$ 1.2 E4 ') 
+plt.plot(vd_kcomp_E4,avg_te_kcomp_E4,'-^',mew=0.7,mec='k',markersize=4,label='$k_n =$ 2.62 E4 ') 
 plt.errorbar(vd_kcomp_E4,avg_te_kcomp_E4,std_te_kcomp_E4,linestyle='none',fmt='none',color='orange',ecolor='#ff7f0e') 
 
 plt.plot(vd_6E4,avg_te_6E4,'-v',color='firebrick',mew=0.7,mec='k',markersize=4,label='$k_n =$ 6 E4') 
