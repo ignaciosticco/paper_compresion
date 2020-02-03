@@ -58,9 +58,9 @@ std_vx_vd8 = data_vd8["std vx"].tolist()
 ###  PLOT  ###
 fig, ax1 = plt.subplots()
 
-plt.plot(k_vd2,mean_vx_vd2,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$v_d=2$~m s$^{-1}$') 
-plt.plot(k_vd4,mean_vx_vd4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$v_d=4$~m s$^{-1}$') 
-plt.plot(k_vd6,mean_vx_vd6,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$v_d=6$~m s$^{-1}$') 
+plt.plot(k_vd2,mean_vx_vd2,'-s',color='#1f77b4',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$v_d=2$~m s$^{-1}$') 
+plt.plot(k_vd4,mean_vx_vd4,'-^',color = '#ff7f0e',mew=0.7,markeredgecolor='k',markersize=5,zorder=3,label='$v_d=4$~m s$^{-1}$') 
+plt.plot(k_vd6,mean_vx_vd6,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$v_d=6$~m s$^{-1}$') 
 #plt.plot(k_vd8,mean_vx_vd8,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$v_d=8$~m s$^{-1}$') 
 #plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E6') 
 

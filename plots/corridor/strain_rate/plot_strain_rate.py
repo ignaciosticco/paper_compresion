@@ -50,7 +50,7 @@ def main():
      list_k = [0,12000,120000,1200000]
      list_d = [6,7,8]
      list_symbol = ['-o','-v','-^']
-     list_color = ['b','g','r']
+     list_color = ['#1f77b4','#ff7f0e','g']
      y_borde = 0.5
      y_centro = 10.5
      plot_name = 'strain_rate_vs_kn'
@@ -74,7 +74,7 @@ def main():
 def plot_strainrate_vs_k(plot_name,list_k,strain_rate,error_strain_rate,d,symbol,color):
 
      plt.errorbar(list_k,strain_rate,error_strain_rate,color=color, fmt='none')     
-     plt.plot(list_k,strain_rate,symbol,color=color,mec='k',mew=0.8,linewidth = '1',markersize=4,label='$\\rho=${}'.format(d))     
+     plt.plot(list_k,strain_rate,symbol,color=color,mec='k',mew=0.8,linewidth = '1',markersize=5,label='$\\rho=${}'.format(d))     
      pylab.grid(False)
      pylab.xlabel('$k_n$')
      pylab.ylabel('Strain rate~(1/s)')

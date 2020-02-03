@@ -58,10 +58,10 @@ std_degree_knE6 = data_knE6["list_std_degree"].tolist()
 ###  PLOT  ###
 fig, ax1 = plt.subplots()
 
-plt.plot(vd_kn0,mean_degree_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=0$') 
-plt.plot(vd_knE4,mean_degree_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$ E4') 
-plt.plot(vd_kn,mean_degree_kn,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$ E5') 
-plt.plot(vd_knE6,mean_degree_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=3,zorder=3,label='$k=1.2$ E6') 
+plt.plot(vd_kn0,mean_degree_kn0,'-s',color='#1f77b4',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=0$') 
+plt.plot(vd_knE4,mean_degree_knE4,'-^',color = '#ff7f0e',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$ E4') 
+plt.plot(vd_kn,mean_degree_kn,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$ E5') 
+plt.plot(vd_knE6,mean_degree_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=3,zorder=3,label='$k_n=1.2$ E6') 
 
 pylab.grid(False)
 pylab.xlabel('density~(p m$^{-2})$')

@@ -58,10 +58,10 @@ std_overlap_knE6 = data_knE6["list_std_overlap"].tolist()
 ###  PLOT  ###
 fig, ax1 = plt.subplots()
 
-plt.plot(dens_kn0,mean_overlap_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=0$') 
-plt.plot(dens_knE4,mean_overlap_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$ E4') 
-plt.plot(dens_kn,mean_overlap_kn,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$ E5') 
-plt.plot(dens_knE6,mean_overlap_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=3,zorder=3,label='$k=1.2$ E6') 
+plt.plot(dens_kn0,mean_overlap_kn0,'-s',color='#1f77b4',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=0$') 
+plt.plot(dens_knE4,mean_overlap_knE4,'-^',color = '#ff7f0e',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$ E4') 
+plt.plot(dens_kn,mean_overlap_kn,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$ E5') 
+plt.plot(dens_knE6,mean_overlap_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=3,zorder=3,label='$k_n=1.2$ E6') 
 
 
 pylab.grid(False)

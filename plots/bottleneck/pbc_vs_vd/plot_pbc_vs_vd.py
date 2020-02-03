@@ -43,7 +43,7 @@ data_kn0 = pd.read_csv("vd_pbc_kn0.txt",sep=" ")
 vd_kn0 = data_kn0.iloc[:,0]
 pbc_kn0 =  data_kn0.iloc[:,1]
 
-data_knE4 = pd.read_csv("vd_pbc_kn12000.txt",sep=" ")
+data_knE4 = pd.read_csv("vd_pbc_kn26200.txt",sep=" ")
 vd_knE4 = data_knE4.iloc[:,0]
 pbc_knE4 =  data_knE4.iloc[:,1]
 
@@ -61,12 +61,12 @@ pbc_knE6 =  data_knE6.iloc[:,1]
 
 fig, ax1 = plt.subplots()
 
-plt.plot(vd_kn0,pbc_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=$0') 
+plt.plot(vd_kn0,pbc_kn0,'-s',color='#1f77b4',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=$0') 
 
 
-plt.plot(vd_knE4,pbc_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k=1.2$~E4') 
+plt.plot(vd_knE4,pbc_knE4,'-^',color = '#ff7f0e',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=2.6$~E4') 
 
-plt.plot(vd_knE5,pbc_knE5,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E5') 
+plt.plot(vd_knE5,pbc_knE5,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E5') 
 
 
 plt.plot(vd_knE6,pbc_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E6') 

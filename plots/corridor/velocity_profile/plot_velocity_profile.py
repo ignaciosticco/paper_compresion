@@ -41,13 +41,13 @@ def main():
 
      file_name = 'vx_profile_kn0.txt'
      simbol ='-s'
-     color = 'b'
+     color = '#1f77b4'
      label = "$k_n=$~0"
      plot_triangles(file_name,simbol,color,label)
 
      file_name = 'vx_profile_kn1.2E5.txt' 
      simbol ='-x'
-     color = 'orange'
+     color = 'g'
      label = "$k_n=1.2$~E5"
      plot_triangles(file_name,simbol,color,label)
 
