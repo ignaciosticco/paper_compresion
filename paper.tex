@@ -487,22 +487,97 @@ complex context. We will investigate this context in section~\ref{results}. \\
 
 
 
-\section{\label{hypotheses}Working hypotheses and procedure}
+\section{\label{hypotheses}Working hypotheses and procedures}
 
+
+\subsection{Working hypotheses}
+
+Our working hypotheses are similar to those mentioned in 
+Ref.~\cite{dorso_2019}, 
+although the presence of the body force opens inquiries about the proper 
+exploration of the parameter space. To be precise
 
 \begin{itemize}
+ \item[(a)] The ``faster-is-slower'' (or the ``faster-is-faster'') phenomenon 
+occurs when varying the values of $v_d$ (see Section~\ref{bottleneck}). This is 
+equivalent to vary simultaneously $\mathcal{A}$ and $\mathcal{K}_c$ by the same 
+amount in the (unit-less) parameter space (see Section~\ref{parameters}). We 
+may visualize this sampling procedure as moving along a straight line in the 
+space $(\mathcal{A},\mathcal{K},\mathcal{K}_c)$. Further variations of 
+$k_n$ turns the sample points out of this line, but on the plane of constant
+$\mathcal{K}_c$. We will step up $k_n$ by several orders of magnitude in order 
+to get the big picture of this surface. 
 
-\item 1)  Nos enfocamos en estudiar principalmente los efectos del parametro kn. Variamos kn en la mayoria de los resultados, salvo en el diagrama fundamental donde tambien variamos kt.
+\item[(b)] We will consider the parameter setting in Ref.~\cite{helbing_2000} 
+as a starting point for exploring the parameter space. The reason for this is 
+that a complete set of experimental parameters is still not available (to our 
+konwledge). We are aware, though, of the drawbacks for this choise, say, the 
+unrealistic meanings for the length $B$ and the compressibility $k_n$ (see 
+Section~\ref{experimental}). But these are irrelevant in the context of the 
+(unit-less) parameter space and the corresponding collective dynamics (see 
+Section~\ref{introduction}). 
 
-\item 2)  No usamos anisotropia. Estamos interesados en las situaciones de alta densidad donde suponemos que la anisotropia no juega ningun papel relevante.
-
-\item 3) Las simulaciones numéricas las hacemos con LAMMPS usando módulos creados por nosotros para calcular las fuerzas del modelo de Helbing. 
-
-\item 4) Exploramos situaciones de muy alta densidad (muy alta presion), sabemos que en estas situaciones pueden producirse caidas y desmayos pero en este paper ignoramos esos efectos.
-
-\item 5) No contemplamos los efectos de la turbulencia. Solo nos interesan los comportamientos macroscopicos. Por eso buscamos reproducir comportamientos macroscopicos con el modelo mas simple posible.
+\item[(c)] We will explore crowd densities allowing body compressions up to 
+$0.1\,$m. This corresponds to remarkably high densities, since our own 
+(real-life) estimates do not surpass $0.065\,$m (see 
+Section~\ref{experimental}). Therefore, the extremely high density 
+scenarios (say, above $0.065\,$m) will be considered for the purpose of a 
+tendency, but not as a common real-life situation. No casualties due to high 
+pressures will be further considered. 
 
 \end{itemize}
+
+We stress the fact that our concern is placed on the collective dynamics of 
+crowded environments. We will work on the hypothesis that any ``reasonable'' 
+parameter set should reproduce the collective behavior (say, the slowing down 
+in the fundamental diagram; see Section~\ref{corridor}). We will not attempt to 
+optimize parameters from other objective functions. \\
+
+We will further sustain the hypothesis of soft matter in the context of crowded 
+environments. The body compression and the sliding friction parameters are 
+supposed to be connected in some way under this hypothesis. However, we will 
+not introduce any direct link between $\mathcal{K}$ and $\mathcal{K}_c$. We 
+will investigate the interplay between both in Section~\ref{corridor}. 
+\\
+
+In order to keep the model as simple as possible, we will only consider 
+isothropic pedestrians, since anisothropy does not play a relevant role at high 
+densities. \\ 
+
+
+\subsection{Procedures} 
+
+The SFM was implemented on the LAMMPS simulation software \cite{plimpton}. 
+Additional modules for LAMMPS were also written in C++ in order to expand the 
+software capabilities. All these were able to run in a high performance 
+environment (HPC). \\
+
+
+The implemented SFM parameters were the same as those in 
+Ref.~\cite{helbing_2000} (at the begining of the exploratory procedure only). 
+But the pedestrian's mass and radius were set to the more realistic values of 
+$70\,$kg and $0.2\,$m, respectively. The force interaccions between 
+pedestrians were limited, however, to a cut-off distance of $0.88\,$m for 
+attaining a \textit{privacy sphere} from first neighbors only. The desired 
+velcity was always set to $1\,$m/s in the corridor situation. Besides, the 
+explored values of $v_d$ for the bottleneck scenario ranged from $1\,$m/s to the 
+extremely anxious situation of $10\,$m/s. \\
+
+
+The Eq.~(\ref{eqn_motion}) was numerically integrated by means of the velocity 
+Verlet algorithm, with a timestep of $10^{-4}$ seconds. The pedestrians 
+positions and velocities were recorded every $0.05\,$sec, but post-processing 
+computing was done over samples acquired every $5\,$sec., in order to avoid 
+data correlations. Those pedestrians leaving the simulations box were 
+re-introduced into the box, on the opposite side (periodic boundary 
+conditions). We only ommitted this mechamism when computing the evacuation time 
+for the bottleneck geometry. \\ 
+
+
+The post-processing computing was assisted by Python functions. The NetworkX 
+package was used among others.   \\
+
+
 
 
 \section{\label{results}Results}
