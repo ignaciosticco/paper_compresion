@@ -224,5 +224,9 @@ Zhang, XL and Weng, WG and Yuan, HY and Chen, JG
 \newblock  Empirical study of a unidirectional dense crowd during a real mass event
 \newblock {\em  Physica A: Statistical Mechanics and its Applications}, 392:2781--2791, 2013.
 
+\bibitem{plimpton1993fast}
+Plimpton, Steve
+\newblock Fast parallel algorithms for short-range molecular dynamics
+\newblock {\em  Sandia National Labs},1993
 
 \end{thebibliography}
