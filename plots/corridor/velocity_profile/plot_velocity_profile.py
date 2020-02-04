@@ -41,13 +41,13 @@ def main():
 
      file_name = 'vx_profile_kn0.txt'
      simbol ='-s'
-     color = 'c'
+     color = '#1f77b4'
      label = "$k_n=$~0"
      plot_triangles(file_name,simbol,color,label)
 
      file_name = 'vx_profile_kn1.2E5.txt' 
      simbol ='-x'
-     color = 'b'
+     color = 'g'
      label = "$k_n=1.2$~E5"
      plot_triangles(file_name,simbol,color,label)
 
@@ -70,8 +70,8 @@ def plot_triangles(file_name,simbol,color,label):
      vx = df['mean vx'].tolist()
      std_vx = df['std vx'].tolist()
 
-     plt.errorbar(y,vx,std_vx,color=color)     
      plt.plot(y,vx,simbol,color=color,mec='k',mew=0.8,linewidth = '1',markersize=4,label=label)     
+     plt.errorbar(y,vx,std_vx,color=color,zorder =1)     
      pylab.grid(False)
      pylab.xlabel('y~(m)')
      pylab.ylabel('$v_x$~(m/s)')

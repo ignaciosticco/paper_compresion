@@ -89,7 +89,7 @@ fig, ax1 = plt.subplots()
 
 
 plt.plot(global_density_kn_kt,flow_kn_kt,'-o',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 135') 
-plt.errorbar(global_density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='b')
+plt.errorbar(global_density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='#1f77b4')
 
 plt.plot(global_density_ktx5_kn,flow_ktx5_kn,'-+',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\mathcal{K}=$ 685') 
 plt.errorbar(global_density_ktx5_kn,flow_ktx5_kn, yerr=std_flow_ktx5_kn,color='orange')

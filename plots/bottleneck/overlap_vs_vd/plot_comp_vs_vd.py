@@ -44,7 +44,7 @@ vd_kn0 = data_kn0["vd"].tolist()
 mean_comp_kn0 = data_kn0["list_mean_overlap"].tolist()
 std_comp_kn0 = data_kn0["list_std_overlap"].tolist()
 
-data_knE4 = pd.read_csv("overlap_vs_vd_kn1.2E4.txt",sep="\t")
+data_knE4 = pd.read_csv("overlap_vs_vd_kn26200.txt",sep="\t")
 vd_knE4 = data_knE4["vd"].tolist()
 mean_comp_knE4 = data_knE4["list_mean_overlap"].tolist()
 std_comp_knE4 = data_knE4["list_std_overlap"].tolist()
@@ -70,16 +70,16 @@ std_comp_knE6 = data_knE6["list_std_overlap"].tolist()
 
 fig, ax1 = plt.subplots()
 
-plt.plot(vd_kn0,mean_comp_kn0,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=0$') 
+plt.plot(vd_kn0,mean_comp_kn0,'-s',color='#1f77b4',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=0$') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(vd_knE4,mean_comp_knE4,'-y^',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E4') 
+plt.plot(vd_knE4,mean_comp_knE4,'-^',color = '#ff7f0e',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=2.6$~E4') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(vd_knx5,mean_comp_knx5,'-rv',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=6$~E4') 
+plt.plot(vd_knx5,mean_comp_knx5,'-v',color='firebrick',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=6$~E4') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
-plt.plot(vd_knE5,mean_comp_knE5,'-bx',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E5') 
+plt.plot(vd_knE5,mean_comp_knE5,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E5') 
 #plt.errorbar(density_kn_kt,flow_kn_kt, yerr=std_flow_kn_kt,color='y')
 
 plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$k_n=1.2$~E6') 

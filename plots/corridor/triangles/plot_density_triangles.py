@@ -41,19 +41,19 @@ def main():
 
      file_name = 'network_data_corridor_avgt_kn0.txt'
      simbol ='-s'
-     color = 'c'
+     color = '#1f77b4'
      label = "$k_n=$~0"
      plot_triangles(file_name,simbol,color,label)
 
      file_name= 'network_data_corridor_avgt_kn1.2E4.txt' 
      simbol ='-^'
-     color = 'y'
+     color = '#ff7f0e'
      label = "$k_n=1.2$~E4"
      plot_triangles(file_name,simbol,color,label)
 
      file_name = 'network_data_corridor_avgt_kn1.2E5.txt' 
      simbol ='-x'
-     color = 'b'
+     color = 'g'
      label = "$k_n=1.2$~E5"
      plot_triangles(file_name,simbol,color,label)
 
@@ -79,6 +79,7 @@ def plot_triangles(file_name,simbol,color,label):
      triangles = df['6.triangles per node'].tolist()
      triangles_std = df['7.std triangles per node'].tolist()
      plt.plot(global_density,triangles,simbol,color=color,mec='k',mew=0.8,linewidth = '1',markersize=4,label=label)     
+     plt.hlines(6, 4, 10, colors='k', linestyles='dashed',)
      pylab.grid(False)
      pylab.xlabel('Density~(p m$^{-2}$)')
      pylab.ylabel('Triangles per node')

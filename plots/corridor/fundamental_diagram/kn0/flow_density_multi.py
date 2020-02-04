@@ -83,7 +83,7 @@ speed_ktx10_kn0 = np.divide(flow_ktx10_kn0,density_ktx10_kn0)
 fig, ax1 = plt.subplots()
 
 plt.plot(global_density_kn0_kt,flow_kn0_kt,'-o',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 1 \\times \\kappa_o$') 
-plt.errorbar(global_density_kn0_kt,flow_kn0_kt, yerr=std_flow_kn0_kt,color='b')
+plt.errorbar(global_density_kn0_kt,flow_kn0_kt, yerr=std_flow_kn0_kt,color='#1f77b4')
 
 plt.plot(global_density_ktx5_kn0,flow_ktx5_kn0,'-+',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$\\kappa = 5 \\times \\kappa_o$') 
 plt.errorbar(global_density_ktx5_kn0,flow_ktx5_kn0, yerr=std_flow_ktx5_kn0,color='orange')
