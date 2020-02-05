@@ -74,7 +74,7 @@ plt.plot(vd_knE6,pbc_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=
 
 pylab.grid(False)
 pylab.xlabel('$v_d$~(m~s$^{-1})$')
-pylab.ylabel('Blocking cluster existence probability',fontsize='6')
+pylab.ylabel('Blocking cluster probability',fontsize='6')
 #pylab.legend()
 #plt.ylim(-0.001,0.1)
 #pylab.xlim(1.0, 10)

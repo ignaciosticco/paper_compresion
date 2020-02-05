@@ -67,7 +67,7 @@ plt.plot(k_d8,mean_vx_d8,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize
 
 pylab.grid(False)
 pylab.xlabel('$k_n$')
-pylab.ylabel('$<v_x> $')
+pylab.ylabel('$\\langle v_x \\rangle $')
 plt.xscale('symlog')
 plt.title("Corridor")
 lgd=plt.legend(numpoints=1,handlelength=0.8) 

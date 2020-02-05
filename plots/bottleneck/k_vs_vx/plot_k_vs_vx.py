@@ -66,7 +66,7 @@ plt.plot(k_vd6,mean_vx_vd6,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersi
 
 pylab.grid(False)
 pylab.xlabel('$k_n$')
-pylab.ylabel('$<v_x> $')
+pylab.ylabel('$\\langle v_x \\rangle $')
 plt.xscale('symlog')
 plt.title("Bottleneck")
 lgd=plt.legend(numpoints=1,handlelength=0.8) 
