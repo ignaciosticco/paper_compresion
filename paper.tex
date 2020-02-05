@@ -568,7 +568,7 @@ extremely anxious situation of $10\,$m/s. \\
 The Eq.~(\ref{eqn_motion}) was numerically integrated by means of the velocity 
 Verlet algorithm, with a timestep of $10^{-4}$ seconds. The pedestrians 
 positions and velocities were recorded every $0.05\,$sec, but post-processing 
-computing was done over samples acquired every $5\,$sec., in order to avoid 
+computing was done over samples acquired at least every $2\,$sec., in order to avoid 
 data correlations. Those pedestrians leaving the simulations box were 
 re-introduced into the box, on the opposite side (periodic boundary 
 conditions). We only ommitted this mechamism when computing the evacuation time 
@@ -587,7 +587,7 @@ package was used among others.   \\
 
 
 We present in this section the results corresponding to the bottleneck geometry. 
-We show the consequences of modifying the body force coefficient $k_n$ in the 
+We show the consequences of modifying the body force coefficient $k_n$ on the 
 evacuation dynamics. Recall that this coefficient is associated 
 to the compression of the human body. \\
 
@@ -604,7 +604,7 @@ $2\,$m/s$<v_d<10\,$m/s.\\
 {./vd_vs_te_N225.eps}
 \caption{\label{vd_vs_te}Mean evacuation time (s) vs. the pedestrian’s desired  
 velocity (m/s) for a bottleneck. The room was 20 m x 20 m size. The door was 
-0.92 m width. Mean values were computed from 10 evacuation processes. 225 
+0.92 m width (two pedestrians' width). Mean values were computed from 10 evacuation processes. 225 
 pedestrians were initially placed in a square lattice with a random initial 
 velocity. Each process was finished when 158 pedestrians left the room. The 
 different symbols indicate the $k_n$ value corresponding to the body force (see 
@@ -614,79 +614,85 @@ Ref.~\cite{melvin1988aatd}, squares correspond
 to zero body force and circles correspond to an extreme value of stiffness (one 
 order of magnitude higher than the original SFM). The 
  down triangles correspond to an intermediate value between the empirical value 
-presented in Ref.~\cite{melvin1988aatd} and the chosen by Helbing in 
+presented in Ref.~\cite{melvin1988aatd} and the one provided by Helbing in 
 Ref.~\cite{helbing_2000} }
 \end{figure}
 
-Two behavioral patterns can be seen in Fig.~\ref{vd_vs_te}. 
-The region in which the slope is positive means that the 
+Three behavioral patterns can be distinguished in Fig.~\ref{vd_vs_te}. 
+Each pattern can accomplish a positive slope, a negative slope
+or both. The interval in which the slope is positive means that the 
 harder the pedestrians try to get out (higher $v_d$), the 
 longer it takes them to evacuate. This is the Faster-is-slower 
-(FIS) regime. Conversely, the region in which the slope is 
+(FIS) regime. Conversely, the interval in which the slope is 
 negative  corresponds to a Faster-is-Faster (FIF) regime (the 
-harder they try, the quicker they leave). Fig.~\ref{vd_vs_te} shows a change in 
-in the behavior for desired velocities $v_d>1.2\,$m/s. The 
-evacuation time is of type FIS+FIF for compression coefficients below 
-$k=1.2\,$E5. This means that ``soft'' individuals are required to attain this 
-behavioral change.  Notice that higher values of $k_n$ allow 
-only FIS or FIF behaviors. For the highest explored value $k_n=1.2\,$E6, no 
+harder they try, the quicker they leave).\\
+
+Fig.~\ref{vd_vs_te}  shows either FIS or FIF, and a FIS+FIF pattern
+for desired velocities $v_d>1.2\,$m/s. The 
+evacuation time attains a FIS+FIF pattern for compression coefficients below 
+$k=1.2\,$E5. This means that ``soft'' individuals can attain this 
+behavioral pattern.  Notice that higher values of $k_n$ allow 
+only FIS or FIF patterns. For the highest explored value $k_n=1.2\,$E6, no 
 FIS can be seen at all. Besides, the evacuation pattern for $k_n = 0$ and $k_n 
-= 1.2\,$E4 are very similar since the body force is comparable to the social 
+= 1.2\,$E4 are very similar since the body force intensity is of the same order
+or less than the social 
 force for these stiffness values. \\
 
-Despite the presence of the FIS or FIF phenomenon, the evacuation time at a 
-fixed value of $v_d$ decreases for increasing values of $k_n$. This means that 
-stiffer pedestrians evacuate faster than soft pedestrians. To investigate this 
-issue, we computed the mean velocity of the whole crowd as a function of the 
-stiffens $k_n$. Fig.~\ref{kn_vs_vx_bottleneck} shows the mean velocity in the 
-x-direction as a function of the stiffness $k_n$ for three different desired 
+Despite the presence of the FIS or FIF pattern, the evacuation time at a 
+fixed value of $v_d$ decreases for increasing values of $k_n$ (whiting the examined interval). 
+This means that stiffer pedestrians evacuate faster than soft pedestrians. 
+To further investigate this 
+phenomenon, we computed the mean velocity of the whole crowd as a function of the 
+stiffness $k_n$. Fig.~\ref{kn_vs_vx_bottleneck} shows the actual mean velocity in the 
+$x-$direction as a function of the stiffness $k_n$ for three different desired 
 velocities. In all cases, the velocity increases with the stiffness. From 
-$k_n=0$ to $k_n=$1.2~E4 the increment of velocity is not as significative as it 
+$k_n=0$ to $k_n=1.2\,$E4 the increment of velocity is not as significative as it 
 is for higher $k_n$. \\
 
 
 \begin{figure}[!htbp]
 \centering
     \subfloat[]{\includegraphics[width=0.7\columnwidth]{./kn_vs_vx_bottleneck.eps}}\\
-\caption[width=0.47\columnwidth]{Mean velocity in the x-direction as a function 
+\caption[width=0.47\columnwidth]{Mean velocity in the $x-$direction as a function 
 of the stiffness level $k_n$ for different desired velocities (see label). The 
 data corresponds to a bottleneck with periodic boundary conditions (re-injecting 
-pedestrians). The average was taken every two seconds once the crowd reaches the 
+pedestrians). The average was taken every five seconds once the crowd reaches the 
 stationary state ($t=$20~s) until the end of the simulation ($t=$110~s). }
 \label{kn_vs_vx_bottleneck}
 \end{figure}
 
 
-The presence of a FIF phenomenon only for soft individuals opens many questions 
+The presence of the FIF phenomenon for only ``soft'' individuals opens many questions 
 on the microscopic dynamics of pedestrians. We may presume that contacts 
 between pedestrians are quite different for soft individuals than for stiff 
-individuals. To study the dynamics of the contact, regardless of the compression 
-effects, we assimilate the pedestrians as nodes and the whole crowd as a 
-network. We set a link between any two individuals if both are in physical 
-contact (\textit{i.e.} $r_{ij} \leq R{ij}$).\\
+individuals. Thus, we proceed to study the dynamics of contacting pedestrians, regardless of the compression 
+effects. We will assimilate the pedestrians as nodes and the whole crowd as a 
+network. We will link any two individuals whenever they get in physical 
+contact (\textit{i.e.} $r_{ij} \leq R_{ij}$).\\
 
 Fig.~\ref{degree_vd} shows the mean degree of the contact network as a function  
 of the desired velocity. The degree of a node is defined as the number of links 
 that connect this node to any other node. This means, the number of pedestrians 
 that are in physical contact with a given pedestrian. The mean degree is the 
 average of the degree over all the nodes (pedestrians) and over the whole 
-sampled time. We report mean values after the system has reached the stationary 
-state, that is after a well-formed bulk has been established.\\
+sampled interval. We computed mean values only after the system reached the stationary 
+state, that is, after a well-formed bulk has been established.\\
 
-Increasing $v_d$ increases the mean degree, as expected. This occurs because 
-increasing $v_d$ produces higher densities that force individuals to touch each 
+Notice that the mean degree increases as $v_d$ increases, as expected. This expresses the fact that
+higher $v_d$ values accomplish higher densities, enforcing individuals to touch each 
 other. But surprisingly, for a given $v_d$, the mean degree reduces as the $k_n$ 
 value increases. A noticeable decrease in the mean degree can be seen for the 
-highest explored value of $k_n$. We may expect a significant change in the 
-sliding friction due to this fact.\\
+highest explored value of $k_n$. This was not expected and opens the question on how would
+this affect the sliding friction among pedestrians.\\
 
 A more detailed insight into the contact dynamics can be acquired from 
 Fig.~\ref{overlap_vd}. The overlap between individuals is shown as a function of 
-$v_d$. Recall from section \ref{sfm} that the overlap is defined as 
+$v_d$. Recall from Section \ref{sfm} that the overlap is defined as 
 $R_{ij}-r_{ij}$ where $R_{ij}$, is the sum of radius of particle $i$ and 
 particle $j$ and $r_{ij}$  is the distance between both particles. Except for 
 very low desired velocities (say, $v_d<2\,$m/s), we can see that the mean 
-overlap is an increasing function of $v_d$ (for the studied $k_n$ values).\\
+overlap is an increasing function of $v_d$ (withing the studied
+range of $v_d$ and $k_n$).\\
 
 % Agregar valor de kappa en todos los captions. 
 
@@ -694,37 +700,39 @@ overlap is an increasing function of $v_d$ (for the studied $k_n$ values).\\
 \centering
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./degree_vs_vd_multi_kn.eps}\label{degree_vd}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./overlap_vs_vd_multi_kn.eps}\label{overlap_vd}}\\
-\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k_n$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every two seconds once the crowd reaches the stationary state ($t=$20~s) until the end of the simulation ($t=$110~s).}
+\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k_n$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every five seconds once the crowd reached the stationary state (say, $t=$20~s) until the end of the simulation ($t=$110~s).}
 \label{degree_overlap_vd}
 \end{figure}
 
-The regime for $v_d<2\,$m/s is different from the rest since most of the 
+The regime for $v_d<2\,$m/s is qualitatively different from the clogged regime since most of the 
 pedestrians are not touching each other. The only pedestrians who touch each 
-other are the ones who are being re-injected in the room. The overlap is higher 
-than, for example, $v_d=3\,$m/s because of the pedestrians that 
-are re-injected and collide with pedestrians in the bulk. \\
+other are the ones who are being re-injected on the opposite side of the room.
+This collides against the bulk, providing some kind of overlap during very short time. We will
+not analize this regime.\\
 
-Besides, for a given $v_d$, the overlap increases as the $k_n$ value decreases. 
-Reducing $k_n$ means reducing the normal body force, which allows a more 
-significant intrusion of the personal space of the individuals 
-(this means more overlap between pedestrians).\\  
+Besides, for a given $v_d>2\,$m/s, the overlap increases as the $k_n$ value decreases. 
+This can be explained by considering the bulk at a (quasi) equilibrium situation. 
+The social and compression forces counterbalance the desired force. Thus, for any fixed $v_d$,
+the product $k_n \times (R_{ij}-r_{ij})$ remains (almost) fixed. Any decrease in $k_n$
+allows a more significant intrusion. This (partially) supports the argument that
+the sliding friction should weaken for stiffer pedestrians (say increasing
+$k_n$ values). \\  
 
 
-Increasing the body stiffness has a significant impact on 
-evacuation dynamics. The reduction of the overlap and the mean degree between 
-pedestrians in the simulation, tend to diminish the sliding 
-friction within the crowd. Consequently, an enhancement in the evacuation time 
-(pedestrians escape faster) is observed, as pictured in Fig.~\ref{vd_vs_te}. 
+The sliding friction reduction appears as the fist feature for enhancing
+the overall evacuation performance. Either reducing the mean overlap and the mean degree
+tend to diminish the mean sliding 
+friction within the crowd. 
 Notice, however, that switching from a FIS regime (positive slope) to a  FIF 
 regime (negative slope) in Fig.~\ref{vd_vs_te} appears as a more complex 
 phenomenon. We will focus on this issue in an upcoming investigation.\\
 
-Despite the effects on the sliding friction, the body force 
+The body force 
 has a notorious impact in the number of pedestrians touching each other (say, 
 the degree). This is clearly depicted in Fig.~\ref{network_bottleneck} where 
 four different configurations of the evacuation dynamics are shown. The 
-configurations represent 225 pedestrians trying to escape through a door see the 
-caption for details. The colors correspond to the degree of each node 
+configurations represent 225 pedestrians trying to escape through a door (see 
+caption for details). The colors correspond to the degree of each node 
 (pedestrian), and the lines between pedestrians represent the contacts among 
 them.\\
 
@@ -736,28 +744,28 @@ them.\\
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_vd10_kn0.eps}\label{network_vd10_kn0}}\\
         \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_vd2_kn1200000.eps}\label{network_vd2_kn1200000}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_vd10_kn1200000.eps}\label{network_vd10_kn1200000}}\\
-\caption[width=0.47\columnwidth]{Contact networks of a 225 pedestrian evacuation through a bottleneck. The door is placed at $(x,y)=(20,10)$~m, the width of the door is 0.92~m (equivalent to 2 pedestrian\textsc{\char13}s diameter). The lines that connect the nodes (pedestrians) represent the contact between them. The color represents the degree (the number of pedestrians with which it is connected). (a) and (b) correspond to a simulation without body force with $v_d=$2 and $v_d=$10 respectively. (c) and (d) correspond to simulations with $k_n$=1.2~E6 with $v_d=$2 and $v_d=$10 respectively.}
+\caption[width=0.47\columnwidth]{Snapshots of the contact networks of a 225 pedestrian evacuation through a bottleneck. The door is placed at $(x,y)=(20,10)$~m, the width of the door is 0.92~m (equivalent to 2 pedestrian\textsc{\char13}s diameter). The lines that connect the nodes (pedestrians) represent the contact between them. The color represents the degree (the number of pedestrians with which it is connected). (a) and (b) correspond to a simulation without body force with $v_d=$2 and $v_d=$10 respectively. (c) and (d) correspond to simulations with $k_n$=1.2\,E6 with $v_d=$2 and $v_d=$10 respectively.}
 \label{network_bottleneck}
 \end{figure}
 
 
 
-The four configurations corresponds to two different $v_d$ and two different $k_n$ values (say, the  minimum and maximum explored values). Fig.~\ref{network_vd2_kn0} and Fig.~\ref{network_vd10_kn0} shows a snapshot for $k_n=$0, at desired velocities of 2$\,$m/s and 10$\,$m/s respectively.    Fig.~\ref{network_vd2_kn1200000} and Fig.~\ref{network_vd10_kn1200000} show similar situations, but for  $k_n=$1.2$\,$E6. As expected, increasing the desired velocity compresses the crowd towards the exit. \\
+The four configurations corresponds to two different $v_d$ and two different $k_n$ values (say, the  minimum and maximum explored values). Fig.~\ref{network_vd2_kn0} and Fig.~\ref{network_vd10_kn0} show snapshots for $k_n=0$, at the desired velocities of 2$\,$m/s and 10$\,$m/s, respectively.    Fig.~\ref{network_vd2_kn1200000} and Fig.~\ref{network_vd10_kn1200000} show similar situations, but for  $k_n=$1.2$\,$E6. As expected, increasing the desired velocity compresses the crowd towards the exit. \\
 
 The four snapshots in Fig.~\ref{network_bottleneck} confirm (visually) the fact that more rigid pedestrians release the crowded environment, widening the occupied region. At $v_d=10\,$m/s (the maximum explored velocity), it can hardly be found pedestrians with degree 6 when $k_n=1.2\,$E6, while a lot of them are present for $k_n$=0.\\
 
-The clusterization of the pedestrians has a significant impact on the blocking clusters (the group of pedestrians that clog the exit).  Fig.~\ref{pbc_vs_vd_multi_kn} shows the blocking cluster existence probability as a function of the desired velocity for different $k$ values. The blocking clusters occur more often when the desired velocity increases because increasing $v_d$ increase the density in the area close to the exit. The most remarkable fact of Fig.~\ref{pbc_vs_vd_multi_kn} is that increasing the stiffness reduces the blocking cluster existence for a fixed value of $v_d$. Under these conditions, the blocking clusters strictly govern the evacuation dynamics~\cite{dorso_2005}. Thus, increasing the stiffness reduces the blocking cluster existence, which improves the evacuation time.\\
+The clusterization of the pedestrians has a significant impact on the blocking clusters (the group of pedestrians that clog the exit).  Fig.~\ref{pbc_vs_vd_multi_kn} shows the blocking cluster probability as a function of the desired velocity for different $k_n$ values (see caption for details). The blocking clusters become more probable for high desired velocity, since the clogged area gets more compact as $v_d$ increases (for any fixed value of $k_n$). But, the most remarkable fact in Fig.~\ref{pbc_vs_vd_multi_kn} is that increasing the body stiffness reduces the blocking cluster probability for any fixed value of $v_d$. Recall from Ref.~\cite{dorso_2005} that the evacuation time is controlled by the blocking. Thus, increasing the body stiffness affects the presence of the blocking clusters, and consequently improves the evacuation time. This raises as a second feature for enhancing the overall evacuation performance. \\
 
 \begin{figure}[htbp!]
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./pbc_vs_vd_multi_kn.eps}
-\caption{\label{pbc_vs_vd_multi_kn} Blocking cluster existence probability as a function of $v_d$ for different stiffness levels (see label). The probability is calculated as the amount of time a blocking cluster is present divided by the overall simulation time. The result correspond to a bottleneck geometry with 225 pedestrians in periodic boundary conditions (re-injection of pedestrians once the exited the room). The simulation lasted $t_f =$ 1000~s. }
+\caption{\label{pbc_vs_vd_multi_kn} Blocking cluster probability as a function of $v_d$ for different stiffness levels (see label). The probability is calculated as the amount of time a blocking cluster is present divided by the overall simulation time. The situation corresponds to a bottleneck with 225 pedestrians under periodic boundary conditions (re-injection of pedestrians once they left the room). The sampled interval was set to $t_f =$ 1000~s. }
 \end{figure}
 
+We may summarize this Section as follows. We explored the parameter space along $v_d$ and $k_n$ for the bottleneck situation. Varying $v_d$ (at a fixed $k_n$) explores the collective behavior for different $(\mathcal{A},\mathcal{K}_c)$ pairs. We realized that increasing $\mathcal{K}_c$ only improves the evacuation performance through the bottleneck. 
 
-To conclude this section, we want to emphasize that increasing body stiffness has a significant impact on the evacuation dynamics. The stiffer pedestrians are, the less they touch to each other (less degree and less overlap). This phenomenon yields a reduction of the existence of the blocking clusters, which reduces the overall evacuation time. \\
-\\
+
 
 \subsection{\label{corridor} Corridor}
 
