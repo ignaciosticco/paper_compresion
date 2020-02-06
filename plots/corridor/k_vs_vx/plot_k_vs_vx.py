@@ -59,10 +59,10 @@ std_vx_d8 = data_d8["std vx"].tolist()
 ###  PLOT  ###
 fig, ax1 = plt.subplots()
 
-plt.plot(k_d5_5,mean_vx_d5_5,'-s',color='#1f77b4',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$d=5.5$')
-plt.plot(k_d6,mean_vx_d6,'-^',color = '#ff7f0e',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$d=6$') 
+plt.plot(k_d5_5,mean_vx_d5_5,'-s',color='#1f77b4',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$\\rho=5.5$')
+plt.plot(k_d6,mean_vx_d6,'-^',color = '#ff7f0e',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$\\rho=6$') 
 #plt.plot(k_d7,mean_vx_d7,'-cs',mew=0.7,markeredgecolor='k',markersize=4,zorder=3,label='$d=7$') 
-plt.plot(k_d8,mean_vx_d8,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$d=8$') 
+plt.plot(k_d8,mean_vx_d8,'-x',color = 'g',mew=0.7,markeredgecolor='k',markersize=5,zorder=1,label='$\\rho=8$') 
 #plt.plot(vd_knE6,mean_comp_knE6,'-ko',mew=0.7,markeredgecolor='k',markersize=4,zorder=1,label='$k=1.2$ E6') 
 
 pylab.grid(False)
