@@ -714,7 +714,7 @@ range of $v_d$ and $k_n$).\\
 \centering
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./degree_vs_vd_multi_kn.eps}\label{degree_vd}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./overlap_vs_vd_multi_kn.eps}\label{overlap_vd}}\\
-\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k_n$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every five seconds once the crowd reached the stationary state (say, $t=$20~s) until the end of the simulation ($t=$1000~s). Color online only.}
+\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k_n$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every five seconds once the crowd reached the stationary state (say, $t=20\,$s) until the end of the simulation ($t=1000\,$s). Color online only.}
 \label{degree_overlap_vd}
 \end{figure}
 
@@ -758,7 +758,7 @@ them.\\
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_vd10_kn0.eps}\label{network_vd10_kn0}}\\
         \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_vd2_kn1200000.eps}\label{network_vd2_kn1200000}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_vd10_kn1200000.eps}\label{network_vd10_kn1200000}}\\
-\caption[width=0.47\columnwidth]{Snapshots of the contact networks of a 225 pedestrian evacuation through a bottleneck. The door is placed at $(x,y)=(20,10)$~m, the width of the door is 0.92~m (equivalent to 2 pedestrian\textsc{\char13}s diameter). The lines that connect the nodes (pedestrians) represent the contact between them. The color represents the degree (the number of pedestrians with which it is connected). (a) and (b) correspond to a simulation without body force with $v_d=$2 and $v_d=$10 respectively. (c) and (d) correspond to simulations with $k_n=1.2\,$E6 with $v_d=$2 and $v_d=$10 respectively. Color online only.}
+\caption[width=0.47\columnwidth]{Snapshots of the contact networks of a 225 pedestrian evacuation through a bottleneck. The door is placed at $(x,y)=(20,10)\,$m, the width of the door is 0.92$\,$m (equivalent to 2 pedestrian\textsc{\char13}s diameter). The lines that connect the nodes (pedestrians) represent the contact between them. The color represents the degree (the number of pedestrians with which it is connected). (a) and (b) correspond to a simulation without body force with $v_d=$2 and $v_d=$10 respectively. (c) and (d) correspond to simulations with $k_n=1.2\,$E6 with $v_d=$2 and $v_d=$10 respectively. Color online only.}
 \label{network_bottleneck}
 \end{figure}
 
@@ -774,7 +774,7 @@ The clusterization of the pedestrians has a significant impact on the blocking c
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./pbc_vs_vd_multi_kn.eps}
-\caption{\label{pbc_vs_vd_multi_kn} Blocking cluster probability as a function of $v_d$ for different stiffness levels (see label). The probability is calculated as the amount of time a blocking cluster is present divided by the overall simulation time. The situation corresponds to a bottleneck with 225 pedestrians under periodic boundary conditions (re-injection of pedestrians once they left the room). The sampled interval was set to $t_f =$ 1000~s. Color online only. }
+\caption{\label{pbc_vs_vd_multi_kn} Blocking cluster probability as a function of $v_d$ for different stiffness levels (see label). The probability is calculated as the amount of time a blocking cluster is present divided by the overall simulation time. The situation corresponds to a bottleneck with 225 pedestrians under periodic boundary conditions (re-injection of pedestrians once they left the room). The sampled interval was set to $t_f =$ 1000$\,$s. Color online only. }
 \end{figure}
 
 We may summarize this Section as follows. We explored the parameter space along $v_d$ and $k_n$ for the bottleneck situation. This is similar to explore the unitless space $(\mathcal{A},\mathcal{K}_c)$. Soft pedestrians attain a FIS or FIS+FIF evacuation pattern but, stiff pedestrians (for any fixed $\mathcal{A}$ value within the explored range) exhibit a single FIF pattern. Stiffness affects either the presence of the blocking clusters and the pedestrians overlap. The less they overlap, the less intense becomes the sliding friction among them. Additionally, the fewer the blocking clusters the easier they get out. \\
@@ -805,7 +805,7 @@ This result is exactly the opposite of what we get in the bottleneck geometry. T
 \centering
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_d6_kn0.eps}\label{network_d6_kn0}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./network_d6_knE5.eps}\label{network_d6_knE5}}\\
-\caption[width=0.47\columnwidth]{Contact network of the pedestrians along the corridor at time $t=50\,$s. The global density was $\rho=6$.  The lines that connect the nodes (pedestrians) represent the contact between them. The colors stand for the degree of the node (the number of pedestrians that are in contact with him/her). The corridor was 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$. (a) corresponds to a simulation without body force and (b) corresponds to a simulation with $k_n=1.2\,$E5. The friction coefficient and the other SFM parameters are the same as in Section \ref{bottleneck}. Color online only.}
+\caption[width=0.47\columnwidth]{Contact network of the pedestrians along the corridor at time $t=50\,$s. The global density was $\rho=6$.  The lines that connect the nodes (pedestrians) represent the contact between them. The colors stand for the degree of the node (the number of pedestrians that are in contact with him/her). The corridor was 28$\,$m $\times$ 22$\,$m with periodic boundary conditions and $v_d=1$. (a) corresponds to a simulation without body force and (b) corresponds to a simulation with $k_n=1.2\,$E5. The friction coefficient and the other SFM parameters are the same as in Section \ref{bottleneck}. Color online only.}
 \label{network_corridor}
 \end{figure}
 
@@ -817,7 +817,7 @@ This result is consistent with the results obtained in Ref.~\cite{pugnaloni_2013
 \centering
 \includegraphics[width=0.7\columnwidth]
 {./triangles.eps}
-\caption{\label{triangles} Triangles per node as a function of the global density. A triangle in a network is defined as three nodes all connected. Each marker corresponds to a different stiffness $k_n$ (see the label in the plot). The measurements correspond to a corridor of 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$. Color online only. }
+\caption{\label{triangles} Triangles per node as a function of the global density. A triangle in a network is defined as three nodes all connected. Each marker corresponds to a different stiffness $k_n$ (see the label in the plot). The measurements correspond to a corridor of 28$\,$m $\times$ 22$\,$m with periodic boundary conditions and $v_d=1$. Color online only. }
 \end{figure}
 
 The most important result is that increasing the $k_n$ value reduces the flow (hence reduces the walking speed of the overall crowd) in the corridor geometry. Fig.~\ref{kn_vs_vx_corridor} shows the mean velocity in the direction of displacement $v_x$ as a function of the stiffness for different global density levels. $v_x$ reduces as $k_n$ increases as opposed to what happens in the bottleneck geometry. There is little to no change in the speed from zero to $k_n=2.6\,$E4, from this value on, the diminishing of velocity is more abrupt.\\
@@ -827,7 +827,7 @@ The reason why the velocity reduces as the stiffness of the pedestrians' increas
 \begin{figure}[htbp!]
 \centering
 \includegraphics[width=0.7\columnwidth]{./kn_vs_vx_corridor.eps}
-\caption{\label{kn_vs_vx_corridor} Mean velocity in the longitudinal coordinate $(v_x)$ as a function of the stiffness $k_n$ for three different global densities (see label in the plot). The measurements correspond to a corridor of 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$. Color online only.      }
+\caption{\label{kn_vs_vx_corridor} Mean velocity in the longitudinal coordinate $(v_x)$ as a function of the stiffness $k_n$ for three different global densities (see label in the plot). The measurements correspond to a corridor of 28$\,$m $\times$ 22$\,$m with periodic boundary conditions and $v_d=1$. Color online only.      }
 \end{figure}
 
 The value of $k_n$ affects the velocity all along the corridor. Fig.~\ref{vx_profile} shows the velocity profile ($v_x$ vs. the longitudinal coordinate $y$) for different $k_n$ values. For $k_n=0$, we can see a parabolic-like velocity profile that resembles the Poiseuille flow (for Newtonian and incompressible fluids in laminar flow flowing through a pipe). This behavior was observed in empirical measurements reported in Ref.~\cite{zhang2013empirical}. As $k_n$ increases the velocity profile flattens until becoming a constant ($k_n=1.2\,$E6). In this scenario, the value of mean $v_x$ is much lower than on the case of soft pedestrians ($k_n=$0).\\
@@ -848,7 +848,7 @@ Where $\langle \rangle$ means the average taken over time. By this definition we
 \centering
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./vx_profile.eps}\label{vx_profile}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./strain_rate_vs_kn.eps}\label{strain_rate_vs_kn}}\\
-\caption[width=0.47\columnwidth]{(a) Velocity in the $x$ coordinate as a function of the transversal coordinate $y$ for three different stiffness values $k$ (see the label). (b) Strain rate as a function of the stiffness level $k_n$ for three different global density values (see label). The measurements correspond to a corridor of 28~m $\times$ 22~m with periodic boundary conditions and $v_d=1$. The global density was 7 p~m$^{-2}$. Color online only. }
+\caption[width=0.47\columnwidth]{(a) Velocity in the $x$ coordinate as a function of the transversal coordinate $y$ for three different stiffness values $k$ (see the label). (b) Strain rate as a function of the stiffness level $k_n$ for three different global density values (see label). The measurements correspond to a corridor of 28$\,$m $\times$ 22$\,$m with periodic boundary conditions and $v_d=1$. The global density was 7 p$\,$m$^{-2}$. Color online only. }
 \label{profile_strain}
 \end{figure}
 
@@ -862,7 +862,7 @@ In this section, we inspect different values of the dimensionless numbers $\math
 
 The empirical measurements correspond to the fundamental diagram measured at the entrance of the Jamaraat bridge (see the inset in Fig.~\ref{flow_density_no_body_force}). We aim to reproduce the qualitative behavior of these measurements roughly.\\
 
-Figs. \ref{flow_density} show the flow as a function of the global density (fundamental diagram). Fig.~\ref{flow_density_no_body_force} corresponds to $\mathcal{K}_c=$ 0 (zero body force \textit{i.e.} $k_n=0$) while Fig.~\ref{flow_density_body_force} corresponds to $\mathcal{K}_c=$68 (which is the value of the original SFM with $k_n=1.2\,$E5 ). Each curve correspond to a different friction value, hence different $k_t$ value (see the caption).\\
+Figs. \ref{flow_density} show the flow as a function of the global density (fundamental diagram). Fig.~\ref{flow_density_no_body_force} corresponds to $\mathcal{K}_c=$ 0 (zero body force \textit{i.e.} $k_n=0$) while Fig.~\ref{flow_density_body_force} corresponds to $\mathcal{K}_c=$68 (which is the E6value of the original SFM with $k_n=1.2\,$E5 ). Each curve correspond to a different friction value, hence different $k_t$ value (see the caption).\\
 
 According to most of the empirical measurements of the fundamental diagram, the flow decreases for high enough values of density because the crowd becomes jammed. Notice that the original friction (corresponding to $\mathcal{K}=$137) does not produce a reduction of the flow when there is zero body force ($\mathcal{K}_c=$0). Nevertheless, when the body force is included, and we remain the original friction (circles from Fig.~\ref{flow_density_body_force}), the flow reduces in the range of densities from  5 p m$^{-2}$ to 7 p m$^{-2}$; then increases for higher values of density.\\
 
@@ -885,7 +885,7 @@ According to most of the empirical measurements, the flow decreases for high eno
 \centering
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./flow-density_multifric_nobodyforce.eps}\label{flow_density_no_body_force}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./flow-density_multifric_bodyforce.eps}\label{flow_density_body_force}}\\
-\caption[width=0.47\columnwidth]{Flow vs. global density. The flow is calculated in a circular area of R=1~m at the center of the corridor. The circular markers correspond to the original friction of the SFM, the "+" symbol corresponds to the friction increased by a factor of five and the triangles correspond to the friction increased by a factor of ten. The desired velocity was $v_d=1$ in all the cases. (a) corresponds to simulations without body force ($\mathcal{K}_c =$0) and (b) corresponds to a body force with the original value of the body stiffness ($\mathcal{K}_c =$68). Color online only.}
+\caption[width=0.47\columnwidth]{Flow vs. global density. The flow is calculated in a circular area of $R=1\,$m at the center of the corridor. The circular markers correspond to the original friction of the SFM, the "+" symbol corresponds to the friction increased by a factor of five and the triangles correspond to the friction increased by a factor of ten. The desired velocity was $v_d=1$ in all the cases. (a) corresponds to simulations without body force ($\mathcal{K}_c =$0) and (b) corresponds to a body force with the original value of the body stiffness ($\mathcal{K}_c =$68). Color online only.}
 \label{flow_density}
 \end{figure}
 
