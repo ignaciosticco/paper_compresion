@@ -660,9 +660,8 @@ To further investigate this
 phenomenon, we computed the mean velocity of the whole crowd as a function of the 
 stiffness $k_n$. Fig.~\ref{kn_vs_vx_bottleneck} shows the actual mean velocity in the 
 $x-$direction as a function of the stiffness $k_n$ for three different desired 
-velocities. In all cases, the velocity increases with the stiffness. From 
-$k_n=0$ to $k_n=2.6\,$E4 the increment of velocity is not as significative as it 
-is for higher $k_n$. \\
+velocities. In all cases, the velocity increases with the stiffness. The most significative 
+increment of velocity is in the interval $k_n>$E4. \\
 
 
 \begin{figure}[!htbp]
@@ -672,7 +671,7 @@ is for higher $k_n$. \\
 of the stiffness level $k_n$ for different desired velocities (see label). The 
 data corresponds to a bottleneck with periodic boundary conditions (re-injecting 
 pedestrians). The average was taken every five seconds once the crowd reaches the 
-stationary state ($t=$20~s) until the end of the simulation ($t=$110~s). 
+stationary state ($t=$20~s) until the end of the simulation ($t=$1000~s). 
 Color online only. }
 \label{kn_vs_vx_bottleneck}
 \end{figure}
@@ -710,13 +709,12 @@ very low desired velocities (say, $v_d<2\,$m/s), we can see that the mean
 overlap is an increasing function of $v_d$ (withing the studied
 range of $v_d$ and $k_n$).\\
 
-% Agregar valor de kappa en todos los captions. 
 
 \begin{figure}[!htbp]
 \centering
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./degree_vs_vd_multi_kn.eps}\label{degree_vd}}\ 
     \subfloat[]{\includegraphics[width=0.49\columnwidth]{./overlap_vs_vd_multi_kn.eps}\label{overlap_vd}}\\
-\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k_n$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every five seconds once the crowd reached the stationary state (say, $t=$20~s) until the end of the simulation ($t=$110~s). Color online only.}
+\caption[width=0.47\columnwidth]{(a) Mean degree as a function of the pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the pedestrians desired velocity. Each symbol indicates the $k_n$ value corresponding to the body force (see the labels). The data corresponds to a bottleneck with periodic boundary conditions (re-injecting pedestrians). The average was taken every five seconds once the crowd reached the stationary state (say, $t=$20~s) until the end of the simulation ($t=$1000~s). Color online only.}
 \label{degree_overlap_vd}
 \end{figure}
 
@@ -799,7 +797,7 @@ Fig. \ref{degree_dens} exhibits a somewhat opposite behavior with respect to the
 \label{network_corridor}
 \end{figure}
 
-In order to get a better insight on how the pedestrians contact to each other, we present in Fig.~\ref{network_corridor} two snapshots of the corridor at the stationary situation. Fig.~\ref{network_d6_knE5} corresponds to $k_n=1.2$~E5. It can be seen that increasing ther stiffness increases the number of contacts between pedestrians (say, the network connectivity). The number of nodes attaining degree 6 is far larger in the case of $k_n=1.2\,$E5 than the case of $k_n=0$. \\
+In order to get a better insight on how the pedestrians contact to each other, we present in Fig.~\ref{network_corridor} two snapshots of the corridor at the stationary situation. Fig.~\ref{network_d6_knE5} corresponds to $k_n=1.2$~E5. It can be seen that increasing the stiffness increases the number of contacts between pedestrians (say, the network connectivity). The number of nodes attaining degree 6 is far larger in the case of $k_n=1.2\,$E5 than the case of $k_n=0$. \\
 
 This result is exactly the opposite of what we get in the bottleneck geometry. This phenomenon occurs because, in the corridor, the lateral walls act like a containment barrier that forces the pedestrian to increase their contacts. Whereas in the bottleneck there are no lateral walls, thus, when increasing the stiffness they have more space to detach from each other, reducing the connectedness (hence reducing the mean degree). \\
 
