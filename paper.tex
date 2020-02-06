@@ -839,10 +839,10 @@ If the stiffness is high enough, the crowd behaves like a solid; this means that
 The strain rate is a tensor for every point in the space. It expresses how the relative velocity of a medium changes when one moves away from a position in a specific direction. For this particular problem, we define the following version of the strain rate:
 
 \begin{equation}
-S = \frac{<v_x(center)> - <v_x(boundary)> }{\left | y(center) - y(boundary) \right |} 
+S = \frac{\langle v_x(center)\rangle - \langle v_x(boundary)\rangle }{\left | y(center) - y(boundary) \right |} 
 \end{equation}
 
-Where $<>$ means the average taken over time. By this definition we compare the velocity of the pedestrians close to the wall (boundary) with respect to the velocity of the pedestrians in the center of the corridor (center). As the stiffness level increases, the crowd becomes less deformable. This phenomenon is shown in Fig.~\ref{strain_rate_vs_kn} where we can see that the strain rate decreases with $k_n$. \\
+Where $\langle \rangle$ means the average taken over time. By this definition we compare the velocity of the pedestrians close to the wall (boundary) with respect to the velocity of the pedestrians in the center of the corridor (center). As the stiffness level increases, the crowd becomes less deformable. This phenomenon is shown in Fig.~\ref{strain_rate_vs_kn} where we can see that the strain rate decreases with $k_n$. \\
 
 
 
