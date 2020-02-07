@@ -29,12 +29,12 @@ params = {'backend': 'ps',
 
 pylab.rcParams.update(params)
 
-'''
+
 ##### 3 parametros reducidos #####
-v = venn3(subsets=(1,1,1,1,1,1,1),set_labels = ('$\mathcal{A} =\\frac{A \\tau}{v_d m}$', '$\mathcal{K} = \\frac{\\kappa B \\tau}{m}$', '$\mathcal{K}_c = \\frac{k B \\tau}{v_d m}$'))
+v = venn3(subsets=(1,1,1,1,1,1,1),set_labels = ('$\mathcal{A} =\\frac{A \\tau}{v_d m}$', '$\mathcal{K} = \\frac{k_t B \\tau}{m}$', '$\mathcal{K}_c = \\frac{k_n B \\tau}{v_d m}$'))
 v.get_label_by_id('100').set_text('$A$')
-v.get_label_by_id('010').set_text('$\\kappa$')
-v.get_label_by_id('001').set_text('$k$')
+v.get_label_by_id('010').set_text('$k_t$')
+v.get_label_by_id('001').set_text('$k_n$')
 v.get_label_by_id('111').set_text('$\\frac{\\tau}{m}$')
 v.get_label_by_id('101').set_text('$\\frac{1}{v_d}$')
 v.get_label_by_id('110').set_text('')
@@ -42,10 +42,10 @@ v.get_label_by_id('011').set_text('$B$')
 '''
 
 ##### 2 parametros reducidos #####
-v = venn2(subsets=(1,1,1),set_labels = ('$\mathcal{A} = \\frac{A \\tau}{v_d m}$', '$\mathcal{K} = \\frac{\\kappa B \\tau}{m}$'))
+v = venn2(subsets=(1,1,1),set_labels = ('$\mathcal{A} = \\frac{A \\tau}{v_d m}$', '$\mathcal{K} = \\frac{k_t B \\tau}{m}$'))
 v.get_label_by_id('10').set_text(' $\\frac{A}{v_d}$')
-v.get_label_by_id('01').set_text('$\\kappa B$')
+v.get_label_by_id('01').set_text('$ k_t B$')
 v.get_label_by_id('11').set_text('$\\frac{\\tau}{m}$')
-
-pylab.savefig('venn_2parameters.png', format='png', dpi=300, bbox_inches='tight')
-pylab.savefig('venn_2parameters.eps', format='eps', dpi=300, bbox_inches='tight')
+'''
+pylab.savefig('venn_3parameters.png', format='png', dpi=300, bbox_inches='tight')
+pylab.savefig('venn_3parameters.eps', format='eps', dpi=300, bbox_inches='tight')
