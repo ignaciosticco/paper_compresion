@@ -300,7 +300,7 @@ compressions between $0.045$ and $0.065\,$m. Thus, according to
 Table~\ref{table_data}, \textcolor{blue}{we may expect experimental values for $k_n(x)$ up to 
 $1000\,$kg/s$^2$ (for $F=30\,$N), or, up to $1400\,$kg/s$^2$ (for $F=60\,$N).} \\
 
-Besides, no reliable values for the sliding friction $\kappa$ appears to be 
+Besides, no reliable values for the sliding friction $k_t$ appears to be 
 available in the literature (to our knowledge). We may presume, however, that 
 the sliding friction approaches a fraction of the body force. We will come back 
 to this issue in Section~\ref{background}. \\
@@ -385,9 +385,9 @@ expression for the granular force is has been borrowed from other granular
 matter fields, as follows
 
 \begin{equation}
- \mathbf{f}_g^{(ij)}=\kappa\,g(R_{ij}-r_{ij})\,
+ \mathbf{f}_g^{(ij)}=k_t\,g(R_{ij}-r_{ij})\,
 (\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij})\,\hat{\mathbf{t}}_{ij}+
-k\,g(R_{ij}-r_{ij})\,
+k_n\,g(R_{ij}-r_{ij})\,
 \,\hat{\mathbf{n}}_{ij}\label{eqn_friction}
 \end{equation}
 
@@ -400,15 +400,15 @@ The sliding friction occurs in the tangential direction while the body force
 occurs in the normal direction. Both are assumed to be linear with respect to 
 the net distance between contacting pedestrians. The sliding friction is also 
 linearly related to the difference between the (tangential) velocities. The 
-coefficients $\kappa$ (for the sliding friction) and $k_n$ (for the 
+coefficients $k_t$ (for the sliding friction) and $k_n$ (for the 
 body force) are supposed to be related to the areas of contact and the clothes 
 material, among others. \\
 
 We stress that the expression (\ref{eqn_friction}) assumes fixed values for 
-$\kappa$ and $k_n$. This may not be completely true according to 
+$k_t$ and $k_n$. This may not be completely true according to 
 Table~\ref{table_data}. The local density (and thus, the pedestrians' 
 compression) may affect the compressibility parameter $k_n$ by more than an order 
-of magnitude. We will vary $k_n$ (and $\kappa$) in order to explore this 
+of magnitude. We will vary $k_n$ (and $k_t$) in order to explore this 
 phenomenon. \\  
 
 
@@ -446,8 +446,8 @@ intersecting regions. \\
 \caption[width=0.47\columnwidth]{Venn diagrams for the unit-less parameters
 appearing in the equation of motion (\ref{eqn_motion}) (see 
 Appendix~\ref{appendix1} for details). The sets correspond to 
-$\mathcal{A}=\{\tau/m,1/v_d,A\}$, $\mathcal{K}=\{\tau/m,B,\kappa\}$ and 
-$\mathcal{K}_c=\{\tau/m,1/v_d,B,k\}$. (a) The Venn diagram representation if no 
+$\mathcal{A}=\{\tau/m,1/v_d,A\}$, $\mathcal{K}=\{\tau/m,B,k_t\}$ and 
+$\mathcal{K}_c=\{\tau/m,1/v_d,B,k_n\}$. (a) The Venn diagram representation if no 
 body force is introduced in the SFM (only sets $\mathcal{A}$ and $\mathcal{K}$, 
 as in Ref.~\cite{dorso_2019}). (b) The Venn diagram representation for the sets 
 $\mathcal{A}$, $\mathcal{K}$ and $\mathcal{K}_c$. }
@@ -463,11 +463,11 @@ role of $\tau$ has already been discussed in
 Refs.~\cite{johansson_2009,dorso_2019}.    \\ 
 
 Fig.~\ref{venn_2parameters} represents the situation when $\mathcal{K}_c$ is 
-absent. Notice that $A/v_d$ or $\kappa B$ may control the collective 
+absent. Notice that $A/v_d$ or $k_t B$ may control the collective 
 dynamic, in spite of the ``assertive'' attitude. The individual character of 
 $v_d$ or $B$ appears somehow ``loosely'' in the crowd dynamic. We mean by 
 ``loosely'' that any numerical setting of these parameters may be 
-counterbalanced by the right setting of $A$ or $\kappa$, keeping the 
+counterbalanced by the right setting of $A$ or $k_t$, keeping the 
 colletive dynamic (qualitatively) unchanged.  \\
 
 Fig.~\ref{venn_3parameters} provides a picture of the parameters' relations 
@@ -820,7 +820,7 @@ and $v_d=1$. Color online only.}
 \end{figure}
 
 
-\textcolor{red}{It is worth noting} from Fig.~\ref{degree_dens} that ``stiff''
+It is worth noting from Fig.~\ref{degree_dens} that ``stiff''
 pedestrians exhibit a sharper transition to the maximum packing density than 
 the ``soft'' pedestrians. We further checked this phenomenon by counting the 
 number of loops of three nodes (say, the triangles) present in the network. 
@@ -1018,7 +1018,7 @@ the subway in Buenos Aires, Argentina.
 \section{\label{appendix1}Reduced-in-units equation of motion}
 
 The SFM description in section~\ref{sfm} introduces seven parameters ($m$, 
-$\tau$, $v_d$, $B$, $A$, $\kappa$ and $k_n$) attaining for the ``individual'' 
+$\tau$, $v_d$, $B$, $A$, $k_t$ and $k_n$) attaining for the ``individual'' 
 behavior of each pedestrian. The collective dynamic, however, requires a 
 smaller set of parameters. In order to identify this smaller set, we introduce 
 the following unit-less magnitudes\\
@@ -1049,7 +1049,7 @@ means\\
 
 \begin{equation}
  \mathcal{A}=\displaystyle\frac{A\,\tau}{m\,v_d}\ \ \ \ , \ \ \ \ 
- \mathcal{K}=\displaystyle\frac{\kappa\,B\,\tau}{m}\ \ \ \ , \ \ \ \
+ \mathcal{K}=\displaystyle\frac{k_t\,B\,\tau}{m}\ \ \ \ , \ \ \ \
  \mathcal{K}_c=\displaystyle\frac{k\,B\,\tau}{m\,v_d}
 \end{equation}
 
