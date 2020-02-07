@@ -163,9 +163,9 @@ def plot_network(G,output_filename,title):
 def main():
 
      ############# PARAMETERS #############
-     input_filename = 'config_d6_knE5_t30s.txt'
-     output_filename = 'network_d6_knE5'
-     title = "Global density $=$ 6 \hspace{0.5cm} $k=1.2$~E5   "
+     input_filename = 'config_d6_kn0_t30s.txt'
+     output_filename = 'network_d6_kn0'
+     title = "Global density $=$ 6 \hspace{0.5cm} $k_n = 0$"
      time = 30
      sum_rads = 0.46
      ######################################
