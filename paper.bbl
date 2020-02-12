@@ -229,4 +229,10 @@ Plimpton, Steve
 \newblock Fast parallel algorithms for short-range molecular dynamics
 \newblock {\em  Sandia National Labs},1993
 
+\bibitem{strachan1997fragment}
+Strachan, A and Dorso, CO
+\newblock  Fragment recognition in molecular dynamics
+\newblock {\em  Physical Review C}, 56:995, 1997.
+
+
 \end{thebibliography}
