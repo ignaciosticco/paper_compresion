@@ -164,15 +164,13 @@ for the SFM control parameters \cite{helbing_2007,dorso_2017}. \\
 
 The fundamental diagram exhibits the flux behavior for either low \textcolor{blue}{density} crowds 
 (with \textcolor{blue}{rare} contacts between pedestrians) and highly dense crowds (dominated 
-by body forces and sliding friction). The latter usually experiences a flux 
-slowing 
-down, but other behaviors are also possible \cite{helbing_2007,lohner_2018}. In 
+by \textcolor{blue}{two body interactions}). \textcolor{blue}{In the second case, crowds} experience a flux 
+slowing down, but other behaviors are also possible \cite{helbing_2007,lohner_2018}. In 
 light of our previous hypothesis, we may suspect that the  modeling of the 
 ``flux slowing down'' within the context of the SFM will require the proper 
-setting of the (dimensionless) controlling parameters. We examined this working 
-hypothesis in Ref.~\cite{dorso_2019}, but limiting the parameter exploration to 
-the sliding friction, disregarding the body force. \\
-
+setting of the (dimensionless) controlling parameters. We \textcolor{blue}{have already}
+examined this working hypothesis in Ref.~\cite{dorso_2019}, but limiting the parameter exploration to 
+the sliding friction, disregarding the body force. 
 We now widen the investigation on the parameter settings to include the one 
 associated to the body force. We will  explore 
  the complex interplay between 
@@ -183,7 +181,7 @@ between each other. Thus, this step up offers a challenge to the
 ``individualistic'' meaning of the parameter's setting. \\  
 
 
-The investigation is organized as follows. We first recall the available 
+The \textcolor{blue}{paper} is organized as follows. We first recall the available 
 experimental values on the body force and the sliding friction (see Section 
 \ref{experimental}). Secondly, we introduce the reduced-in-units SFM and the 
 three dimensionless numbers that control the crowd dynamics (see Section 
@@ -201,7 +199,7 @@ The complex behavior of pedestrians features
 the environmental conditions. The former is expressed, for example, by his 
 (her) moving ``attitude'' (say, self-assuredness). The latter brings out the 
 observed separation between pedestrians. Also, the ``contacts'' between 
-individuals address some kind of ``unwanted'' slowing down. All these 
+individuals \textcolor{blue}{produce} some kind of ``unwanted'' slowing down. All these 
 observed patterns are commonly quantified in the literature into a set of 
 characteristic  parameters. The experimental meaning of these parameters is as 
 follows.
@@ -214,7 +212,7 @@ follows.
 behavior is the relaxation or characteristic time $\tau$ 
 \cite{johansson_2009,helbing_2000}. 
 
-\item[(ii)] Despite the reactive attitude $\tau$, the pedestrian addresses a 
+\item[(ii)] Despite the reactive attitude $\tau$, the pedestrian \textcolor{blue}{adopts} a 
 ``free'' (undisturbed) walking speed $v_d$. This speed expresses his (her) 
 motivation or intention to reach a certain destination (as comfortable as 
 possible). Observations commonly associate $0.6\,$m/s, $1\,$m/s or $1.5\,$m/s 
@@ -298,7 +296,8 @@ desired speed and the body compressibility could be achieved. The reported
 magnitude $k_n$ assesses either the clothes and the body compressibility. The 
 final value, though, is linearly related to the compression $x$. \\
 
-We measured the maximum attainable forces during the spring of 2019 at the subway in Buenos Aires, 
+We measured \textcolor{blue}{\sout{the maximum attainable forces}
+contact forces} during the spring of 2019 at the subway in Buenos Aires, 
 Argentina. Our preliminary results show that pedestrians feel ``uncomfortable'' 
 whenever a body force ranging from $5$ to $20\,$N is applied for at least ten 
 minutes. Short lasting forces (say, less than 4 minutes) may also be perceived 
@@ -307,7 +306,7 @@ forces up to $60\,$N during very short ``hits''. The comparison with the
 fittings provided by Ref.~\cite{song_2019} shows that these magnitudes 
 accomplish densities around 5 people/m$^2$.     \\    
 
-The maximum (realistic) compressions may be computed from the hook relation 
+The maximum (realistic) compressions may be computed from the \textcolor{blue}{hook's} relation 
 $F(x)=k_n(x)\,x$ and the compressibility $k_n(x)$ reported in Table~\ref{table_data}. 
 An ``uncomfortable'' body force  $10\,$N $-$ $30\,$N can address compressions in the 
 range of $0.030-0.055\,$m. Also, a ``hitting'' force of $60\,$N can address 
@@ -325,7 +324,7 @@ to this issue in Section~\ref{background}. \\
 
 \subsection{\label{sfm}The Social Force Model}
 
-The Social Force Model (SFM) provides the necessary framework for simulating 
+The Social Force Model (SFM) provides \textcolor{blue}{a} necessary framework for simulating 
 the collective dynamics of self-driven particles (\textit{i.e.} pedestrians). 
 The pedestrians are considered to follow an equation of motion involving 
 either ``socio-psychological'' forces and physical forces (say, granular 
@@ -340,7 +339,7 @@ forces). The equation of motion for any pedestrian $i$ (of mass $m_i$) reads
 \noindent where the subscript $j$ corrresponds to any neighboring pedestrian or 
 the walls. The three forces $\mathbf{f}_d$, $\mathbf{f}_s$ and $\mathbf{f}_g$ 
 are different in nature. The desire force $\mathbf{f}_d$ represents the 
-acceleration (or deceleration) of the pedestrian due to his (her) own willings. 
+acceleration (or deceleration) of the pedestrian due to his (her) own \textcolor{blue}{will}. 
 The social force $\mathbf{f}_s$, instead, describes the tendency of the 
 pedestrians to stay away from each other. The granular force $\mathbf{f}_g$ 
 stands for either the sliding friction and the compression between 
@@ -352,11 +351,11 @@ Thus, the set of (empirical) parameters described in Section~\ref{experimental}
 is expected to be also present in the SFM. These will appear in connection to 
 the forces, although their meaning may be somewhat different. \\   
 
-The pedestrians' own willing is modeled by the desire force $\mathbf{f}_d$. 
-This force stands for the acceleration (deceleration) required to reach a 
-certain position at the desired walking speed $v_d$. This involves, however, a 
+The pedestrians' own \textcolor{blue}{will} is modeled by the desire force $\mathbf{f}_d$. 
+This force stands for the acceleration (deceleration) required to \textcolor{blue}{move}
+ at the desired walking speed $v_d$. This involves, however, a 
 personal attitude that makes him (her) appear more or less ``assertive''. As 
-mentioned in Section~\ref{experimental}, the reaction time $\tau$  attains for 
+mentioned in Section~\ref{experimental}, the reaction time $\tau$  \textcolor{blue}{reflects} for 
 this attitude. Thus, the desire force is modeled as follows
 
 \begin{equation}
@@ -373,8 +372,8 @@ $t$. \\
 The tendency of any individual to preserve his (her) ``private sphere'' is 
 accomplished by the social force $\mathbf{f}_s$. This force is expected to 
 prevent the pedestrians from getting too close to each other (or to the walls) 
-in a crowded environment. If he (she) perceives that there is not enough space 
-to move, he (she) will decelerate or even move back. The model for this kind of 
+in a \textcolor{blue}{\sout{crowded} any} environment. \textcolor{blue}{\sout{If he (she) perceives that there is not enough space 
+to move, he (she) will decelerate or even move back.}} The model for this kind of 
 ``socio-psychological'' behavior is as follows
 
 \begin{equation}
@@ -394,10 +393,10 @@ length within the model, and thus, it may be somewhat connected to the
 parameter $A$, however, does not provide any direct link to other parameters 
 mentioned there. \\    
 
-The granular force (say, the sliding friction plus the body force) attain to 
+The granular force (say, the sliding friction plus the body force) \textcolor{blue}{reflects} 
 the moving difficulties encountered in very crowded environments. The 
-expression for the granular force is has been borrowed from other granular 
-matter fields, as follows
+expression for the granular force has been borrowed from the granular 
+matter field, the mathematical expression reads as follows
 
 \begin{equation}
  \mathbf{f}_g^{(ij)}=k_t\,g(R_{ij}-r_{ij})\,
@@ -408,7 +407,7 @@ k_n\,g(R_{ij}-r_{ij})\,
 
 \noindent where $g(R_{ij}-r_{ij})$ equals $R_{ij}-r_{ij}$ if $R_{ij}>r_{ij}$ and 
 vanished otherwise. $\Delta\mathbf{v}^{(ij)}\cdot\hat{\mathbf{t}}_{ij}$ 
-represents the difference between the tangential velocities of the sliding 
+represents the \textcolor{blue}{relative} tangential velocities of the sliding 
 bodies (or between the individual and the walls).    \\
 
 The sliding friction occurs in the tangential direction while the body force 
@@ -420,7 +419,7 @@ body force) are supposed to be related to the areas of contact and the clothes
 material, among others. \\
 
 We stress that the expression (\ref{eqn_friction}) assumes fixed values for 
-$k_t$ and $k_n$. This may not be completely true according to 
+$k_t$ \textcolor{blue}{(and $k_n$)}. This may not be completely true according to 
 Table~\ref{table_data}. The local density (and thus, the pedestrians' 
 compression) may affect the compressibility parameter $k_n$ by more than an order 
 of magnitude. We will vary $k_n$ (and $k_t$) in order to explore this 
@@ -431,16 +430,16 @@ phenomenon. \\
 
 The numerical setting of the parameters may affect the dynamics of the 
 pedestrians. Some settings, however, yield similar collective dynamics.
-We introduce unit-less magnitudes 
+We introduce \textcolor{blue}{dimensionless} magnitudes 
 and proceed straightforward as indicated in \ref{appendix1}. We realize from 
-\ref{appendix1} that only three (unit-less) parameters  are the true 
+\ref{appendix1} that only three (\textcolor{blue}{dimensionless}) parameters  are the true 
 ``control'' parameters for the collective dynamics. These are $\mathcal{A}$, 
 $\mathcal{K}$, $\mathcal{K}_c$ as defined in \ref{appendix1}. Recall that 
 $\mathcal{A}$ and $\mathcal{K}$ are precisely the same as in 
 Ref.~\cite{dorso_2019}, but a novel $\mathcal{K}_c$ parameter has been 
 introduced due to the body force.   \\
 
-The logical relations between the unit-less parameters and the ``individual'' 
+The logical relations between the \textcolor{blue}{dimensionless} parameters and the ``individual'' 
 parameters can be studied by means of the Venn diagrams exhibited in 
 Fig.~\ref{venn_diagram}. The parameters $\mathcal{A}$, $\mathcal{K}$ and 
 $\mathcal{K}_c$ are represented as intersecting sets, and the ``individual'' 
@@ -458,7 +457,7 @@ intersecting regions. \\
 \subfloat[\label{venn_3parameters}]
 {\includegraphics[width=0.49\columnwidth]{./venn_3parameters.png}
 }\\
-\caption[width=0.47\columnwidth]{Venn diagrams for the unit-less parameters
+\caption[width=0.47\columnwidth]{Venn diagrams for the \textcolor{blue}{dimensionless} parameters
 appearing in the equation of motion (\ref{eqn_motion}) (see 
 Appendix~\ref{appendix1} for details). The sets correspond to 
 $\mathcal{A}=\{\tau/m,1/v_d,A\}$, $\mathcal{K}=\{\tau/m,B,k_t\}$ and 
@@ -504,7 +503,9 @@ complex context. We will investigate this context in Section~\ref{results}. \\
 \subsection{\label{blocking_clusters} Blocking clusters}
 
 A characteristic feature of pedestrian dynamics is the formation of clusters. Clusters of pedestrians can 
-be defined as the set of individuals that for any member of the group (say, $i$) there exists at least another member belonging to the same group ($j$) in contact with the former. Thus, we define a ``granular cluster'' ($C_g$) following the mathematical formula given in Ref.~\cite{dorso_2005}
+be defined as the set of individuals that for any member of the group (say, $i$) there exists at least
+another member belonging to the same group ($j$) in contact with the former. 
+Thus, we define a ``granular cluster'' ($C_g$) following the mathematical formula given in Ref.~\cite{strachan1997fragment}
 
 \begin{equation}
 C_g:P_i~\epsilon~ C_g \Leftrightarrow \exists~ j~\epsilon~C_g / r_{ij} < (R_i+R_j) \label{ec-cluster}
@@ -513,8 +514,8 @@ C_g:P_i~\epsilon~ C_g \Leftrightarrow \exists~ j~\epsilon~C_g / r_{ij} < (R_i+R_
 where ($P_i$) indicate the \textit{ith} pedestrian and $R_i$ is his (her) radius (shoulder width). That means, $C_g$ is a
 set of pedestrians that interact not only with the social force, but also with physical forces (\textit{i.e.} friction force and body force).
 A ``blocking cluster'' is defined as the subset of clusterized particles (granular cluster) closest to the door whose first 
-and last component particles are in contact with the walls at both sides of the door. This clogging structure is responsible for 
-worsening the evacuation performance. 
+and last component particles are in contact with the walls at both sides of the door ~\cite{dorso_2005}.
+This clogging structure is responsible for worsening the evacuation performance. 
 
 
 \section{\label{hypotheses}Working hypotheses and procedures}
@@ -531,20 +532,20 @@ exploration of the parameter space. To be precise
  \item[(a)] The ``faster-is-slower'' (or the ``faster-is-faster'') phenomenon 
 occurs when varying the values of $v_d$ (see Section~\ref{bottleneck}). This is 
 equivalent to vary simultaneously $\mathcal{A}$ and $\mathcal{K}_c$ by the same 
-amount in the (unit-less) parameter space (see Section~\ref{parameters}). We 
+amount in the (\textcolor{blue}{dimensionless}) parameter space (see Section~\ref{parameters}). We 
 may visualize this sampling procedure as moving along a straight line in the 
 space $(\mathcal{A},\mathcal{K},\mathcal{K}_c)$. Further variations of 
 $k_n$ turns the sample points out of this line, but on the plane of constant
 $\mathcal{K}_c$. We will step up $k_n$ by several orders of magnitude in order 
 to get the big picture of this surface. 
 
-\item[(b)] We will consider the parameter setting in Ref.~\cite{helbing_2000} 
+\item[(b)] We will consider the parameter \textcolor{blue}{set of} Ref.~\cite{helbing_2000} 
 as a starting point for exploring the parameter space. The reason for this is 
 that a complete set of experimental parameters is still not available (to our 
-konwledge). We are aware, though, of the drawbacks for this choise, say, the 
+konwledge). We are aware, though, of the drawbacks \textcolor{blue}{of} this choise, say, the 
 unrealistic meanings for the length $B$ and the compressibility $k_n$ (see 
 Section~\ref{experimental}). But these are irrelevant in the context of the 
-(unit-less) parameter space and the corresponding collective dynamics (see 
+(\textcolor{blue}{dimensionless}) parameter space and the corresponding collective dynamics (see 
 Section~\ref{introduction}). 
 
 \item[(c)] We will explore crowd densities allowing body compressions up to 
@@ -571,8 +572,8 @@ will investigate the interplay between both in Section~\ref{corridor}.
 \\
 
 In order to keep the model as simple as possible, we will only consider 
-isothropic pedestrians, since anisothropy does not play a relevant role at high 
-densities. \\ 
+\textcolor{blue}{isotropic pedestrian interactions}, since \textcolor{blue}{anisotropic
+interactions} does not play a relevant role at high densities. \\ 
 
 
 
@@ -585,11 +586,11 @@ environment (HPC). \\
 
 
 The implemented SFM parameters were the same as those in 
-Ref.~\cite{helbing_2000} (at the begining of the exploratory procedure only). 
+Ref.~\cite{helbing_2000} (at the beginning of the exploratory procedure only). 
 But the pedestrian's mass and radius were set to the more realistic values of 
-$70\,$kg and $0.23\,$m, respectively. The force interaccions between 
+$70\,$kg and $0.23\,$m, respectively. The force interactions between 
 pedestrians were limited, however, to a cut-off distance of $0.88\,$m for 
-attaining a \textit{privacy sphere} from first neighbors only. The desired 
+attaining a \textit{privacy sphere} \textcolor{blue}{only of the first neighbors}. The desired 
 velcity was always set to $1\,$m/s in the corridor situation. Besides, the 
 explored values of $v_d$ for the bottleneck scenario ranged from $1\,$m/s to the 
 extremely anxious situation of $10\,$m/s. \\
@@ -601,7 +602,7 @@ positions and velocities were recorded every $0.05\,$sec, but post-processing
 computing was done over samples acquired at least every $2\,$sec., in order to avoid 
 data correlations. Those pedestrians leaving the simulations box were 
 re-introduced into the box, on the opposite side (periodic boundary 
-conditions). We only ommitted this mechamism when computing the evacuation time 
+conditions). We only omitted this mechanism when computing the evacuation time 
 for the bottleneck geometry. \\ 
 
 
@@ -623,7 +624,7 @@ to the compression of the human body. \\
 
 Fig.~\ref{vd_vs_te} shows the evacuation time as a function of the pedestrian's 
 desired velocity for different values of $k_n$. The evacuation 
-time is defined as the time until 80\% of the pedestrians have 
+time is defined as the time \textcolor{blue}{lapsed} until 80\% of the pedestrians have 
 left the room. In this section we will focus on the evacuation time for 
 $2\,$m/s$<v_d<10\,$m/s.\\
 
@@ -649,7 +650,7 @@ Ref.~\cite{helbing_2000} }
 \end{figure}
 
 Three behavioral patterns can be distinguished in Fig.~\ref{vd_vs_te}. 
-Each pattern can accomplish a positive slope, a negative slope
+Each pattern can \textcolor{blue}{display} a positive slope, a negative slope
 or both. The interval in which the slope is positive means that the 
 harder the pedestrians try to get out (higher $v_d$), the 
 longer it takes them to evacuate. This is the Faster-is-slower 
@@ -669,14 +670,14 @@ or less than the social
 force for these stiffness values. \\
 
 Despite the presence of the FIS or FIF pattern, the evacuation time at a 
-fixed value of $v_d$ decreases for increasing values of $k_n$ (whiting the examined interval). 
+fixed value of $v_d$ decreases for increasing values of $k_n$ (\textcolor{blue}{within} the examined interval). 
 This means that stiffer pedestrians evacuate faster than soft pedestrians. 
 To further investigate this 
 phenomenon, we computed the mean velocity of the whole crowd as a function of the 
 stiffness $k_n$. Fig.~\ref{kn_vs_vx_bottleneck} shows the actual mean velocity in the 
 $x-$direction as a function of the stiffness $k_n$ for three different desired 
 velocities. In all cases, the velocity increases with the stiffness. The most significative 
-increment of velocity is in the interval $k_n>\,$E4. \\
+increment of velocity is in the interval \textcolor{blue}{$k_n>\,10^{4}$}. \\
 
 
 \begin{figure}[!htbp]
@@ -702,17 +703,17 @@ contact (\textit{i.e.} $r_{ij} \leq R_{ij}$).\\
 
 Fig.~\ref{degree_vd} shows the mean degree of the contact network as a function  
 of the desired velocity. The degree of a node is defined as the number of links 
-that connect this node to any other node. This means, the number of pedestrians 
+that \textcolor{blue}{connects} this node to any other node. This means, the number of pedestrians 
 that are in physical contact with a given pedestrian. The mean degree is the 
 average of the degree over all the nodes (pedestrians) and over the whole 
 sampled interval. We computed mean values only after the system reached the stationary 
 state, that is, after a well-formed bulk has been established.\\
 
 Notice that the mean degree increases as $v_d$ increases, as expected. This expresses the fact that
-higher $v_d$ values accomplish higher densities, enforcing individuals to touch each 
-other. But surprisingly, for a given $v_d$, the mean degree reduces as the $k_n$ 
+higher $v_d$ values accomplish higher densities, \textcolor{blue}{forcing} individuals to touch each 
+other. For a given $v_d$, the mean degree reduces as the $k_n$ 
 value increases. A noticeable decrease in the mean degree can be seen for the 
-highest explored value of $k_n$. This was not expected and opens the question on how would
+highest explored value of $k_n$. This \textcolor{blue}{was not expected and} opens the question on how would
 this affect the sliding friction among pedestrians.\\
 
 A more detailed insight into the contact dynamics can be acquired from 
@@ -736,7 +737,7 @@ range of $v_d$ and $k_n$).\\
 The regime for $v_d<2\,$m/s is qualitatively different from the clogged regime since most of the 
 pedestrians are not touching each other (as was already observed in Ref~\cite{dorso_2005,dorso_2011}). The only pedestrians who touch each 
 other are the ones who are being re-injected on the opposite side of the room.
-This collides against the bulk, providing some kind of overlap during very short time. We will
+\textcolor{blue}{These collide with the bulk}, providing some kind of overlap during very short time. We will
 not analize this regime.\\
 
 Besides, for a given $v_d>2\,$m/s, the overlap increases as the $k_n$ value decreases. 
@@ -781,7 +782,7 @@ them.\\
 
 The four configurations corresponds to two different $v_d$ and two different $k_n$ values (say, the  minimum and maximum explored values). Fig.~\ref{network_vd2_kn0} and Fig.~\ref{network_vd10_kn0} show snapshots for $k_n=0$, at the desired velocities of 2$\,$m/s and 10$\,$m/s, respectively.    Fig.~\ref{network_vd2_kn1200000} and Fig.~\ref{network_vd10_kn1200000} show similar situations, but for  $k_n=1.2\,$E6. As expected, increasing the desired velocity compresses the crowd towards the exit. \\
 
-The four snapshots in Fig.~\ref{network_bottleneck} confirm (visually) the fact that more rigid pedestrians release the crowded environment, widening the occupied region. At $v_d=10\,$m/s (the maximum explored velocity), it can hardly be found pedestrians with degree 6 when $k_n=1.2\,$E6, while a lot of them are present for $k_n$=0.\\
+The four snapshots in Fig.~\ref{network_bottleneck} confirm (visually) the fact that more rigid pedestrians \textcolor{blue}{ease} the crowded environment, widening the occupied region. At $v_d=10\,$m/s (the maximum explored velocity), it can hardly be found pedestrians with degree 6 when $k_n=1.2\,$E6, while a lot of them are present for $k_n$=0.\\
 
 The clusterization of the pedestrians has a significant impact on the blocking clusters (the group of pedestrians that clog the exit).  Fig.~\ref{pbc_vs_vd_multi_kn} shows the blocking cluster probability as a function of the desired velocity for different $k_n$ values (see caption for details). The blocking clusters become more probable for high desired velocity, since the clogged area gets more compact as $v_d$ increases (for any fixed value of $k_n$). But, the most remarkable fact in Fig.~\ref{pbc_vs_vd_multi_kn} is that increasing the body stiffness reduces the blocking cluster probability for any fixed value of $v_d$. Recall from Ref.~\cite{dorso_2005} that the evacuation time is controlled by the blocking. Thus, increasing the body stiffness affects the presence of the blocking clusters, and consequently improves the evacuation time. This raises as a second feature for enhancing the overall evacuation performance. \\
 
@@ -792,7 +793,7 @@ The clusterization of the pedestrians has a significant impact on the blocking c
 \caption{\label{pbc_vs_vd_multi_kn} Blocking cluster probability as a function of $v_d$ for different stiffness levels (see label). The probability is calculated as the amount of time a blocking cluster is present divided by the overall simulation time. The situation corresponds to a bottleneck with 225 pedestrians under periodic boundary conditions (re-injection of pedestrians once they left the room). The sampled interval was set to $t_f =$ 1000$\,$s. Color online only. }
 \end{figure}
 
-We may summarize this Section as follows. We explored the parameter space along $v_d$ and $k_n$ for the bottleneck situation. This is similar to explore the unitless plane $(\mathcal{A},\mathcal{K}_c)$. Soft pedestrians attain a FIS or FIS+FIF evacuation pattern but, stiff pedestrians (for any fixed $\mathcal{A}$ value within the explored range) exhibit a single FIF pattern. Stiffness affects either the presence of the blocking clusters and the pedestrians overlap. The less they overlap, the less intense becomes the sliding friction among them. Additionally, the fewer the blocking clusters the easier they get out. \\
+We may summarize this Section as follows. We explored the parameter space along $v_d$ and $k_n$ for the bottleneck situation. This is similar to explore the \textcolor{blue}{dimensionless} plane $(\mathcal{A},\mathcal{K}_c)$. Soft pedestrians attain a FIS or FIS+FIF evacuation pattern but, stiff pedestrians (for any fixed $\mathcal{A}$ value within the explored range) exhibit a single FIF pattern. Stiffness affects either the presence of the blocking clusters and the pedestrians overlap. The less they overlap, the less intense becomes the sliding friction among them. Additionally, the fewer the blocking clusters the easier they get out. \\
 
 
 
@@ -1038,7 +1039,7 @@ The SFM description in section~\ref{sfm} introduces seven parameters ($m$,
 $\tau$, $v_d$, $B$, $A$, $k_t$ and $k_n$) attaining for the ``individual'' 
 behavior of each pedestrian. The collective dynamic, however, requires a 
 smaller set of parameters. In order to identify this smaller set, we introduce 
-the following unit-less magnitudes\\
+the following \textcolor{blue}{dimensionless} magnitudes\\
 
 \begin{equation}
  \left\{\begin{array}{lcl}
@@ -1049,7 +1050,7 @@ the following unit-less magnitudes\\
 \end{equation}
 
 The equation of motion (\ref{eqn_motion}) can be written in terms of these 
-(unit-less) magnitudes, while only three (reduced) parameters are needed.\\
+(\textcolor{blue}{dimensionless}) magnitudes, while only three (reduced) parameters are needed.\\
 
 
 \begin{equation}
