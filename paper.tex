@@ -66,7 +66,7 @@ The Social Force Model (SFM) is a suitable model for describing crowd behaviors
 This research analyzes the role of the body force in the original SFM.
 We focused on the parameter associated with the body stiffness ($k_n$) and its impact on the pedestrian
 dynamics for two different geometries: bottlenecks and corridors.
-Increasing $k_n$ produces opposite effects on \textcolor{blue}{crowd dynamics for each geometry}: an increase of the crowd velocity 
+Increasing $k_n$ produces opposite effects on \textcolor{blue}{the crowd dynamics for each geometry}: an increase of the crowd velocity 
 for bottlenecks, and a decrease for corridors. 
 The former reflects the fact that \textcolor{blue}{an increase in the stiffness reduces
 the overlap between pedestrians and, as a consequence, the sliding friction is reduced.} 
@@ -152,7 +152,7 @@ meaning.
  \\
 
 The numerical \textcolor{blue}{parameters} for the ``faster is slower'' effect presented by 
-Helbing and co-workers \textcolor{red}{\sout{is somewhat cumbersome} has some drawbacks} 
+Helbing and co-workers \textcolor{red}{\sout{is somewhat cumbersome} appears to have some drawbacks} 
 Ref.~\cite{helbing_2000,dorso_2017,dorso_2019}. Although a single 
 parameter (say, the desired velocity $v_d$) is numerically varied to 
 explain the phenomenon, the researcher \textcolor{red}{\sout{looses sight} may loose sight} of the dimensionless 
@@ -204,16 +204,16 @@ individuals \textcolor{blue}{produce} some kind of ``unwanted'' slowing down. Al
 observed patterns are commonly quantified in the literature into a set of 
 characteristic  parameters. \textcolor{red}{It is worth mentioning that the empirical
 data reported in this Section corresponds to non-panicking situations in which pedestrians 
-do not experience anxiety. }
+do not experience high anxiety levels (see below). }
 The experimental meaning of these parameters is as follows.
 
 \begin{itemize}
-\item[(i)] The walking attitude of a pedestrian may appear somewhat 
+\item[(i)] \textcolor{red}{\textbf{The walking attitude of a pedestrian may appear somewhat 
   ``aggressive'' if he (she) reacts actively to unexpected behaviors 
 \cite{lakoba_2005,helbing_1995}. The smaller the reaction time, the more 
  aggressive observed posture. The associated parameter to this 
 behavior is the relaxation or characteristic time $\tau$ 
-\cite{johansson_2009,helbing_2000}. 
+\cite{johansson_2009,helbing_2000}}}. 
 
 \item[(ii)] Despite the reactive attitude $\tau$, the pedestrian \textcolor{blue}{adopts} a 
 ``free'' (undisturbed) walking speed $v_d$. This speed expresses his (her) 
@@ -222,7 +222,8 @@ possible). Observations commonly associate $0.6\,$m/s, $1\,$m/s or $1.5\,$m/s
 to relaxed, normal or nervous walking speeds, respectively  
 \cite{helbing_1995,helbing_2000,li_2015}. 
 \textcolor{red}{Nevertheless, when pedestrians are in a panic situation,
- the actual speed tends to be lower than the desired velocity $v_d$. }
+ they may not reach the ``free'' walking speed, but, $v_d$ may still be 
+ associated to his (her) motivation to get to a target position.  }
 
 \item[(iii)] The walking speed of pedestrians appears to be lower in a 
 crowded walkway with respect to their usually expected ``free'' walking speeds 
@@ -285,11 +286,11 @@ desired velocities around $1.3\,$m/s. \\
 
 The reports from Refs.~\cite{seyfried_2007,weidmann_1992} do not include any 
 values for the compressibility $k_n$ since these experiments were carried out 
-under low density conditions.  The minimum (perceived) step distance 
+under low density \textcolor{red}{and non-panicking} conditions.  The minimum (perceived) step distance 
 is $0.36\,$m according to Ref.~\cite{seyfried_2007}, but the
  pedestrians seem to require larger 
 distances when they walk faster. The commonly accepted value $B\simeq 
-0.5\,$m is somewhat valid for walking speeds under $0.5\,$m/s 
+0.5\,$m is somewhat valid for walking speeds under $0.5\,$m/s  \textcolor{red}{and non-panicking conditions}
 \cite{seyfried_2007}. Higher walking speeds (say, $1\,$m/s) will require 
 a step distance of $1.3\,$m for the pedestrians to feel that there is enough 
 space to move along.\\ 
@@ -311,7 +312,7 @@ forces up to $60\,$N during very short ``hits''. The comparison with the
 fittings provided by Ref.~\cite{song_2019} shows that these magnitudes 
 accomplish densities around 5 people/m$^2$.     \\    
 
-The maximum (realistic) compressions may be computed from the \textcolor{blue}{Hook's} relation 
+The maximum (realistic) compressions may be computed from the \textcolor{blue}{Hooke's} relation 
 $F(x)=k_n(x)\,x$ and the compressibility $k_n(x)$ reported in Table~\ref{table_data}. 
 An ``uncomfortable'' body force  $10\,$N $-$ $30\,$N can address compressions in the 
 range of $0.030-0.055\,$m. Also, a ``hitting'' force of $60\,$N can address 
@@ -349,14 +350,14 @@ are different in nature. The desire force $\mathbf{f}_d$ represents the
 acceleration (or deceleration) of the pedestrian due to his (her) own \textcolor{blue}{will}. 
 The social force $\mathbf{f}_s$, instead, describes the tendency of the 
 pedestrians to stay away from each other. The granular force $\mathbf{f}_g$ 
-stands for either the sliding friction and the compression between 
+stands for \textcolor{red}{both} the sliding friction and the compression between 
 pedestrians. \\
 
 Notice that these forces are supposed to influence the behavior of the 
 pedestrians in a similar fashion as mentioned in Section~\ref{experimental}. 
 Thus, the set of (empirical) parameters described in Section~\ref{experimental} 
 is expected to be also present in the SFM. These will appear in connection to 
-the forces, although their meaning may be somewhat different. \\   
+the forces \textcolor{red}{\sout{, although their meaning may be somewhat different}}. \\   
 
 The pedestrians' own \textcolor{blue}{will} is modeled by the desire force $\mathbf{f}_d$. 
 This force stands for the acceleration (deceleration) required to \textcolor{blue}{move}
@@ -396,9 +397,8 @@ pedestrian $i$, meaning a repulsive interaction.\\
 The net distance (overlap) $|R_{ij}-r_{ij}|$ scales to the parameter $B$ in the 
 expression (\ref{eqn_social}). This parameter plays the role of a fall-off 
 length within the model, and thus, it may be somewhat connected to the 
-(perceived) step distance mentioned in Section~\ref{experimental}. The 
-parameter $A$, however, does not provide any direct link to other parameters 
-mentioned there. \\    
+(perceived) step distance mentioned in Section~\ref{experimental}. 
+\textcolor{red}{Besides, the parameter $A$ reflects the intensity of the social repulsion.} \\    
 
 The granular force (say, the sliding friction plus the body force) \textcolor{blue}{reflects} 
 the moving difficulties encountered in very crowded environments. The 
@@ -436,7 +436,7 @@ phenomenon. \\
 \subsection{\label{parameters} \textcolor{blue}{\sout{The parameters setting} The set of parameters}}
 
 The numerical \textcolor{blue}{\sout{setting} set} of the parameters may affect the dynamics of the 
-pedestrians. Some \textcolor{blue}{\sout{settings} sets}, however, yield similar collective dynamics.
+pedestrians. Some \textcolor{blue}{\sout{settings} values}, however, yield similar collective dynamics.
 We introduce \textcolor{blue}{dimensionless} magnitudes 
 and proceed straightforward as indicated in \ref{appendix1}. We realize from 
 \ref{appendix1} that only three (\textcolor{blue}{dimensionless}) parameters  are the true 
@@ -487,7 +487,7 @@ Fig.~\ref{venn_2parameters} represents the situation when $\mathcal{K}_c$ is
 absent. Notice that $A/v_d$ or $k_t B$ may control the collective 
 dynamic, in spite of the ``assertive'' attitude. The individual character of 
 $v_d$ or $B$ appears somehow ``loosely'' in the crowd dynamic. We mean by 
-``loosely'' that any numerical \textcolor{blue}{\sout{setting} set} of these parameters may be 
+``loosely'' that any numerical \textcolor{blue}{\sout{setting} set for} these parameters may be 
 counterbalanced by the right \textcolor{blue}{\sout{setting} choise } of $A$ or $k_t$, keeping the 
 colletive dynamic (qualitatively) unchanged.  \\
 
@@ -546,10 +546,10 @@ $k_n$ turns the sample points out of this line, but on the plane of constant
 $\mathcal{K}_c$. We will step up $k_n$ by several orders of magnitude in order 
 to get the big picture of this surface. 
 
-\item[(b)] We will consider the parameter \textcolor{blue}{set of} Ref.~\cite{helbing_2000} 
+\item[(b)] We will consider the parameter \textcolor{blue}{set from} Ref.~\cite{helbing_2000} 
 as a starting point for exploring the parameter space. The reason for this is 
 that a complete set of experimental parameters is still not available (to our 
-konwledge). We are aware, though, of the drawbacks \textcolor{blue}{of} this choise, say, the 
+konwledge). We are aware, though, of the drawbacks \textcolor{blue}{for} this choise, say, the 
 unrealistic meanings for the length $B$ and the compressibility $k_n$ (see 
 Section~\ref{experimental}). But these are irrelevant in the context of the 
 (\textcolor{blue}{dimensionless}) parameter space and the corresponding collective dynamics (see 
@@ -580,7 +580,7 @@ will investigate the interplay between both in Section~\ref{corridor}.
 
 In order to keep the model as simple as possible, we will only consider 
 \textcolor{blue}{isotropic pedestrian interactions}, since \textcolor{blue}{anisotropic
-interactions} does not play a relevant role at high densities. \\ 
+interactions do} not play a relevant role at high densities. \\ 
 
 
 
@@ -597,7 +597,7 @@ Ref.~\cite{helbing_2000} (at the beginning of the exploratory procedure only).
 But the pedestrian's mass and radius were set to the more realistic values of 
 $70\,$kg and $0.23\,$m, respectively. The force interactions between 
 pedestrians were limited, however, to a cut-off distance of $0.88\,$m for 
-attaining a \textit{privacy sphere} \textcolor{blue}{only of the first neighbors}. The desired 
+attaining a \textit{privacy sphere} \textcolor{blue}{for the first neighbors only}. The desired 
 velcity was always set to $1\,$m/s in the corridor situation. Besides, the 
 explored values of $v_d$ for the bottleneck scenario ranged from $1\,$m/s to the 
 extremely anxious situation of $10\,$m/s. \\
