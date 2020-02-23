@@ -920,10 +920,12 @@ online only. }
 \end{figure}
 
 
-The above results correspond to a milestone in the 
-investigation. The connectivity differences between the bottleneck geometry 
-and the corridor geometry were not expected and opens two major questions: how 
-does the body stiffness interact with the walls, and consequently, how does 
+The above results correspond to \textcolor{blue}{\sout{a milestone} an important step} in the 
+investigation. The \textcolor{blue}{inter-pedestrian} connectivity differences between the bottleneck geometry 
+and the corridor geometry were not expected and opens two major questions:
+\textcolor{blue}{\sout{ how 
+does the body stiffness interact with the walls} do the pedestrians interact with the walls as
+a function of the body stiffness}, and consequently, how does 
 this affect the flux across the corridor.\\ 
 
 We start by computing the mean velocity across the corridor.  
@@ -946,7 +948,8 @@ to what happens in the bottleneck geometry. \\
 
 The $\langle v_x\rangle$ values in Fig.~\ref{kn_vs_vx_corridor} 
 were computed at densities $\rho\geq 5.5$. According to 
-Fig.~\ref{overlap_dens}, these densities attain relevant overlaps. Furthermore, 
+Fig.~\ref{overlap_dens},\textcolor{blue}{\sout{ these densities attain relevant overlaps}
+at these densities, the overlaps among pedestrians attain significant values}. Furthermore, 
 stiffness values $k_n\geq 10^4$ move the system to a more heavily connected 
 stage, and thus, pedestrians have no choice but to walk at 
 (almost) the same speed as his (her) neighbors. This 
@@ -960,14 +963,14 @@ pedestrians that walk in physical contact with the wall are the ones who
 determine the velocity of the whole crowd, as discussed 
 below.\\
 
-Fig.~\ref{vx_profile} shows the velocity profile ($\langle v_x \rangle$ vs. the transversal coordinate $y$) for different $k_n$ values. For $k_n=0$, we can see a parabolic-like velocity profile that resembles the Poiseuille flow (similar to Newtonian and incompressible fluids in a laminar regime). This behavior was also observed in empirical measurements of crowd dynamics reported in Ref.~\cite{zhang2013empirical}. But as $k_n$ increases the velocity profile flattens until becoming (almost) uniform (see Fig.~\ref{vx_profile} for $k_n=1.2\,$E6). In this scenario, $v_x$ attains a much lower level than in the case of soft pedestrians ($k_n=$0).\\
+Fig.~\ref{vx_profile} shows the velocity profile ($\langle v_x \rangle$ vs. the transversal coordinate $y$) for different $k_n$ values. For $k_n=0$, we can see a parabolic-like velocity profile \textcolor{red}{which means that the friction with the walls reduces the speed of pedestrians.} \textcolor{blue}{\sout{that} The velocity profile} resembles the Poiseuille flow (similar to Newtonian and incompressible fluids in a laminar regime). This behavior was also observed in empirical measurements of crowd dynamics reported in Ref.~\cite{zhang2013empirical}. But as $k_n$ increases the velocity profile flattens until becoming (almost) uniform (see Fig.~\ref{vx_profile} for $k_n=1.2\,$E6). In this scenario, $v_x$ attains a much lower \textcolor{blue}{\sout{level} value}  than in the case of soft pedestrians ($k_n=$0).\\
 
-The crowd behaves like a solid for very stiff pedestrians. This means that the crowd can not be easily ``deformed''. In this context, deformation means that parts of the crowd may be released to move faster than other parts of the crowd. \\
+The crowd behaves like a solid for very stiff pedestrians. This means that the crowd can not be easily ``deformed''. In this context, deformation means that parts of the crowd may be \textcolor{blue}{\sout{released} allowed} to move faster than other parts of the crowd. \\
 
-The strain rate is the tensor that expresses how the relative velocity of a medium changes when one moves away from one position to another. We consider the following discrete definition of the strain rate:
+\textcolor{blue}{\sout{The strain rate is the tensor that expresses how the relative velocity of a medium changes when one moves away from one position to another.} The strain rate tensor displays the rate of change of the deformation of a body in the vincinity of a given point.} We consider the following discrete definition of the strain rate:
 
 \begin{equation}
-S = \frac{\langle v_x(\mathrm{center})\rangle - \langle v_x(\mathrm{boundary})\rangle }{\left | y(\mathrm{center}) - y(\mathrm{boundary}) \right |} 
+\dot{\gamma} = \frac{\langle v_x(\mathrm{center})\rangle - \langle v_x(\mathrm{boundary})\rangle }{\left | y(\mathrm{center}) - y(\mathrm{boundary}) \right |} 
 \end{equation}
 
 
@@ -979,10 +982,10 @@ S = \frac{\langle v_x(\mathrm{center})\rangle - \langle v_x(\mathrm{boundary})\r
 \label{profile_strain}
 \end{figure}
 
-Where $\langle \cdot \rangle$ means the average taken over time. This definition compares the velocity of the pedestrians close to the wall (boundary) with respect to the velocity of the pedestrians at the center of the corridor (center). Thus, $S$ vanishes (no deformation) as the stiffness level increases. This phenomenon is shown in Fig.~\ref{strain_rate_vs_kn} where we can see that the strain rate drops for high values of $k_n$. \\
+Where $\langle \cdot \rangle$ means the average taken over time. This definition compares the velocity of the pedestrians close to the wall (boundary) with respect to the velocity of the pedestrians at the center of the corridor (center). Thus, $\dot{\gamma}$ vanishes (no deformation) as the stiffness level increases. This phenomenon is shown in Fig.~\ref{strain_rate_vs_kn} where we can see that the strain rate drops for high values of $k_n$. \\
 
 
-We conclude this Section by stressing that stiffer pedestrians attain opposite results in corridors with respect to bottlenecks. The walls in the corridors play a critical role that prevents pedestrians from detaching from each other. This effect has can be observed as an increment in the connectivity of the contact network and the flattening of the velocity profile (thus reducing the strain rate). Very high enough stiffness values stuck the pedestrians leading to a ``solidification'' of the crowd. All the pedestrians walk at almost the same velocity at this stage. The pedestrians that are in contact with the walls are the ones that determine the velocity of the whole crowd. We already analyzed this situation in Ref~\cite{dorso_2019}. \\
+We conclude this Section by stressing\textcolor{blue}{, once again,} that stiffer pedestrians attain opposite results in corridors with respect to bottlenecks. The walls in the corridors play a critical role that prevents pedestrians from detaching from each other. This effect has can be observed as an increment in the connectivity of the contact network and the flattening of the velocity profile (thus reducing the strain rate). Very high enough stiffness values stuck the pedestrians leading to a ``solidification'' of the crowd. All the pedestrians walk at almost the same velocity at this stage. The pedestrians that are in contact with the walls are the ones that determine the velocity of the whole crowd. We already analyzed this situation in Ref~\cite{dorso_2019}. \\
 
 \subsection{Dimensionless numbers and comparison with empirical data}
 
@@ -1022,14 +1025,14 @@ According to most of the empirical measurements, the flow decreases for high eno
 \section{\label{conclusions}Conclusions}
 
 
-We explored the effect on the pedestrians dynamics of the (sometimes neglected) body force in the framework of the SFM. We showed that the stiffness coefficient ($k_n$) has a significant impact on the evacuation dynamics (bottleneck) and also in the dynamics of pedestrians walking along a straight corridor.\\
+\textcolor{blue}{Having adopted as fundamental philosophy of work that the parameters of the SFM should be properly determined by requiring that the model properly reproduces well established experimental data, we} explored the effect on the pedestrians dynamics of the (sometimes neglected) body force in the framework of the SFM. We showed that the stiffness coefficient ($k_n$) has a significant impact on the evacuation dynamics (bottleneck) and also in the dynamics of pedestrians walking along a straight corridor.\\
 
 In the bottleneck geometry, the evacuation time diminishes (pedestrians move faster) as pedestrians become stiffer along the explored desired velocities. This phenomenon occurs because stiffer pedestrians reduce the overlapping and hence the sliding friction intensity. This scenario releases more easily the pedestrians and reduces the probability of producing a cluster of pedestrians blocking the exit (blocking cluster). This leads to a more efficient evacuation dynamics. \\
 
-The opposite behavior is obtained in the corridor geometry with respect to the bottleneck geometry. The major difference is that pedestrians are limited to the available space between walls in the corridor geometry.  Walls are not relevant in the bottleneck geometry. Thus, the overlap between pedestrians is controlled by the available space. But, stiffer pedestrians are more likely to get stuck. The whole crowd can be compared to a granular material. Granular materials can be disordered (amorphous) or ordered depending on how particles link to each other. In the present context, at low stiffness levels, the crowd appears disordered attaining a parabolic velocity profile.
+The opposite behavior is obtained in the corridor geometry with respect to the bottleneck geometry. The major difference is that pedestrians are limited to the available space between walls in the corridor geometry.  Walls are not relevant in the bottleneck geometry. Thus, the overlap between pedestrians is controlled by the available space. But, stiffer pedestrians are more likely to get stuck. The whole crowd can be compared to a granular material. Granular materials can be disordered (amorphous) or ordered depending on how particles \textcolor{blue}{\sout{link} interact}  to each other. In the present context, at low stiffness levels, the crowd appears disordered attaining a parabolic velocity profile.
 If the stiffness level is high, the whole crowd appears ordered into a lattice (like a crystalline solid) with a uniform velocity profile that depends on the friction interaction with the walls.\\
 
-Our efforts to ``tune'' the original SFM to empirical data (say, the fundamental diagram) moved us to explore the dimensionless parameter space.  We found that the qualitative behavior of empirical  data can be accomplished if the parameters are close to $\mathcal{K}_c < 68$, $\mathcal{K} = 685$ and $\mathcal{A}=14$. Nevertheless, this is a first attempt to arrive at suitable parameters, although we do not claim these to be optimal. We encourage further research to find dimensionless numbers that may better fit experimental data.\\
+Our efforts to ``tune'' the original SFM to \textcolor{blue}{reproduce} empirical data (say, the fundamental diagram) moved us to explore the dimensionless parameter space.  We found that \textcolor{blue}{\sout{the qualitative behavior of empirical  data can be accomplished} we can qualitatively reproduce the empirical data} if the parameters are close to $\mathcal{K}_c < 68$, $\mathcal{K} = 685$ and $\mathcal{A}=14$. Nevertheless, this is a first attempt to arrive at suitable parameters, although we do not claim these to be optimal. We encourage further research to find dimensionless numbers that may better fit experimental data.\\
 
 
 \section*{Acknowledgments}
