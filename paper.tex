@@ -69,7 +69,7 @@ different geometries: bottlenecks and corridors. Increasing $k_n$ produces
 opposite effects on the crowd dynamics for each geometry: an increase of the
 crowd velocity  for bottlenecks, and a decrease for corridors.  The former
 reflects the fact that an increase in the stiffness reduces the overlap
-between pedestrians and, as a consequence, the sliding friction is reduced.
+between pedestrians and, as a consequence, the sliding friction is diminished.
 This phenomenon reduces the number of blocking clusters close to the exit
 door.  In the case of the corridor, instead, due to the confining walls, the
 pedestrians get tight  into a lattice-like configuration due to space
@@ -98,7 +98,7 @@ Pedestrian Dynamics \sep Social Force Model \sep Body Force
 \section{\label{introduction}Introduction}
 
 The Social Force Model (SFM) models the crowd dynamics  considering three kinds
-of force: desired forces, social forces, and physical forces. In its original
+of forces: desired forces, social forces, and physical forces. In its original
 version, the SFM, addresses two physical forces as essential:   the ``body
 force'' and the ``sliding friction''. Both are  inspired by granular
 interactions and were claimed to be necessary   for attaining the particular
@@ -107,19 +107,20 @@ actually proved to be an essential feature of the  ``faster-is-slower'' effect,
 although the role of the ``body force'' appears,  at a first instance, not so
 clear \cite{dorso_2005,dorso_2007,dorso_2011}. \\
 
-The existence of a ``body force'' in the context of highly dense crowds (say, 5
-to 10$\,$people/m$^2$) is a commonsense matter \cite{henein_2007,fruin_1993}.
-Researchers, however, question the numerical setting for this force in  the SFM
-context \cite{lakoba_2005}. As a matter of fact, the usual   set of parameters
-provided by  Helbing prevents the excessive overlapping among pedestrians, but
-it is known to  accomplish artificially high force levels
-\cite{helbing_2000,lakoba_2005,langston_2006,lin_2017}. The force estimates from
-the SFM appear to be remarkably higher with respect to the reported real life
-data (say, an order of magnitude). The crowd motion simulations, however,
-present realistic results \cite{lakoba_2005,langston_2006,dorso_2017}.  The
-point seems to be that the SFM focuses on the ``collective behavior'' due  to
-clogging, missing the ``individualistic'' perspective  of single pedestrians  or
-very small groups \cite{helbing_2000,henein_2007,narain_2009}.  \\
+The existence of a ``body force'' in the context of highly dense crowds (say,
+more than 5$\,$people/m$^2$) is a commonsense matter
+\cite{henein_2007,fruin_1993}. Researchers, however, question the numerical
+setting for this force in  the SFM context \cite{lakoba_2005}. As a matter of
+fact, the usual   set of parameters provided by  Helbing prevents the excessive
+overlapping among pedestrians, but it is known to  accomplish artificially high
+force levels \cite{helbing_2000,lakoba_2005,langston_2006,lin_2017}. The force
+estimates from the SFM appear to be remarkably higher with respect to the
+reported real life data (say, an order of magnitude). The crowd motion
+simulations, however, present realistic results
+\cite{lakoba_2005,langston_2006,dorso_2017}.  The point seems to be that the SFM
+focuses on the ``collective behavior'' due  to clogging, missing the
+``individualistic'' perspective  of single pedestrians  or very small groups
+\cite{helbing_2000,henein_2007,narain_2009}.  \\
 
 Many researchers realized that modifying the SFM may (partially) fix the
 misleading results. It was proposed that the pedestrians'  psychological force
@@ -157,19 +158,19 @@ the SFM control parameters \cite{helbing_2007,dorso_2017}. \\
 The fundamental diagram exhibits the flux behavior for either low density crowds
 (with rare contacts between pedestrians) and highly dense crowds (dominated  by
 two body interactions). In the second case, crowds experience a flux  slowing
-down, but other behaviors are also possible \cite{helbing_2007,lohner_2018}.
-We may suspect that the  modeling of the  ``flux slowing down'' within the
-context of the SFM will require the proper  setting of the (dimensionless)
-controlling parameters. We have already examined this working hypothesis in
-Ref.~\cite{dorso_2019}, but limiting the parameter exploration to  the sliding
-friction, disregarding the body force.  We now widen the investigation on the
-set of parameters to include the one  associated to the body force. We will
-explore   the complex interplay between  the body force and the sliding friction
-among pedestrians. Recall that the  interplay dynamics is not directly
-controlled by the set of parameters, but  through dimensionless ``numbers'',
-where the model parameters appear mixed  between each other. Thus, this step up
-offers a challenge to the  ``individualistic'' meaning of the parameter's set.
-\\
+down, but other behaviors are also possible \cite{helbing_2007,lohner_2018}. We
+may suspect that the  modeling of the  ``flux slowing down'' within the context
+of the SFM will require the proper  setting of the (dimensionless) controlling
+parameters. This working hypothesis was already examined in
+Ref.~\cite{dorso_2019}, but the parameter exploration was limited to  the
+sliding friction, disregarding the body force. In this paper, we widen the
+investigation on the set of parameters to include the one  associated to the
+body force. We will explore   the complex interplay between  the body force and
+the sliding friction among pedestrians. Recall that the  interplay dynamics is
+not directly controlled by the set of parameters, but  through dimensionless
+``numbers'', where the model parameters appear mixed  between each other. Thus,
+this step up offers a challenge to the  ``individualistic'' meaning of the
+parameter's set. \\
 
 
 The paper is organized as follows. We first recall the available  experimental
@@ -177,11 +178,12 @@ values on the body force and the sliding friction (see Section
 \ref{experimental}). Secondly, we introduce the reduced-in-units SFM and the
 three dimensionless numbers that control the crowd dynamics (see Section
 \ref{background}). We present our numerical simulations in Section
-\ref{results}. For the sake of clarity, this Section is  separated into two
-major parts: the bottleneck scenario and the corridor  scenario in Sections
-\ref{bottleneck} and \ref{corridor}, respectively.  Section \ref{conclusions}
-opens a detailed discussion from results in Section \ref{results} and resumes
-our main conclusions.
+\ref{results}. For the sake of clarity, this Section is  separated into three
+major parts: the bottleneck scenario, the corridor scenario and the comparison
+with empirical data in Sections: \ref{bottleneck}, \ref{corridor} and
+\ref{Dimensionless}, respectively.  Section \ref{conclusions} opens a detailed
+discussion from results in Section \ref{results} and resumes our main
+conclusions.
 
 \section{\label{experimental}Experimental background}
 
@@ -282,7 +284,7 @@ environment of the Beijing subway. This environment was not suitable for
 providing information on the step distance $B$, but estimates for the  desired
 speed and the body compressibility could be achieved. The reported  magnitude
 $k_n$ assesses either the clothes and the body compressibility. The  final
-value, though, is linearly related to the compression $x$. \\
+value, though, is linearly related to the compression (overlap) $x$. \\
 
 We measured  contact forces during the spring of 2019 at the subway in Buenos
 Aires,  Argentina. Our preliminary results show that pedestrians feel
@@ -293,13 +295,13 @@ We also recorded body  forces up to $60\,$N during very short ``hits''. The
 comparison with the  fittings provided by Ref.~\cite{song_2019} shows that these
 magnitudes  accomplish densities around 5 people/m$^2$.     \\
 
-The maximum (realistic) compressions may be computed from the Hooke's relation
+The maximum (realistic) overlap may be computed from the Hooke's relation
 $F(x)=k_n(x)\,x$ and the compressibility $k_n(x)$ reported in
 Table~\ref{table_data}.  An ``uncomfortable'' body force  $10\,$N $-$ $30\,$N
-can address compressions in the  range of $0.030-0.055\,$m. Also, a ``hitting''
-force of $60\,$N can address  compressions between $0.045$ and $0.065\,$m.
-Besides, no reliable values for the sliding friction $k_t$ appears to be
-available in the literature (to our knowledge).\\
+can address overlap values in the  range of $0.030-0.055\,$m. Also, a
+``hitting'' force of $60\,$N can address  overlap values between $0.045$ and
+$0.065\,$m. Besides, no reliable values for the sliding friction $k_t$ appears
+to be available in the literature (to our knowledge).\\
 
 
 \section{\label{background}Theoretical background}
@@ -307,7 +309,7 @@ available in the literature (to our knowledge).\\
 \subsection{\label{sfm}The Social Force Model}
 
 The Social Force Model (SFM) provides a necessary framework for simulating  the
-collective dynamics of self-driven particles (\textit{i.e.} pedestrians).  The
+collective dynamics of pedestrians (\textit{i.e.} self-driven particles). The
 pedestrians are considered to follow an equation of motion involving  either
 ``socio-psychological'' forces and physical forces (say, granular  forces). The
 equation of motion for any pedestrian $i$ (of mass $m_i$) reads
@@ -336,7 +338,7 @@ The pedestrians' own will is modeled by the desire force $\mathbf{f}_d$.  This
 force stands for the acceleration (deceleration) required to move  at the
 desired walking speed $v_d$. This involves, however, a  personal attitude that
 makes him (her) appear more or less ``assertive''. As  mentioned in
-Section~\ref{experimental}, the reaction time $\tau$ reflects for  this
+Section~\ref{experimental}, the reaction time $\tau$ reflects this
 attitude. Thus, the desire force is modeled as follows
 
 \begin{equation}
@@ -1048,7 +1050,8 @@ the same velocity at this stage. The pedestrians that are in contact with the
 walls are the ones that determine the velocity of the whole crowd. We already
 analyzed this situation in Ref~\cite{dorso_2019}. \\
 
-\subsection{Dimensionless numbers and comparison with empirical data}
+\subsection{\label{Dimensionless}Dimensionless numbers and comparison
+ with empirical data}
 
 
 The final stage of our investigation deals with the plausible values of the
