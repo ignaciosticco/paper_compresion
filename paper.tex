@@ -523,26 +523,27 @@ Section~\ref{experimental}). But these are irrelevant in the context of the
 (dimensionless) parameter space and the corresponding collective dynamics (see
 Section~\ref{introduction}).
 
-\item[(c)] We will explore crowd densities allowing body compressions up to
-$0.1\,$m. This corresponds to remarkably high densities, since our own  (real-
-life) estimates do not surpass $0.065\,$m (see  Section~\ref{experimental}).
-Therefore, the extremely high density  scenarios (say, above $0.065\,$m) will be
-considered for the purpose of a  tendency, but not as a common real-life
-situation. No casualties due to high  pressures will be further considered.
+\item[(c)] We will explore crowd densities allowing body compressions (overlaps)
+up to $0.1\,$m. This corresponds to remarkably high densities, since our own
+(real- life) estimates do not surpass $0.065\,$m (see
+Section~\ref{experimental}). Therefore, the extremely high density  scenarios
+(say, above $0.065\,$m) will be considered for the purpose of a  tendency, but
+not as a common real-life situation. No casualties due to high  pressures will
+be further considered.
 
 \end{itemize}
 
 We stress the fact that our concern is placed on the collective dynamics of
 crowded environments. We will work on the hypothesis that any ``reasonable''
-parameter set should reproduce the collective behavior (say, the slowing down
-in the fundamental diagram; see Section~\ref{corridor}). We will not attempt to
-optimize parameters from other objective functions. \\
+parameter set should reproduce the collective behavior (say, the slowing down in
+the fundamental diagram; see Section~\ref{Dimensionless}). We will not attempt
+to optimize parameters from other objective functions. \\
 
 We will further sustain the hypothesis of soft matter in the context of crowded
 environments. The body compression and the sliding friction parameters are
-supposed to be connected in some way under this hypothesis. However, we will
-not introduce any direct link between $\mathcal{K}$ and $\mathcal{K}_c$. We
-will investigate the interplay between both in Section~\ref{corridor}.  \\
+supposed to be connected in some way under this hypothesis. However, we will not
+introduce any direct link between $\mathcal{K}$ and $\mathcal{K}_c$. We will
+investigate the interplay between both in Section~\ref{Dimensionless}.\\
 
 In order to keep the model as simple as possible, we will only consider
 isotropic pedestrian interactions, since anisotropic interactions do not play a
@@ -631,7 +632,7 @@ the quicker they leave).\\
 
 Fig.~\ref{vd_vs_te}  shows either FIS or FIF, and a FIS+FIF pattern for desired
 velocities $v_d>1.2\,$m/s. The  evacuation time attains a FIS+FIF pattern for
-compression coefficients below  $k=1.2\,$E5. This means that ``soft''
+compression coefficients below  $k_n=1.2\,$E5. This means that ``soft''
 individuals can attain this  behavioral pattern.  Notice that higher values of
 $k_n$ allow  only FIS or FIF patterns. For the highest explored value
 $k_n=1.2\,$E6, no  FIS can be seen at all. Besides, the evacuation pattern for
@@ -704,7 +705,7 @@ and $k_n$).\\
 \subfloat[]{\includegraphics[width=0.49\columnwidth]
 {./overlap_vs_vd_multi_kn.eps}\label{overlap_vd}}\\
 \caption[width=0.47\columnwidth]{(a) Mean degree as a function of the
-pedestrian’s desired velocity (m/s). (b) Mean overlap as a function of the
+pedestrian’s desired velocity. (b) Mean overlap as a function of the
 pedestrians desired velocity. Each symbol indicates the $k_n$ value
 corresponding to the body force (see the labels). The data corresponds to a
 bottleneck with periodic boundary conditions (re-injecting pedestrians). The
@@ -837,7 +838,7 @@ degree vanishes at very low  densities because the pedestrians do not touch each
 other. When the density  surpasses 4.5, a few pedestrians start to touch each
 other,  raising the mean degree. As the density continuous increasing,  the mean
 degree approaches the asymptotic value  of six. Degree six corresponds to the
-maximum packing density for identical  hard circles.\\
+maximum packing density for identical hard disks.\\
 
 
 \begin{figure}[!htbp]
@@ -886,7 +887,7 @@ replaced by other polygons of more than three edges. \\
 {./network_d6_knE5.eps}\label{network_d6_knE5}}\\
 \caption[width=0.47\columnwidth]{Contact network of the pedestrians along the 
 corridor at time $t=50\,$s. The global density was $\rho=6$.  The lines that 
-connect the nodes (pedestrians) represent the contact between them. The colors 
+connect the nodes (pedestrians) represent the contacts between them. The colors 
 stand for the degree of the node (the number of pedestrians that are in contact 
 with him/her). The corridor was 28~m $\times$ 22~m with periodic boundary 
 conditions and $v_d=1$. (a) corresponds to a simulation without body force and 
@@ -914,7 +915,7 @@ seems to  be related to the boundary conditions, since the same SFM parameters
 were  applied on both situations. We may speculate that this phenomenon occurs
 because, in the corridor, the lateral walls act like a  confining barrier that
 forces the ``stiff'' pedestrian to increase his (her) contacts. On the contrary,
-no real containment walls exist in the bottleneck situation (regardless the side
+no real confining walls exist in the bottleneck situation (regardless the side
 walls). \\
 
 We can test our hypothesis by computing the mean overlap. 
@@ -923,7 +924,7 @@ that ``soft'' pedestrians attain more overlap than the ``stiff''
 ones, as expected. This is in agreement with Fig.~\ref{overlap_vd} for the 
 bottleneck situation (at a fixed value of $v_d$). The curves in 
 Fig.~\ref{overlap_vd}, however, do not meet each other as in  
-Fig.~\ref{overlap_dens}. All the curves meet each other at
+Fig.~\ref{overlap_dens} where all the curves meet each other at
 high-density values. This phenomenon occurs due to space limitations
 in the corridor that produces overlapping (almost) independently of 
 the value of $k_n$. \\
@@ -941,11 +942,11 @@ online only. }
 \end{figure}
 
 
-The above results represent an important step in the  investigation. The inter-
-pedestrian connectivity differences between the bottleneck geometry  and the
-corridor geometry were not expected and opens two major questions:  how do the
-pedestrians interact with the walls as a function of the body stiffness, and
-consequently, how does  this affect the flux across the corridor.\\
+The above results represent an important step in the  investigation.
+The inter-pedestrian connectivity differences between the bottleneck geometry
+and the corridor geometry were not expected and opens two major questions:  how
+do the pedestrians interact with the walls as a function of the body stiffness,
+and consequently, how does  this affect the flux across the corridor.\\
 
 We start by computing the mean velocity across the corridor.  
 Fig.~\ref{kn_vs_vx_corridor} shows the mean velocity 
@@ -972,9 +973,9 @@ densities, the overlaps among pedestrians attain significant values.
 Furthermore,  stiffness values $k_n\geq 10^4$ move the system to a more heavily
 connected  stage, and thus, pedestrians have no choice but to walk at  (almost)
 the same speed as his (her) neighbors. This  behavior may be envisaged as the
-passage from a ``free''  walking movement to a  constrained movement as the
-stiffness increases. A more  physical picture would assimilate the former as a
-``fluid-like  state'' and the latter as a ``solid-like state''. When the
+passage from a ``free''  walking movement to a constrained walking movement as
+the stiffness increases. A more  physical picture would assimilate the former as
+a ``fluid-like  state'' and the latter as a ``solid-like state''. When the
 stiffness is  very high (say $k_n=$1.2~E6), all the pedestrians  are expected to
 walk at a common velocity. The  pedestrians that walk in physical contact with
 the wall are the ones who  determine the velocity of the whole crowd, as
@@ -993,8 +994,8 @@ case of soft pedestrians ($k_n=$0).\\
 
 From the results displayed above, we realize that the crowd behaves like a solid
 for very stiff pedestrians. This means that the crowd can not be easily
-``deformed''. In this context, deformation means that parts of the crowd may be
-allowed to move faster than other parts of the crowd. \\
+``deformed''. In this context, deformation means that some parts of the crowd
+may be allowed to move faster than other parts of the crowd. \\
 
 The strain rate tensor displays the rate of change of the deformation of a body
 in the vicinity of a given point.  We consider the following discrete definition
@@ -1026,17 +1027,18 @@ $v_d=1$. The global density was $\rho=7 p\,$m$^{-2}$. Color online only. }
 Where $\langle \cdot \rangle$ means the average taken over time. This definition
 compares the velocity of the pedestrians close to the wall (boundary) with
 respect to the velocity of the pedestrians at the center of the corridor
-(center). Thus, $\dot{\gamma}$ vanishes (no deformation) as the stiffness level
-increases. This phenomenon is shown in Fig.~\ref{strain_rate_vs_kn} where we can
-see that the strain rate drops for high values of $k_n$. \\
+(center). Thus, the strain rate $\dot{\gamma}$ vanishes (no deformation) as the
+stiffness level increases. This phenomenon is shown in
+Fig.~\ref{strain_rate_vs_kn} where we can see that the strain rate drops for
+high values of $k_n$. \\
 
 
 We conclude this Section by stressing, once again, that stiffer pedestrians
 attain opposite results in corridors with respect to bottlenecks. The walls in
 the corridors play a critical role that prevents pedestrians from detaching from
-each other. This effect has can be observed as an increment in the connectivity
+each other. This effect can be observed as an increment in the connectivity
 of the contact network and the flattening of the velocity profile (thus reducing
-the strain rate). Very high enough stiffness values stuck the pedestrians
+the strain rate). High enough stiffness values stuck the pedestrians
 leading to a ``solidification'' of the crowd. All the pedestrians walk at almost
 the same velocity at this stage. The pedestrians that are in contact with the
 walls are the ones that determine the velocity of the whole crowd. We already
@@ -1077,7 +1079,7 @@ the presence of the body force. Including the body force, however, produces a
 subtle increment in the flow for densities higher than 7 p m$^{-2}$ (see orange
 curve from Fig.~\ref{flow_density_no_body_force}). \\
 
-A further increment of $\mathcal{K}$ to $\mathcal{K}=$137 (ten times the 
+A further increment of $\mathcal{K}$ to $\mathcal{K}=$1371 (ten times the 
 original SFM value) attains a plateau ($\rho>5$ p m$^{-2}$) before vanishing at 
 very high densities. This occurs on either $\mathcal{K}_c=$ 0 and 
 $\mathcal{K}_c = $ 68.\\
@@ -1115,7 +1117,7 @@ was $v_d=1$ in all the cases. (a) corresponds to simulations without body force
 
 
 Having adopted as fundamental philosophy of work that the parameters of the SFM
-should be properly determined by requiring that the model properly reproduces
+should be properly determined by requiring that the model reproduces
 well established experimental data, we explored the effect on the pedestrians
 dynamics of the (sometimes neglected) body force in the framework of the SFM. We
 showed that the stiffness coefficient ($k_n$) has a significant impact on the
@@ -1158,7 +1160,7 @@ Research Council (spanish: Consejo Nacional de Investigaciones Cient\'\i ficas
 y T\'ecnicas - CONICET, Argentina) grant Programaci\'on Cient\'\i fica 2018 
 (UBACYT) Number 20020170100628BA.\\
 
-The authors want to thanks the degree students Josefina Catoni and Ayelen Santos
+The authors want to thank the degree students Josefina Catoni and Ayelen Santos
  for providing data acquired at the subway in Buenos Aires, Argentina. \\
 
 G. Frank thanks Universidad Tecnol\'olica Nacional (UTN) for partial
