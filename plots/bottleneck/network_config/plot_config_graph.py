@@ -7,6 +7,7 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
+import matplotlib.patches as patches
 import pylab
 import math
 
@@ -130,6 +131,8 @@ def plot_network(G,output_filename,title):
      nodes = G.nodes()
      n_color = np.asarray([degrees[n] for n in nodes])
      fig, ax = plt.subplots()
+     rect = patches.Rectangle((20,10),0.3,1,linewidth=2,edgecolor='k',clip_on=False,facecolor='k')
+     ax.add_patch(rect)
      pos = nx.get_node_attributes(G,'pos')
      sc = nx.draw(G,pos,width=0.5,cmap='jet',vmax=6,node_color=n_color,node_size=5,with_labels=False,edge_color='black')
      plt.axis([13,20,4,16])
@@ -150,6 +153,9 @@ def plot_network(G,output_filename,title):
      plt.text(21.5, 11.5, "4", fontsize=12,color="k")
      plt.text(21.5, 13, "5", fontsize=12,color="k")
      plt.text(21.5, 15, "6", fontsize=12,color="k")
+
+
+
      pylab.savefig('{}.png'.format(output_filename), format='png', dpi=300, bbox_inches='tight')
      pylab.savefig('{}.eps'.format(output_filename), format='eps', dpi=300, bbox_inches='tight')
 
@@ -160,9 +166,9 @@ def main():
 
      ############# PARAMETERS #############
      #1200000
-     input_filename = 'config_bottleneck_vd2_k1200000'
-     output_filename = 'network_vd2_kn1200000'
-     title = "$v_d=$2 m~s$^{-1}$ \hspace{0.5cm} $k_n=$1.2~E6"
+     input_filename = 'config_bottleneck_vd2_k0'
+     output_filename = 'network_vd2_kn0'
+     title = "$v_d=$2 m~s$^{-1}$ \hspace{0.5cm} $k_n=$0"
      time = 100
      sum_rads = 0.46
      ######################################
